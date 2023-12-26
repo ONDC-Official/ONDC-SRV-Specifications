@@ -6,7 +6,7 @@
     },
     "error": {
       "type": "JSON-SCHEMA-ERROR",
-      "code": "50009",
+      "code": "90003",
       "message": "schedule not provided"
     }
   }
