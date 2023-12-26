@@ -27,7 +27,7 @@ message:
               required: required
               usage: "2023-11-16T10:30:00Z"
               reference: if any  
-      payments:
+    payments:
         parent: true
         id: 
           description: id of the partial payment done
