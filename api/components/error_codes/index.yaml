@@ -1,5 +1,6 @@
 code:
-  - Event: Application submittion failure
-    Description: Buyer application could not submit the loan application to the lender/s
+  - Event: Schedule not provided
+    Description: Buyer could not provide the schedule
     From: BAP
-    code: 80101
+    code: 50009
+

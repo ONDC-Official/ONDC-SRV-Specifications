@@ -22,10 +22,8 @@ var uiPath = "../../ui/build.js";
 // const unresolvedFilePath = `https://raw.githubusercontent.com/beckn/protocol-specifications/master/api/transaction/components/index.yaml`
 const tempPath = `./temp.yaml`;
 getSwaggerYaml("example_set", outputPath);
-const { buildErrorCodes } = require("./build-error-code.js");
-const BUILD = {
-  error: "errorCode",
-};
+
+
 const SKIP_VALIDATION = {
   flows: "skip1",
   examples: "skip2",
@@ -218,7 +216,7 @@ async function getSwaggerYaml(example_set, outputPath) {
       schemaMap[path.substring(1)] = pathSchema;
     }
   
-      await buildErrorCodes();
+    
    
     // console.log('schemaMap', JSON.stringify(schemaMap));
     // return;
