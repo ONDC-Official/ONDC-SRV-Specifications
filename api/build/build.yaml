@@ -15869,6 +15869,39 @@ x-attributes:
                       required: required
                       usage: '2023-11-16T10:30:00Z'
                       reference: if any
+              payments:
+                parent: true
+                id:
+                  description: id of the partial payment done
+                  required: required
+                  usage: P1
+                  reference: if any
+                collected_by:
+                  description: payment is collected by which entity
+                  required: required
+                  usage: BAP
+                  reference: if any
+                params:
+                  transaction_id:
+                    description: reference id generated once the payment is made
+                    required: required if payment is done
+                    usage: '3979'
+                    reference: if any
+                status:
+                  description: status of the payment
+                  required: required
+                  usage: PAID
+                  reference: if any
+                type:
+                  description: type of payment
+                  required: required
+                  usage: PRE-FULFILLMENT
+                  reference: if any
+                tags:
+                  description: tags such as settlement details
+                  required: optional
+                  usage: '-'
+                  reference: if any
       on_update:
         parent: true
         message:
@@ -15964,5 +15997,13 @@ x-errorcodes:
   code:
     - Event: Schedule not provided
       Description: Buyer could not provide the schedule
-      From: BAP
-      code: 50009
+      From: BPP
+      code: 90001
+    - Event: Incorrect OTP
+      Description: OTP provided by buyer is incorrect
+      From: BPP
+      code: 90002
+    - Event: Schedule not provided
+      Description: Buyer did not provide the schedule
+      From: BPP
+      code: 90003

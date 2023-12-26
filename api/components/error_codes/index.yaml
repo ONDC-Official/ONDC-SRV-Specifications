@@ -1,6 +1,14 @@
 code:
   - Event: Schedule not provided
     Description: Buyer could not provide the schedule
-    From: BAP
-    code: 50009
+    From: BPP
+    code: 90001
+  - Event: Incorrect OTP
+    Description: OTP provided by buyer is incorrect
+    From: BPP
+    code: 90002
+  - Event: Schedule not provided
+    Description: Buyer did not provide the schedule
+    From: BPP
+    code: 90003
 
