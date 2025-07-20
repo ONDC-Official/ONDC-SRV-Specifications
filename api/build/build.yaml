@@ -37691,7 +37691,7 @@ x-examples:
                               code: Settlement_Timestamp
                             value: '2024-04-03T23:00:00.000Z'
 x-attributes:
-  Home Services:
+  Agriculture Services:
     attribute_set:
       search:
         parent: true
@@ -38423,3 +38423,8 @@ x-errorcodes:
       Who can use code?: BPP
       Usage: Used in NACK
       Action: NACK on /select
+    - Code: '90004'
+      Reason: Report deadline cannot be matched
+      Who can use code?: BPP
+      Usage: Used in error object
+      Action: /on_select
