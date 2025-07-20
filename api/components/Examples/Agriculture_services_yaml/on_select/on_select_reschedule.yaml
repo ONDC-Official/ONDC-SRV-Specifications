@@ -1,5 +1,3 @@
-summary: Seller rejects the schedule and returns the available slots
-description: Seller rejects the schedule and returns the available slots + error message
 value:
   context:
     domain: ONDC:SRV14

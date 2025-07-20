@@ -3006,6 +3006,702 @@ x-enum:
                 When the buyer sends out the sample/or goes to the seller
                 location for availing a service
               reference: <PR/Issue/Discussion Links md format text>
+        tags:
+          COMMODITY_DETAILS:
+            COMMODITY_CODE:
+              - code: ARHAR_WHOLE
+                description: ARHAR WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MOONG_WHOLE
+                description: MOONG WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MASOOR_WHOLE
+                description: MASOOR WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: URAD_WHOLE
+                description: URAD WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WHEAT
+                description: WHEAT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MAIZE
+                description: MAIZE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHANA
+                description: CHANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BAJRA
+                description: BAJRA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BARLEY
+                description: BARLEY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JOWAR
+                description: JOWAR
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PADDY
+                description: PADDY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAJMA
+                description: RAJMA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAGI
+                description: RAGI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LOBIA
+                description: LOBIA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BASMATI_RICE
+                description: BASMATI RICE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WHITE_PEAS
+                description: WHITE PEAS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CASTOR_SEED
+                description: CASTOR SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MUSTARD_SEED
+                description: MUSTARD SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SOYABEAN
+                description: SOYABEAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PEANUT_KERNEL
+                description: PEANUT KERNEL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SUNFLOWER_SEED
+                description: SUNFLOWER SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KUSUM_SEED
+                description: KUSUM SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SESAME_SEED
+                description: SESAME SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: NIGER_SEED
+                description: NIGER SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SAL_SEED
+                description: SAL SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: COTTON_SEED
+                description: COTTON SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PONGAM_SEED
+                description: PONGAM SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: APPLE
+                description: APPLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PEAR
+                description: PEAR
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ORANGE
+                description: ORANGE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SAPOTA
+                description: SAPOTA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MUSK_MELON
+                description: MUSK MELON
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GRAPES
+                description: GRAPES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LITCHI
+                description: LITCHI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: POMEGRANATE
+                description: POMEGRANATE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BANANA
+                description: BANANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PLUM
+                description: PLUM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PEACH
+                description: PEACH
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MANGO
+                description: MANGO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SWEET_ORANGE
+                description: SWEET ORANGE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CUSTARD_APPLE
+                description: CUSTARD APPLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WATERMELONS
+                description: WATERMELONS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LEMON
+                description: LEMON
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GUAVA
+                description: GUAVA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JACKFRUIT
+                description: JACKFRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KINNOW
+                description: KINNOW
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_MANGO_FOR_PICKLES
+                description: RAW MANGO FOR PICKLES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ONION
+                description: ONION
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: POTATO
+                description: POTATO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TOMATO
+                description: TOMATO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PEAS
+                description: PEAS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BOTTLE_GOURD
+                description: BOTTLE GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BITTER_GOURD
+                description: BITTER GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CUCUMBER
+                description: CUCUMBER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BRINJAL
+                description: BRINJAL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CABBAGE
+                description: CABBAGE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CAULIFLOWER
+                description: CAULIFLOWER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GREEN_CHILLIES
+                description: GREEN CHILLIES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CARROT
+                description: CARROT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SWEET_POTATO
+                description: SWEET POTATO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SPINACH
+                description: SPINACH
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MUSTARD_LEAF
+                description: MUSTARD LEAF
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CORIANDER_LEAVES
+                description: CORIANDER LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GARLIC
+                description: GARLIC
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BHINDI_OKRA
+                description: BHINDI/OKRA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GINGER
+                description: GINGER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BEETROOT
+                description: BEETROOT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RIBBED_CELERY
+                description: RIBBED CELERY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CLUSTER_BEANS
+                description: CLUSTER BEANS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RIDGE_GOURD
+                description: RIDGE GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RADISH
+                description: RADISH
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SWEET_CORN
+                description: SWEET CORN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CAPSICUM_GREEN
+                description: CAPSICUM GREEN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JIMIKAND_SURAN
+                description: JIMIKAND SURAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CUMIN
+                description: CUMIN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RED_CHILLIES
+                description: RED CHILLIES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TURMERIC
+                description: TURMERIC
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: AJWAIN
+                description: AJWAIN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CORIANDER_WHOLE
+                description: CORIANDER WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRIED_RAW_MANGO_SLICES
+                description: DRIED RAW MANGO SLICES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GUAR_SEED
+                description: GUAR SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MAHUA_FLOWER
+                description: MAHUA FLOWER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TAMARIND
+                description: TAMARIND
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JAGGERY
+                description: JAGGERY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GROUNDNUT_WITH_PODS
+                description: GROUNDNUT WITH PODS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: COCONUT
+                description: COCONUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: REETHA
+                description: REETHA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BAMBOO
+                description: BAMBOO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: COTTON
+                description: COTTON
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_CASHEWNUT
+                description: RAW CASHEWNUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MOTH
+                description: MOTH
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LINSEED
+                description: LINSEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_JUTE
+                description: RAW JUTE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SAFFRON
+                description: SAFFRON
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRUMSTICK
+                description: DRUMSTICK
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAISINS
+                description: RAISINS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MAHUA_SEED
+                description: MAHUA SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PINEAPPLE
+                description: PINEAPPLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TEZPATTA_BAY_LEAVES
+                description: TEZPATTA BAY LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TENDER_COCONUT
+                description: TENDER COCONUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: FENUGREEK_WHOLE
+                description: FENUGREEK WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: FENUGREEK_LEAVES_METHI
+                description: FENUGREEK LEAVES METHI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: FENNEL_SEED
+                description: FENNEL SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ISABGOL
+                description: ISABGOL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: POINTED_GOURD
+                description: POINTED GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PUMPKIN
+                description: PUMPKIN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LARGE_CARDAMOM
+                description: LARGE CARDAMOM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: COLOCASIA_VEGETABLE
+                description: COLOCASIA VEGETABLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BETEL_LEAVES
+                description: BETEL LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PAPAYA
+                description: PAPAYA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: IVY_GOURD
+                description: IVY GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ARECA_NUT_BETEL_NUT
+                description: ARECA NUT BETEL NUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TUBEROSE
+                description: TUBEROSE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MARIGOLD
+                description: MARIGOLD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BUCKWHEAT
+                description: BUCKWHEAT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SNAKE_GOURD
+                description: SNAKE GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: STRAWBERRIES
+                description: STRAWBERRIES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: AMLA
+                description: AMLA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: HORSE_GRAM
+                description: HORSE GRAM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRY_GINGER
+                description: DRY GINGER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LOBIA_PODS
+                description: LOBIA PODS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DOLICHOS_BEAN
+                description: DOLICHOS BEAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CARNATIONS
+                description: CARNATIONS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GLADIOLUS
+                description: GLADIOLUS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: APRICOT
+                description: APRICOT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ARHAR_DAL_SPLIT
+                description: ARHAR DAL SPLIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SAFED_PETHA
+                description: SAFED PETHA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BER
+                description: BER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BLACK_PEPPER_WHOLE
+                description: BLACK PEPPER WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MOONG_DAL_SPLIT
+                description: MOONG DAL SPLIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHANA_DAL_SPLIT
+                description: CHANA DAL SPLIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: URD_DAL_SPLIT
+                description: URD DAL SPLIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KABULI_CHANA_WHOLE
+                description: KABULI CHANA WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TINDA
+                description: TINDA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JAMUN
+                description: JAMUN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CARDAMOMS_WHOLE
+                description: CARDAMOMS WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CLOVES_WHOLE
+                description: CLOVES WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: NUTMEG_WHOLE
+                description: NUTMEG WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: COCONUT_WITH_HUSK
+                description: COCONUT WITH HUSK
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: OATS_RAW
+                description: OATS RAW
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHERRY_RED_BLACK
+                description: CHERRY RED/BLACK
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BANANA_RAW
+                description: BANANA RAW
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PAPAYA_RAW
+                description: PAPAYA RAW
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: NEEM_SEEDS
+                description: NEEM SEEDS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JUTE_SEEDS
+                description: JUTE SEEDS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TAPIOCA
+                description: TAPIOCA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ROSE_CUT_FLOWER
+                description: ROSE CUT FLOWER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHHAPPAN_KADDU
+                description: CHHAPPAN KADDU
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PERSIMON
+                description: PERSIMON
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WALNUTS_INSHELL
+                description: WALNUTS INSHELL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHRYSANTHEMUM
+                description: CHRYSANTHEMUM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GERBERA
+                description: GERBERA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ANTHURIUM
+                description: ANTHURIUM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: TULIP
+                description: TULIP
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SPRAY_CHRYSANTHEMUM
+                description: SPRAY CHRYSANTHEMUM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LILY
+                description: LILY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHAKHAO_OR_BLACK_RICE
+                description: CHAKHAO OR BLACK RICE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MACE_WHOLE
+                description: MACE WHOLE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: POPPY_SEED
+                description: POPPY SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHIRONJI
+                description: CHIRONJI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SAFED_MUSLI
+                description: SAFED MUSLI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SPONGE_GOURD
+                description: SPONGE GOURD
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PASSION_FRUIT
+                description: PASSION FRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BROCCOLI_CALABRESE
+                description: BROCCOLI/CALABRESE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SUGAR_SNAP_PEAS
+                description: SUGAR SNAP PEAS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ALOEVERA
+                description: ALOEVERA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: OYSTER_MUSHROOM
+                description: OYSTER MUSHROOM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BUTTON_MUSHROOM
+                description: BUTTON MUSHROOM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GHERKIN
+                description: GHERKIN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GRAPEFRUIT
+                description: GRAPEFRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAPESEED
+                description: RAPESEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: HILSA
+                description: HILSA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MINT_LEAVES
+                description: MINT LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CURRY_LEAVES
+                description: CURRY LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SPRING_ONION
+                description: SPRING ONION
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BREAD_FRUIT
+                description: BREAD FRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: AVOCADO
+                description: AVOCADO
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAMBUTAN
+                description: RAMBUTAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MANGOSTEEN
+                description: MANGOSTEEN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WINGED_BEAN
+                description: WINGED BEAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LESSER_YAM
+                description: LESSER YAM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BILIMBI
+                description: BILIMBI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SOURSOP
+                description: SOURSOP
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ARROWROOT
+                description: ARROWROOT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_TURMERIC
+                description: RAW TURMERIC
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ROUND_CHILLI
+                description: ROUND CHILLI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GARCINIA
+                description: GARCINIA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GREEN_AMARANTHUS
+                description: GREEN AMARANTHUS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RED_AMARANTHUS
+                description: RED AMARANTHUS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: JACKFRUIT_SEED
+                description: JACKFRUIT SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GINGER_SEED
+                description: GINGER SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SILK_COCOONS
+                description: SILK COCOONS
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BANANA_STEM
+                description: BANANA STEM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_ARROWROOT_POWDER
+                description: RAW ARROWROOT POWDER
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_HONEY
+                description: RAW HONEY
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BAJI_BANANA
+                description: BAJI BANANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MYSORE_BANANA
+                description: MYSORE BANANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RED_BANANA
+                description: RED BANANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LADY_FINGER_BANANA
+                description: LADY FINGER BANANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: FOXTAIL_MILLET
+                description: FOXTAIL MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LITTLE_MILLET
+                description: LITTLE MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KODO_MILLET
+                description: KODO MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BARNYARD_MILLET
+                description: BARNYARD MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BROWNTOP_MILLET
+                description: BROWNTOP MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PROSO_MILLET
+                description: PROSO MILLET
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: AMARANTH_SEED
+                description: AMARANTH SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ALMOND_KERNEL
+                description: ALMOND KERNEL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: PINENUT
+                description: PINENUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: LOTUS_STEM
+                description: LOTUS STEM
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MUSHK_BUDJI_RICE
+                description: MUSHK BUDJI RICE
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SNOW_MOUNTAIN_GARLIC
+                description: SNOW MOUNTAIN GARLIC
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KHESARI_DAL
+                description: KHESARI DAL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WALNUT_KERNEL
+                description: WALNUT KERNEL
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KHANDSARI
+                description: KHANDSARI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: KIWI
+                description: KIWI
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SARDA
+                description: SARDA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MAKHANA_SEED
+                description: MAKHANA SEED
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: POPPED_MAKHANA
+                description: POPPED MAKHANA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRIED_TULSI_LEAVES
+                description: DRIED TULSI LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRIED_FENUGREEK_LEAVES
+                description: DRIED FENUGREEK LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: ASAFOETIDA
+                description: ASAFOETIDA
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BESAN
+                description: BESAN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WHEAT_FLOUR
+                description: WHEAT FLOUR
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: CHANA_SATTU
+                description: CHANA SATTU
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WATER_CHESTNUT_FLOUR
+                description: WATER CHESTNUT FLOUR
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: WATER_CHESTNUT
+                description: WATER CHESTNUT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: BABY_CORN
+                description: BABY CORN
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: DRAGON_FRUIT
+                description: DRAGON FRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: GREEN_HENNA_LEAVES
+                description: GREEN HENNA LEAVES
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: MOOTTY_FRUIT
+                description: MOOTTY FRUIT
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: RAW_COFFEE_BEANS
+                description: RAW COFFEE BEANS
+                reference: <PR/Issue/Discussion Links md format text>
   on_search:
     context:
       domain: *ref_0
@@ -3013,6 +3709,133 @@ x-enum:
       catalog:
         fulfillments:
           type: *ref_1
+        providers:
+          items:
+            descriptor:
+              code:
+                - code: SHELF_LIFE
+                  description: Shelf Life
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: MOISTURE
+                  description: Moisture
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: FOREIGN_MATTER
+                  description: Foreign Matter
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: OIL_CONTENT
+                  description: Oil Content
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: DEFECTIVES
+                  description: Defectives
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: OTHER_EDIBLE_GRAINS
+                  description: Other Edible Grains
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: URIC_ACID
+                  description: Uric Acid
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: AFLATOXIN
+                  description: Aflatoxin
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: ARGEMONE_SEEDS
+                  description: Argemone Seeds
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: SIZE_RANGE_MEASURE
+                  description: Size Range Measure
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: SIZE_RANGE
+                  description: Size Range
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: PERCENTAGE_OF_DEFECTS
+                  description: Percentage Of Defects
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: PERCENTAGE_OF_WASTAGE
+                  description: Percentage Of Wastage
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: BUNCH_SIZE_VALUE
+                  description: Bunch Size Value
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: BUNCH_SIZE_UNIT
+                  description: Bunch Size Unit
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: VISIBLE_COLOUR
+                  description: Visible Colour
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: COLOUR_PERCENTAGE
+                  description: Colour Percentage
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: TOTAL_SOLUBLE_SOLIDS
+                  description: Total Soluble Solids
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: TRACES_OF_SOIL
+                  description: Traces Of Soil
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: VOLATILE_OIL
+                  description: Volatile Oil
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: TOTAL_ASH
+                  description: Total Ash
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: CORIANDER_SPLIT_SEEDS_PERCENTAGE
+                  description: Coriander Split Seeds Percentage
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: MIN_FLOWER_PER_STEM
+                  description: Min Flower Per Stem
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: GIRTH_AT_THIN_END_VALUE
+                  description: Girth At Thin End Value
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: GIRTH_AT_THIN_END_UNIT
+                  description: Girth At Thin End Unit
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: BLOOMING_AND_SHAPE
+                  description: Blooming And Shape
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: FLOWER_DIAMETER_VALUE
+                  description: Flower Diameter Value
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: FLOWER_DIAMETER_UNIT
+                  description: Flower Diameter Unit
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: STAPLE_LENGTH_OF_COTTON_VALUE
+                  description: Staple Length Of Cotton Value
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: STAPLE_LENGTH_OF_COTTON_UNIT
+                  description: Staple Length Of Cotton Unit
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: TRASH_PERCENTAGE
+                  description: Trash Percentage
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: BUNDLE_STRENGTH
+                  description: Bundle Strength
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: MICRONAIRE
+                  description: Micronaire
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: PERCENTAGE_OF_MATURED_FIBERS
+                  description: Percentage Of Matured Fibers
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: SIEVE_ANALYSIS
+                  description: Sieve Analysis
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: NUMBER_OF_NUTS_VALUE
+                  description: Number Of Nuts Value
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: NUMBER_OF_NUTS_UNIT
+                  description: Number Of Nuts Unit
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: VOID_NUTS
+                  description: Void Nuts
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: IMMATURE_NUTS
+                  description: Immature Nuts
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: STRENGTH
+                  description: Strength
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: FINENESS
+                  description: Fineness
+                  reference: <PR/Issue/Discussion Links md format text>
   init:
     context:
       domain: *ref_0
@@ -3196,30 +4019,70 @@ x-tags:
         providers:
           tags:
             - code: serviceability
-              description: Serviceability Details
+              description: >-
+                Serviceability Details - The serviceability construct will allow
+                a buyer app to display catalogs, for only those stores, that can
+                fulfil orders for a buyer, at a specific time, at thir location.
+                for more details follow <a
+                href=https://docs.google.com/document/d/1f4QbVstY5m-L_-Jut5jvbeiaBKLR1ttJL_am6GG2Fko/edit?tab=t.0>
+                👉 Here </a>
               reference: <PR/Issue/Discussion Links md format text>
               list:
                 - code: location
-                  description: Description of the Tag
+                  description: >-
+                    Unique identifier of the location where the serviceability
+                    rules apply. This ensures only stores that can deliver to
+                    this buyer's location are considered.
                   reference: <PR/Issue/Discussion Links md format text>
                 - code: category
-                  description: Description of the Tag
+                  description: >-
+                    Unique identifier of the category for which the
+                    serviceability rule is defined. Filters catalog based on
+                    category-level availability for fulfillment.
                   reference: <PR/Issue/Discussion Links md format text>
                 - code: type
-                  description: Description of the Tag
+                  description: >-
+                    Defines the geographical coverage model for serviceability.
+                    Supported values - "10" - hyperlocal; "11" - intercity; "12"
+                    - pan-India; "13" - polygon (geoJSON).
                   reference: <PR/Issue/Discussion Links md format text>
                 - code: val
-                  description: Description of the Tag
+                  description: >-
+                    The value associated with the selected serviceability type
+                    (e.g., distance in km for hyperlocal, list of serviceable
+                    pincodes, or geo-coordinates).
                   reference: <PR/Issue/Discussion Links md format text>
                 - code: unit
-                  description: Description of the Tag
+                  description: >-
+                    The unit in which the 'val' is expressed (e.g., "km",
+                    "pincode", "geojson", etc.), depending on the type selected.
                   reference: <PR/Issue/Discussion Links md format text>
           items:
             tags:
+              - code: COMMODITY_DETAILS
+                description: Commodity details for assaying group
+                reference: <PR/Issue/Discussion Links md format text>
+                list:
+                  - code: COMMODITY_CODE
+                    description: >-
+                      Code Representing the Commodity as Defined in the Enum
+                      List
+                    reference: <PR/Issue/Discussion Links md format text>
               - code: SERVICE_INFORMATION
                 description: Information of the service
                 reference: <PR/Issue/Discussion Links md format text>
                 list:
+                  - code: SERVICE_TYPE
+                    description: This specify whether the service is manual or electronic
+                    reference: <PR/Issue/Discussion Links md format text>
+                  - code: ASSAYINGTEST_TYPE
+                    description: >-
+                      This indicate what kind of test is being offered—whether
+                      it’s a physical or chemical test or both
+                    reference: <PR/Issue/Discussion Links md format text>
+                  - code: ACCURACY
+                    description: Indicates the Percentage Accuracy of the Result
+                    reference: <PR/Issue/Discussion Links md format text>
                   - code: PICKUP_TAT
                     description: >-
                       TAT for picking up the sample, only required if
@@ -3460,10 +4323,6 @@ x-flows:
           required - e.g. Soil Testing
         reference: if any
         example: &ref_14
-          summary: Search based on the intent for buying a particular agri service
-          description: >-
-            Search intent sent by the buyer based on the particular agri service
-            required - e.g. Soil Testing
           value:
             context:
               domain: ONDC:SRV14
@@ -3495,33 +4354,31 @@ x-flows:
                       location:
                         gps: 12.974002,77.613458
                         area_code: '560001'
-              payment:
-                type: PRE-FULFILLMENT
-                collected_by: BAP
-              tags:
-                - descriptor:
-                    code: BAP_TERMS
-                  display: false
-                  list:
-                    - descriptor:
-                        code: FINDER_FEE_TYPE
-                      value: percent
-                    - descriptor:
-                        code: FINDER_FEE_AMOUNT
-                      value: '0'
-                - descriptor:
-                    code: BAP_DETAILS
-                  list:
-                    - descriptor:
-                        code: BAP_TYPE
-                      value: FARMER
+                payment:
+                  type: PRE-FULFILLMENT
+                  collected_by: BAP
+                tags:
+                  - descriptor:
+                      code: BAP_TERMS
+                    display: false
+                    list:
+                      - descriptor:
+                          code: FINDER_FEE_TYPE
+                        value: percent
+                      - descriptor:
+                          code: FINDER_FEE_AMOUNT
+                        value: '0'
+                  - descriptor:
+                      code: BAP_DETAILS
+                    list:
+                      - descriptor:
+                          code: BAP_TYPE
+                        value: FARMER
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
         example: &ref_15
-          summary: Returns the catalog specific to the search intent
-          description: Returns the catalog specific to the search intent
           value:
             context:
               domain: ONDC:SRV14
@@ -4038,8 +4895,6 @@ x-flows:
         description: Buyer selects the required agri service + suitable fulfillment type
         reference: if any
         example: &ref_16
-          summary: Buyer selects the required agri service
-          description: Buyer selects the required agri service + suitable fulfillment type
           value:
             context:
               domain: ONDC:SRV14
@@ -4216,8 +5071,6 @@ x-flows:
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
         example: &ref_17
-          summary: Seller confirms the schedule and returns the quote for service
-          description: Seller confirms the schedule and returns the quote for service
           value:
             context:
               domain: ONDC:SRV14
@@ -4430,8 +5283,6 @@ x-flows:
         description: Buyer initialises the order and provides billing details
         reference: if any
         example: &ref_18
-          summary: Buyer initialises the order for service
-          description: Buyer initialises the order and provides billing details
           value:
             context:
               domain: ONDC:SRV14
@@ -4631,8 +5482,6 @@ x-flows:
         description: Seller provides the final quotation
         reference: if any
         example: &ref_19
-          summary: Seller provides the final quotation for the service
-          description: Seller provides the final quotation
           value:
             context:
               domain: ONDC:SRV14
@@ -5033,8 +5882,6 @@ x-flows:
         api: confirm
         description: Buyer makes the payment to confirm the order
         example: &ref_20
-          summary: Buyer confirm the order for the service
-          description: Buyer makes the payment to confirm the order
           value:
             context:
               domain: ONDC:SRV14
@@ -5444,10 +6291,6 @@ x-flows:
           order
         reference: if any
         example: &ref_21
-          summary: Seller accepts the order for service
-          description: >-
-            Seller app sends an on_confirm call to the buyer app accepting the
-            order
           value:
             context:
               domain: ONDC:SRV14
@@ -5950,8 +6793,6 @@ x-flows:
         api: status
         description: Buyer requests for the status of the order
         example: &ref_13
-          summary: Buyer requests for the status of the order
-          description: Buyer requests for the status of the order
           value:
             context:
               domain: ONDC:SRV14
@@ -5979,10 +6820,6 @@ x-flows:
           way
         reference: if any
         example:
-          summary: Seller app sends order status update (In-Transit)
-          description: >-
-            Seller app sends order status update when service provider is on the
-            way
           value:
             context:
               domain: ONDC:SRV14
@@ -6326,10 +7163,6 @@ x-flows:
           the buyer location
         reference: if any
         example:
-          summary: Seller app sends the order status (At location)
-          description: >-
-            Seller app sends order status update when service provider has
-            reached the buyer location
           value:
             context:
               domain: ONDC:SRV14
@@ -6652,10 +7485,6 @@ x-flows:
           collected by the service provider
         reference: if any
         example:
-          summary: Seller app sends order status (Collected by agent)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            collected by the service provider
           value:
             context:
               domain: ONDC:SRV14
@@ -6978,10 +7807,6 @@ x-flows:
           received at the lab
         reference: if any
         example:
-          summary: Seller app sends order status (Received at lab)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            received at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -7325,10 +8150,6 @@ x-flows:
           completed at the lab
         reference: if any
         example:
-          summary: Seller app sends the order status (Test completed)
-          description: >-
-            Seller app sends the order status update when the test has been
-            completed at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -7672,10 +8493,6 @@ x-flows:
           generated
         reference: if any
         example:
-          summary: Seller app sends the order status (Report generated)
-          description: >-
-            Seller app sends the order status update when the test report is
-            generated
           value:
             context:
               domain: ONDC:SRV14
@@ -8019,10 +8836,6 @@ x-flows:
           shared
         reference: if any
         example:
-          summary: Seller app sends the order status (Completed)
-          description: >-
-            Seller app sends the order status update when the test report is
-            shared
           value:
             context:
               domain: ONDC:SRV14
@@ -8399,10 +9212,6 @@ x-flows:
           required - e.g. Soil Testing
         reference: if any
         example:
-          summary: Search based on the intent for buying a particular agri service
-          description: >-
-            Search intent sent by the buyer based on the particular agri service
-            required - e.g. Soil Testing
           value:
             context:
               domain: ONDC:SRV14
@@ -8456,8 +9265,6 @@ x-flows:
         description: Returns the catalog specific to the search intent
         reference: if any
         example:
-          summary: Returns the catalog specific to the search intent
-          description: Returns the catalog specific to the search intent
           value:
             context:
               domain: ONDC:SRV14
@@ -8803,8 +9610,6 @@ x-flows:
         description: Buyer selects the required agri service + suitable fulfillment type
         reference: if any
         example:
-          summary: Buyer selects the required agri service
-          description: Buyer selects the required agri service + suitable fulfillment type
           value:
             context:
               domain: ONDC:SRV14
@@ -8980,8 +9785,6 @@ x-flows:
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
         example:
-          summary: Seller confirms the schedule and returns the quote for service
-          description: Seller confirms the schedule and returns the quote for service
           value:
             context:
               domain: ONDC:SRV14
@@ -9105,8 +9908,6 @@ x-flows:
         description: Buyer initialises the order and provides billing details
         reference: if any
         example:
-          summary: Buyer initialises the order for service
-          description: Buyer initialises the order and provides billing details
           value:
             context:
               domain: ONDC:SRV14
@@ -9312,10 +10113,6 @@ x-flows:
         description: Seller provides the final quotation
         reference: if any
         example:
-          summary: Seller provides the final quotation for the service
-          description: >-
-            Seller provides the final quotation and creates the draft contract
-            for the service
           value:
             context:
               domain: ONDC:SRV14
@@ -9655,8 +10452,6 @@ x-flows:
         api: confirm
         description: Buyer makes the payment to confirm the order
         example:
-          summary: Buyer confirm the order for the service
-          description: Buyer makes the payment to confirm the order
           value:
             context:
               domain: ONDC:SRV14
@@ -9983,10 +10778,6 @@ x-flows:
           order
         reference: if any
         example:
-          summary: Seller accepts the order for service
-          description: >-
-            Seller app sends an on_confirm call to the buyer app accepting the
-            order
           value:
             context:
               domain: ONDC:SRV14
@@ -10374,10 +11165,6 @@ x-flows:
           way
         reference: if any
         example:
-          summary: Seller app sends order status update (In-Transit)
-          description: >-
-            Seller app sends order status update when service provider is on the
-            way
           value:
             context:
               domain: ONDC:SRV14
@@ -10427,7 +11214,7 @@ x-flows:
                   - id: F2
                     state:
                       descriptor:
-                        code: IN_TRANSIT
+                        code: AT_LOCATION
                     type: Buyer-Fulfilled
                     tracking: false
                     stops:
@@ -10586,10 +11373,6 @@ x-flows:
           received at the lab
         reference: if any
         example:
-          summary: Seller app sends order status (Received at lab)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            received at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -10903,10 +11686,6 @@ x-flows:
           completed at the lab
         reference: if any
         example:
-          summary: Seller app sends the order status (Test completed)
-          description: >-
-            Seller app sends the order status update when the test has been
-            completed at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -11115,10 +11894,6 @@ x-flows:
           generated
         reference: if any
         example:
-          summary: Seller app sends the order status (Report generated)
-          description: >-
-            Seller app sends the order status update when the test report is
-            generated
           value:
             context:
               domain: ONDC:SRV14
@@ -11327,10 +12102,6 @@ x-flows:
           shared
         reference: if any
         example:
-          summary: Seller app sends the order status (Completed)
-          description: >-
-            Seller app sends the order status update when the test report is
-            shared
           value:
             context:
               domain: ONDC:SRV14
@@ -11595,10 +12366,6 @@ x-flows:
           required - e.g. Soil Testing
         reference: if any
         example:
-          summary: Search based on the intent for buying a particular agri service
-          description: >-
-            Search intent sent by the buyer to test a particular commodity and
-            get assaying services
           value:
             context:
               domain: ONDC:SRV14
@@ -11667,8 +12434,6 @@ x-flows:
         description: Returns the catalog specific to the search intent
         reference: if any
         example:
-          summary: Returns the catalog specific to the search intent
-          description: Returns the catalog specific to the search intent
           value:
             context:
               domain: ONDC:SRV14
@@ -11800,7 +12565,7 @@ x-flows:
                         category_ids:
                           - SRV14-xxxx
                         fulfillment_ids:
-                          - '1'
+                          - '2'
                         location_ids:
                           - L1
                         payment_ids:
@@ -11818,8 +12583,20 @@ x-flows:
                               percentage: '10.00'
                         tags:
                           - descriptor:
+                              code: COMMODITY_DETAILS
+                            list:
+                              - descriptor:
+                                  code: COMMODITY_CODE
+                                value: ARHAR_WHOLE
+                          - descriptor:
                               code: SERVICE_INFORMATION
                             list:
+                              - descriptor:
+                                  code: SERVICE_TYPE
+                                value: manual
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                               - descriptor:
                                   code: ACCURACY
                                 value: 90%
@@ -12233,10 +13010,10 @@ x-flows:
                       - id: I1C9
                         parent_item_id: I1
                         descriptor:
-                          name: Alfatoxin
-                          code: ALFATOXIN
-                          short_desc: Alfatoxin Testing
-                          long_desc: Alfatoxin Testing
+                          name: Aflatoxin
+                          code: AFLATOXIN
+                          short_desc: Aflatoxin Testing
+                          long_desc: Aflatoxin Testing
                           images:
                             - url: https://abc.com/images/207.png
                           media:
@@ -12388,14 +13165,23 @@ x-flows:
                               percentage: '10.00'
                         tags:
                           - descriptor:
+                              code: COMMODITY_DETAILS
+                            list:
+                              - descriptor:
+                                  code: COMMODITY_CODE
+                                value: ARHAR_WHOLE
+                          - descriptor:
                               code: SERVICE_INFORMATION
                             list:
                               - descriptor:
+                                  code: SERVICE_TYPE
+                                value: electronic
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: chemical
+                              - descriptor:
                                   code: ACCURACY
                                 value: 90%
-                              - descriptor:
-                                  code: PICKUP_TAT
-                                value: PT2D
                               - descriptor:
                                   code: COMPLETION_TAT
                                 value: PT1D
@@ -12803,10 +13589,10 @@ x-flows:
                       - id: I1C9
                         parent_item_id: I1
                         descriptor:
-                          name: Alfatoxin
-                          code: ALFATOXIN
-                          short_desc: Alfatoxin Testing
-                          long_desc: Alfatoxin Testing
+                          name: Aflatoxin
+                          code: AFLATOXIN
+                          short_desc: Aflatoxin Testing
+                          long_desc: Aflatoxin Testing
                           images:
                             - url: https://abc.com/images/207.png
                           media:
@@ -12874,8 +13660,6 @@ x-flows:
         description: Buyer selects the required agri service + suitable fulfillment type
         reference: if any
         example:
-          summary: Buyer selects the required agri service
-          description: Buyer selects the required agri service + suitable fulfillment type
           value:
             context:
               domain: ONDC:SRV14
@@ -12944,8 +13728,6 @@ x-flows:
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
         example:
-          summary: Seller confirms the schedule and returns the quote for service
-          description: Seller confirms the schedule and returns the quote for service
           value:
             context:
               domain: ONDC:SRV14
@@ -13063,8 +13845,6 @@ x-flows:
         description: Buyer initialises the order and provides billing details
         reference: if any
         example:
-          summary: Buyer initialises the order for service
-          description: Buyer initialises the order and provides billing details
           value:
             context:
               domain: ONDC:SRV14
@@ -13264,10 +14044,6 @@ x-flows:
         description: Seller provides the final quotation
         reference: if any
         example:
-          summary: Seller provides the final quotation for the service
-          description: >-
-            Seller provides the final quotation and creates the draft contract
-            for the service
           value:
             context:
               domain: ONDC:SRV14
@@ -13573,8 +14349,6 @@ x-flows:
         api: confirm
         description: Buyer makes the payment to confirm the order
         example:
-          summary: Buyer confirm the order for the service
-          description: Buyer makes the payment to confirm the order
           value:
             context:
               domain: ONDC:SRV14
@@ -14204,10 +14978,6 @@ x-flows:
           way
         reference: if any
         example:
-          summary: Seller app sends order status update (In-Transit)
-          description: >-
-            Seller app sends order status update when service provider is on the
-            way
           value:
             context:
               domain: ONDC:SRV14
@@ -14551,10 +15321,6 @@ x-flows:
           the buyer location
         reference: if any
         example:
-          summary: Seller app sends the order status (At location)
-          description: >-
-            Seller app sends order status update when service provider has
-            reached the buyer location
           value:
             context:
               domain: ONDC:SRV14
@@ -14898,10 +15664,6 @@ x-flows:
           collected by the service provider
         reference: if any
         example:
-          summary: Seller app sends order status (Collected by agent)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            collected by the service provider
           value:
             context:
               domain: ONDC:SRV14
@@ -15245,10 +16007,6 @@ x-flows:
           received at the lab
         reference: if any
         example:
-          summary: Seller app sends order status (Received at lab)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            received at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -15592,10 +16350,6 @@ x-flows:
           completed at the lab
         reference: if any
         example:
-          summary: Seller app sends the order status (Test completed)
-          description: >-
-            Seller app sends the order status update when the test has been
-            completed at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -15939,10 +16693,6 @@ x-flows:
           generated
         reference: if any
         example:
-          summary: Seller app sends the order status (Report generated)
-          description: >-
-            Seller app sends the order status update when the test report is
-            generated
           value:
             context:
               domain: ONDC:SRV14
@@ -16286,10 +17036,6 @@ x-flows:
           shared
         reference: if any
         example:
-          summary: Seller app sends the order status (Completed)
-          description: >-
-            Seller app sends the order status update when the test report is
-            shared
           value:
             context:
               domain: ONDC:SRV14
@@ -16719,10 +17465,6 @@ x-flows:
           suitable schedule
         reference: if any
         example:
-          summary: Buyer selects the required agri service
-          description: >-
-            Buyer selects the required agri service + suitable fulfillment type
-            + suitable schedule
           value:
             context:
               domain: ONDC:SRV14
@@ -16900,10 +17642,6 @@ x-flows:
         description: Seller rejects the schedule
         reference: if any
         example:
-          summary: Seller rejects the schedule and returns the available slots
-          description: >-
-            Seller rejects the schedule and returns the available slots + error
-            message
           value:
             context:
               domain: ONDC:SRV14
@@ -17043,8 +17781,6 @@ x-flows:
           suitable schedule
         reference: if any
         example:
-          summary: Buyer selects the required agri service
-          description: Buyer selects the required agri service + suitable fulfillment type
           value:
             context:
               domain: ONDC:SRV14
@@ -17118,8 +17854,6 @@ x-flows:
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
         example:
-          summary: Seller confirms the schedule and returns the quote for service
-          description: Seller confirms the schedule and returns the quote for service
           value:
             context:
               domain: ONDC:SRV14
@@ -17237,8 +17971,6 @@ x-flows:
         description: Buyer initialises the order and provides billing details
         reference: if any
         example:
-          summary: Buyer initialises the order for service
-          description: Buyer initialises the order and provides billing details
           value:
             context:
               domain: ONDC:SRV14
@@ -17438,8 +18170,6 @@ x-flows:
         description: Seller provides the final quotation
         reference: if any
         example:
-          summary: Seller provides the final quotation for the service
-          description: Seller provides the final quotation
           value:
             context:
               domain: ONDC:SRV14
@@ -17745,8 +18475,6 @@ x-flows:
         api: confirm
         description: Buyer makes the payment to confirm the order
         example:
-          summary: Buyer confirm the order for the service
-          description: Buyer makes the payment to confirm the order
           value:
             context:
               domain: ONDC:SRV14
@@ -18061,10 +18789,6 @@ x-flows:
           order
         reference: if any
         example:
-          summary: Seller accepts the order for service
-          description: >-
-            Seller app sends an on_confirm call to the buyer app accepting the
-            order
           value:
             context:
               domain: ONDC:SRV14
@@ -18472,8 +19196,6 @@ x-flows:
         api: status
         description: Buyer requests for the status of the order
         example:
-          summary: Buyer requests for the status of the order
-          description: Buyer requests for the status of the order
           value:
             context:
               domain: ONDC:SRV14
@@ -18501,10 +19223,6 @@ x-flows:
           way
         reference: if any
         example:
-          summary: Seller app sends order status update (In-Transit)
-          description: >-
-            Seller app sends order status update when service provider is on the
-            way
           value:
             context:
               domain: ONDC:SRV14
@@ -18848,10 +19566,6 @@ x-flows:
           the buyer location
         reference: if any
         example:
-          summary: Seller app sends the order status (At location)
-          description: >-
-            Seller app sends order status update when service provider has
-            reached the buyer location
           value:
             context:
               domain: ONDC:SRV14
@@ -19174,10 +19888,6 @@ x-flows:
           collected by the service provider
         reference: if any
         example:
-          summary: Seller app sends order status (Collected by agent)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            collected by the service provider
           value:
             context:
               domain: ONDC:SRV14
@@ -19500,10 +20210,6 @@ x-flows:
           received at the lab
         reference: if any
         example:
-          summary: Seller app sends order status (Received at lab)
-          description: >-
-            Seller app sends the order status update when the sample has been
-            received at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -19847,10 +20553,6 @@ x-flows:
           completed at the lab
         reference: if any
         example:
-          summary: Seller app sends the order status (Test completed)
-          description: >-
-            Seller app sends the order status update when the test has been
-            completed at the lab
           value:
             context:
               domain: ONDC:SRV14
@@ -20194,10 +20896,6 @@ x-flows:
           generated
         reference: if any
         example:
-          summary: Seller app sends the order status (Report generated)
-          description: >-
-            Seller app sends the order status update when the test report is
-            generated
           value:
             context:
               domain: ONDC:SRV14
@@ -20541,10 +21239,6 @@ x-flows:
           shared
         reference: if any
         example:
-          summary: Seller app sends the order status (Completed)
-          description: >-
-            Seller app sends the order status update when the test report is
-            shared
           value:
             context:
               domain: ONDC:SRV14
@@ -20984,10 +21678,6 @@ x-flows:
           reason_id
         reference: if any
         example:
-          summary: Buyer requests for the order cancellation
-          description: >-
-            Buyer requests for the order cancellation and provides cancellation
-            reason_id
           value:
             context:
               domain: ONDC:SRV14
@@ -21013,8 +21703,6 @@ x-flows:
         api: on_cancel
         description: Seller accepts the cancellation request
         example:
-          summary: Seller accepts the cancellation request
-          description: Seller accepts the cancellation request
           value:
             context:
               domain: ONDC:SRV14
@@ -21471,8 +22159,6 @@ x-flows:
         api: on_cancel
         description: Seller cancels the order
         example:
-          summary: Seller cancels the order
-          description: Seller cancels the order
           value:
             context:
               domain: ONDC:SRV14
@@ -21813,8 +22499,6 @@ x-flows:
         api: update
         description: null
         example:
-          summary: null
-          description: null
           value:
             context:
               domain: ONDC:SRV14
@@ -21872,11 +22556,7 @@ x-examples:
     example_set:
       search:
         examples:
-          - summary: Search based on the intent for buying a particular agri service
-            description: >-
-              Search intent sent by the buyer based on the particular agri
-              service required - e.g. Soil Testing
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -21907,31 +22587,27 @@ x-examples:
                         location:
                           gps: 12.974002,77.613458
                           area_code: '560001'
-                payment:
-                  type: PRE-FULFILLMENT
-                  collected_by: BAP
-                tags:
-                  - descriptor:
-                      code: BAP_TERMS
-                    display: false
-                    list:
-                      - descriptor:
-                          code: FINDER_FEE_TYPE
-                        value: percent
-                      - descriptor:
-                          code: FINDER_FEE_AMOUNT
-                        value: '0'
-                  - descriptor:
-                      code: BAP_DETAILS
-                    list:
-                      - descriptor:
-                          code: BAP_TYPE
-                        value: FARMER
-          - summary: Search based on the intent for buying a particular agri service
-            description: >-
-              Search intent sent by the buyer based on the particular agri
-              service required - e.g. Soil Testing
-            value:
+                  payment:
+                    type: PRE-FULFILLMENT
+                    collected_by: BAP
+                  tags:
+                    - descriptor:
+                        code: BAP_TERMS
+                      display: false
+                      list:
+                        - descriptor:
+                            code: FINDER_FEE_TYPE
+                          value: percent
+                        - descriptor:
+                            code: FINDER_FEE_AMOUNT
+                          value: '0'
+                    - descriptor:
+                        code: BAP_DETAILS
+                      list:
+                        - descriptor:
+                            code: BAP_TYPE
+                          value: FARMER
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -21979,11 +22655,7 @@ x-examples:
                         - descriptor:
                             code: BAP_TYPE
                           value: FARMER
-          - summary: Search based on the intent for buying a particular agri service
-            description: >-
-              Search intent sent by the buyer to test a particular commodity and
-              get assaying services
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22048,11 +22720,7 @@ x-examples:
                           value: FARMER
       select:
         examples:
-          - summary: Buyer selects the required agri service
-            description: >-
-              Buyer selects the required agri service + suitable fulfillment
-              type
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22223,11 +22891,7 @@ x-examples:
                             area_code: '560001'
                   payments:
                     - type: PRE-FULFILLMENT
-          - summary: Buyer selects the required agri service
-            description: >-
-              Buyer selects the required agri service + suitable fulfillment
-              type + suitable schedule
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22399,11 +23063,7 @@ x-examples:
                             area_code: '560001'
                   payments:
                     - type: PRE-FULFILLMENT
-          - summary: Buyer selects the required agri service
-            description: >-
-              Buyer selects the required agri service + suitable fulfillment
-              type
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22471,11 +23131,7 @@ x-examples:
                             area_code: '560001'
                   payments:
                     - type: PRE-FULFILLMENT
-          - summary: Buyer selects the required agri service
-            description: >-
-              Buyer selects the required agri service + suitable fulfillment
-              type
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22645,11 +23301,7 @@ x-examples:
                             area_code: '560001'
                   payments:
                     - type: PRE-FULFILLMENT
-          - summary: Buyer selects the required agri service
-            description: >-
-              Buyer selects the required agri service + suitable fulfillment
-              type
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22714,9 +23366,7 @@ x-examples:
                     - type: PRE-FULFILLMENT
       init:
         examples:
-          - summary: Buyer initialises the order for service
-            description: Buyer initialises the order and provides billing details
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -22910,9 +23560,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Buyer initialises the order for service
-            description: Buyer initialises the order and provides billing details
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -23106,9 +23754,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Buyer initialises the order for service
-            description: Buyer initialises the order and provides billing details
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -23308,9 +23954,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Buyer initialises the order for service
-            description: Buyer initialises the order and provides billing details
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -23506,9 +24150,7 @@ x-examples:
                       collected_by: BAP
       confirm:
         examples:
-          - summary: Buyer confirm the order for the service
-            description: Buyer makes the payment to confirm the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -23910,9 +24552,7 @@ x-examples:
                               value: '3'
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:38.000Z'
-          - summary: Buyer confirm the order for the service
-            description: Buyer makes the payment to confirm the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -24219,9 +24859,7 @@ x-examples:
                               value: '3'
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:38.000Z'
-          - summary: Buyer confirm the order for the service
-            description: Buyer makes the payment to confirm the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -24540,9 +25178,7 @@ x-examples:
                               value: '3'
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:38.000Z'
-          - summary: Buyer confirm the order for the service
-            description: Buyer makes the payment to confirm the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -24851,9 +25487,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       status:
         examples:
-          - summary: Buyer requests for the status of the order
-            description: Buyer requests for the status of the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -24875,11 +25509,7 @@ x-examples:
                 order_id: O1
       cancel:
         examples:
-          - summary: Buyer requests for the order cancellation
-            description: >-
-              Buyer requests for the order cancellation and provides
-              cancellation reason_id
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -24902,9 +25532,7 @@ x-examples:
                 cancellation_reason_id: '012'
       on_search:
         examples:
-          - summary: Returns the catalog specific to the search intent
-            description: Returns the catalog specific to the search intent
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -25416,9 +26044,7 @@ x-examples:
                         - contact:
                             phone: '9886098860'
                             email: abc@xyz.com
-          - summary: Returns the catalog specific to the search intent
-            description: Returns the catalog specific to the search intent
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -25759,9 +26385,7 @@ x-examples:
                         - contact:
                             phone: '9886098860'
                             email: abc@xyz.com
-          - summary: Returns the catalog specific to the search intent
-            description: Returns the catalog specific to the search intent
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -25893,7 +26517,7 @@ x-examples:
                           category_ids:
                             - SRV14-xxxx
                           fulfillment_ids:
-                            - '1'
+                            - '2'
                           location_ids:
                             - L1
                           payment_ids:
@@ -25911,8 +26535,20 @@ x-examples:
                                 percentage: '10.00'
                           tags:
                             - descriptor:
+                                code: COMMODITY_DETAILS
+                              list:
+                                - descriptor:
+                                    code: COMMODITY_CODE
+                                  value: ARHAR_WHOLE
+                            - descriptor:
                                 code: SERVICE_INFORMATION
                               list:
+                                - descriptor:
+                                    code: SERVICE_TYPE
+                                  value: manual
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                                 - descriptor:
                                     code: ACCURACY
                                   value: 90%
@@ -26326,10 +26962,10 @@ x-examples:
                         - id: I1C9
                           parent_item_id: I1
                           descriptor:
-                            name: Alfatoxin
-                            code: ALFATOXIN
-                            short_desc: Alfatoxin Testing
-                            long_desc: Alfatoxin Testing
+                            name: Aflatoxin
+                            code: AFLATOXIN
+                            short_desc: Aflatoxin Testing
+                            long_desc: Aflatoxin Testing
                             images:
                               - url: https://abc.com/images/207.png
                             media:
@@ -26482,14 +27118,23 @@ x-examples:
                                 percentage: '10.00'
                           tags:
                             - descriptor:
+                                code: COMMODITY_DETAILS
+                              list:
+                                - descriptor:
+                                    code: COMMODITY_CODE
+                                  value: ARHAR_WHOLE
+                            - descriptor:
                                 code: SERVICE_INFORMATION
                               list:
                                 - descriptor:
+                                    code: SERVICE_TYPE
+                                  value: electronic
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: chemical
+                                - descriptor:
                                     code: ACCURACY
                                   value: 90%
-                                - descriptor:
-                                    code: PICKUP_TAT
-                                  value: PT2D
                                 - descriptor:
                                     code: COMPLETION_TAT
                                   value: PT1D
@@ -26897,10 +27542,10 @@ x-examples:
                         - id: I1C9
                           parent_item_id: I1
                           descriptor:
-                            name: Alfatoxin
-                            code: ALFATOXIN
-                            short_desc: Alfatoxin Testing
-                            long_desc: Alfatoxin Testing
+                            name: Aflatoxin
+                            code: AFLATOXIN
+                            short_desc: Aflatoxin Testing
+                            long_desc: Aflatoxin Testing
                             images:
                               - url: https://abc.com/images/207.png
                             media:
@@ -26965,9 +27610,7 @@ x-examples:
                             email: abc@xyz.com
       on_select:
         examples:
-          - summary: Seller confirms the schedule and returns the quote for service
-            description: Seller confirms the schedule and returns the quote for service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -27174,11 +27817,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Seller rejects the schedule and returns the available slots
-            description: >-
-              Seller rejects the schedule and returns the available slots +
-              error message
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -27310,9 +27949,7 @@ x-examples:
               error:
                 code: 90001
                 message: Schedule not available
-          - summary: Seller confirms the schedule and returns the quote for service
-            description: Seller confirms the schedule and returns the quote for service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -27424,9 +28061,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Seller confirms the schedule and returns the quote for service
-            description: Seller confirms the schedule and returns the quote for service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -27544,9 +28179,7 @@ x-examples:
                   payments:
                     - type: PRE-FULFILLMENT
                       collected_by: BAP
-          - summary: Seller confirms the schedule and returns the quote for service
-            description: Seller confirms the schedule and returns the quote for service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -27660,9 +28293,7 @@ x-examples:
                       collected_by: BAP
       on_init:
         examples:
-          - summary: Seller provides the final quotation for the service
-            description: Seller provides the final quotation
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -28058,9 +28689,7 @@ x-examples:
                       url: https//abc.com/checklist
                       mimetype: text/html
                     required: false
-          - summary: Seller provides the final quotation for the service
-            description: Seller provides the final quotation
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -28361,11 +28990,7 @@ x-examples:
                       url: https//abc.com/checklist
                       mimetype: text/html
                     required: false
-          - summary: Seller provides the final quotation for the service
-            description: >-
-              Seller provides the final quotation and creates the draft contract
-              for the service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -28700,11 +29325,7 @@ x-examples:
                       url: https//abc.com/checklist
                       mimetype: text/html
                     required: false
-          - summary: Seller provides the final quotation for the service
-            description: >-
-              Seller provides the final quotation and creates the draft contract
-              for the service
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -29007,11 +29628,7 @@ x-examples:
                     required: false
       on_confirm:
         examples:
-          - summary: Seller accepts the order for service
-            description: >-
-              Seller app sends an on_confirm call to the buyer app accepting the
-              order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -29509,11 +30126,7 @@ x-examples:
                       mimetype: text/html
                       submission_id: xxxxxxxx
                       status: SUCCESS
-          - summary: Seller accepts the order for service
-            description: >-
-              Seller app sends an on_confirm call to the buyer app accepting the
-              order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -29916,11 +30529,7 @@ x-examples:
                       mimetype: text/html
                       submission_id: xxxxxxxx
                       status: SUCCESS
-          - summary: Seller accepts the order for service
-            description: >-
-              Seller app sends an on_confirm call to the buyer app accepting the
-              order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -30602,11 +31211,7 @@ x-examples:
                       status: SUCCESS
       on_status:
         examples:
-          - summary: Seller app sends order status update (In-Transit)
-            description: >-
-              Seller app sends order status update when service provider is on
-              the way
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -30942,11 +31547,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:41.000Z'
-          - summary: Seller app sends the order status (At location)
-            description: >-
-              Seller app sends order status update when service provider has
-              reached the buyer location
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -31261,11 +31862,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-02T12:00:40.000Z'
-          - summary: Seller app sends order status (Collected by agent)
-            description: >-
-              Seller app sends the order status update when the sample has been
-              collected by the service provider
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -31580,11 +32177,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-02T12:00:45.000Z'
-          - summary: Seller app sends order status (Received at lab)
-            description: >-
-              Seller app sends the order status update when the sample has been
-              received at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -31920,11 +32513,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:45.000Z'
-          - summary: Seller app sends the order status (Test completed)
-            description: >-
-              Seller app sends the order status update when the test has been
-              completed at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -32260,11 +32849,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:50.000Z'
-          - summary: Seller app sends the order status (Report generated)
-            description: >-
-              Seller app sends the order status update when the test report is
-              generated
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -32600,11 +33185,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T12:00:55.000Z'
-          - summary: Seller app sends the order status (Completed)
-            description: >-
-              Seller app sends the order status update when the test report is
-              shared
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -32920,11 +33501,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T13:00:00.000Z'
-          - summary: Seller app sends order status update (In-Transit)
-            description: >-
-              Seller app sends order status update when service provider is on
-              the way
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -32973,7 +33550,7 @@ x-examples:
                     - id: F2
                       state:
                         descriptor:
-                          code: IN_TRANSIT
+                          code: AT_LOCATION
                       type: Buyer-Fulfilled
                       tracking: false
                       stops:
@@ -33125,11 +33702,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:41.000Z'
-          - summary: Seller app sends order status (Received at lab)
-            description: >-
-              Seller app sends the order status update when the sample has been
-              received at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -33435,11 +34008,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:45.000Z'
-          - summary: Seller app sends the order status (Test completed)
-            description: >-
-              Seller app sends the order status update when the test has been
-              completed at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -33640,11 +34209,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:50.000Z'
-          - summary: Seller app sends the order status (Report generated)
-            description: >-
-              Seller app sends the order status update when the test report is
-              generated
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -33845,11 +34410,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T12:00:55.000Z'
-          - summary: Seller app sends the order status (Completed)
-            description: >-
-              Seller app sends the order status update when the test report is
-              shared
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -34053,11 +34614,7 @@ x-examples:
                       label: REPORT
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T13:00:00.000Z'
-          - summary: Seller app sends order status update (In-Transit)
-            description: >-
-              Seller app sends order status update when service provider is on
-              the way
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -34393,11 +34950,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:41.000Z'
-          - summary: Seller app sends the order status (At location)
-            description: >-
-              Seller app sends order status update when service provider has
-              reached the buyer location
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -34733,11 +35286,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-02T12:00:40.000Z'
-          - summary: Seller app sends order status (Collected by agent)
-            description: >-
-              Seller app sends the order status update when the sample has been
-              collected by the service provider
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -35073,11 +35622,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-02T12:00:45.000Z'
-          - summary: Seller app sends order status (Received at lab)
-            description: >-
-              Seller app sends the order status update when the sample has been
-              received at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -35413,11 +35958,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:45.000Z'
-          - summary: Seller app sends the order status (Completed)
-            description: >-
-              Seller app sends the order status update when the test report is
-              shared
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -35756,11 +36297,7 @@ x-examples:
                       label: REPORT
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T13:00:00.000Z'
-          - summary: Seller app sends the order status (Report generated)
-            description: >-
-              Seller app sends the order status update when the test report is
-              generated
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -36096,11 +36633,7 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-04T12:00:55.000Z'
-          - summary: Seller app sends the order status (Test completed)
-            description: >-
-              Seller app sends the order status update when the test has been
-              completed at the lab
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -36438,9 +36971,7 @@ x-examples:
                   updated_at: '2024-04-03T12:00:50.000Z'
       on_cancel:
         examples:
-          - summary: Seller accepts the cancellation request
-            description: Seller accepts the cancellation request
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -36776,9 +37307,7 @@ x-examples:
                                 code: Buyer_Finder_Fee_Amount
                               value: '3'
                   updated_at: '2023-11-08T22:00:57.000Z'
-          - summary: Seller cancels the order
-            description: Seller cancels the order
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -37116,9 +37645,7 @@ x-examples:
                   updated_at: '2024-04-02T20:00:39.000Z'
       update:
         examples:
-          - summary: null
-            description: null
-            value:
+          - value:
               context:
                 domain: ONDC:SRV14
                 location:
@@ -37331,6 +37858,52 @@ x-attributes:
                 required: optional
                 usage: '-'
                 reference: if any
+              categories:
+                parent: true
+                id:
+                  description: Unique identifier for the category.
+                  required: required
+                  usage: C1
+                  reference: if any
+                descriptor:
+                  name:
+                    description: >-
+                      Name of the category representing a logical grouping of
+                      parameters.
+                    required: required
+                    usage: Tradabale Parameters
+                    reference: if any
+                  code:
+                    description: Code representing the category in UPPER_SNAKE_CASE format.
+                    required: required
+                    usage: TRADABLE_PARAMETERS
+                    reference: if any
+                tags:
+                  descriptor.code:
+                    description: >-
+                      Code to group a list of configurable fields for the
+                      category and for more details refer the tags section.
+                    required: required
+                    usage: SELECTION
+                    reference: if any
+                  list:
+                    - descriptor.code:
+                        description: >-
+                          Code to item of configurable fields for the category
+                          group and for more details refer the tags section.
+                        required: required
+                        usage: SEQ
+                        reference: if any
+                      value:
+                        description: Value of the parameter defined by code.
+                        required: required
+                        usage: '1'
+                        reference: if any
+              ttl:
+                description: Validity for catalog at buyer side into ISO time format
+                required: required
+                usage: PT1D
+                reference: if any
               items:
                 descriptor:
                   name:
@@ -37387,12 +37960,12 @@ x-attributes:
                       usage: PT1H
                       reference: if any
                     holidays:
-                      description: days on which service provide is not available
+                      description: days on which service provider is not available
                       required: required
                       usage: '[2023-11-13, 2023-11-15]'
                       reference: if any
                     times:
-                      description: time slots in which service provide is available
+                      description: time slots in which service provider is available
                       required: required
                       usage: '[2022-11-20T00:00:00.000Z]'
                       reference: if any

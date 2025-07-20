@@ -208,7 +208,7 @@
                 "minimum_value": "100.00"
               },
               "category_ids": ["SRV14-xxxx"],
-              "fulfillment_ids": ["1"],
+              "fulfillment_ids": ["2"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "cancellation_terms": [
@@ -236,9 +236,34 @@
               "tags": [
                 {
                   "descriptor": {
+                    "code": "COMMODITY_DETAILS"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "COMMODITY_CODE"
+                      },
+                      "value": "ARHAR_WHOLE"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
                     "code": "SERVICE_INFORMATION"
                   },
                   "list": [
+                    {
+                      "descriptor": {
+                        "code": "SERVICE_TYPE"
+                      },
+                      "value": "manual"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ASSAYINGTEST_TYPE"
+                      },
+                      "value": "physical"
+                    },
                     {
                       "descriptor": {
                         "code": "ACCURACY"
@@ -884,10 +909,10 @@
               "id": "I1C9",
               "parent_item_id": "I1",
               "descriptor": {
-                "name": "Alfatoxin",
-                "code": "ALFATOXIN",
-                "short_desc": "Alfatoxin Testing",
-                "long_desc": "Alfatoxin Testing",
+                "name": "Aflatoxin",
+                "code": "AFLATOXIN",
+                "short_desc": "Aflatoxin Testing",
+                "long_desc": "Aflatoxin Testing",
                 "images": [
                   {
                     "url": "https://abc.com/images/207.png"
@@ -1125,20 +1150,39 @@
               "tags": [
                 {
                   "descriptor": {
+                    "code": "COMMODITY_DETAILS"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "COMMODITY_CODE"
+                      },
+                      "value": "ARHAR_WHOLE"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
                     "code": "SERVICE_INFORMATION"
                   },
                   "list": [
                     {
                       "descriptor": {
-                        "code": "ACCURACY"
+                        "code": "SERVICE_TYPE"
                       },
-                      "value": "90%"
+                      "value": "electronic"
                     },
                     {
                       "descriptor": {
-                        "code": "PICKUP_TAT"
+                        "code": "ASSAYINGTEST_TYPE"
                       },
-                      "value": "PT2D"
+                      "value": "chemical"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ACCURACY"
+                      },
+                      "value": "90%"
                     },
                     {
                       "descriptor": {
@@ -1773,10 +1817,10 @@
               "id": "I1C9",
               "parent_item_id": "I1",
               "descriptor": {
-                "name": "Alfatoxin",
-                "code": "ALFATOXIN",
-                "short_desc": "Alfatoxin Testing",
-                "long_desc": "Alfatoxin Testing",
+                "name": "Aflatoxin",
+                "code": "AFLATOXIN",
+                "short_desc": "Aflatoxin Testing",
+                "long_desc": "Aflatoxin Testing",
                 "images": [
                   {
                     "url": "https://abc.com/images/207.png"

@@ -1,5 +1,3 @@
-summary: Buyer selects the required agri service
-description: Buyer selects the required agri service + suitable fulfillment type
 value:
   context:
     domain: ONDC:SRV14

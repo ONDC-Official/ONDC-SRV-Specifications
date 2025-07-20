@@ -1,5 +1,3 @@
-summary: Buyer requests for the status of the order
-description: Buyer requests for the status of the order
 value:
   context:
     domain: ONDC:SRV14

@@ -14,12 +14,17 @@ catalog:
   providers:
     tags:
       - code: serviceability
-        description: Serviceability Details
+        description: Serviceability Details - The serviceability construct will allow a buyer app to display catalogs, for only those stores, that can fulfil orders for a buyer, at a specific time, at thir location. for more details follow <a href=https://docs.google.com/document/d/1f4QbVstY5m-L_-Jut5jvbeiaBKLR1ttJL_am6GG2Fko/edit?tab=t.0> 👉 Here </a>
         reference: <PR/Issue/Discussion Links md format text>
         list:
           $ref: "./Tag.yaml#/serviceability"
     items:
       tags:
+        - code: COMMODITY_DETAILS
+          description: Commodity details for assaying group
+          reference: <PR/Issue/Discussion Links md format text>
+          list:
+            $ref: "./Tag.yaml#/COMMODITY_DETAILS"
         - code: SERVICE_INFORMATION
           description: Information of the service
           reference: <PR/Issue/Discussion Links md format text>

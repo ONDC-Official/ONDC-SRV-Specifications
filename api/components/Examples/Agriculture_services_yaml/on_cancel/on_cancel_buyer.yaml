@@ -1,5 +1,3 @@
-summary: Seller accepts the cancellation request
-description: Seller accepts the cancellation request
 value:
   context:
     domain: ONDC:SRV14

@@ -55,6 +55,46 @@ message:
         required: optional
         usage: "-"
         reference: if any
+      categories:
+        parent: true
+        id:
+          description: Unique identifier for the category.
+          required: required
+          usage: "C1"
+          reference: if any
+        descriptor:
+          name:
+            description: Name of the category representing a logical grouping of parameters.
+            required: required
+            usage: "Tradabale Parameters"
+            reference: if any
+          code:
+            description: Code representing the category in UPPER_SNAKE_CASE format.
+            required: required
+            usage: "TRADABLE_PARAMETERS"
+            reference: if any
+        tags:
+          descriptor.code:
+            description: Code to group a list of configurable fields for the category and for more details refer the tags section.
+            required: required
+            usage: "SELECTION"
+            reference: if any
+          list:
+            - descriptor.code:
+                description: Code to item of configurable fields for the category group and for more details refer the tags section.
+                required: required
+                usage: "SEQ"
+                reference: if any
+              value:
+                description: Value of the parameter defined by code.
+                required: required
+                usage: "1"
+                reference: if any  
+      ttl:
+        description: Validity for catalog at buyer side into ISO time format
+        required: required
+        usage: "PT1D"
+        reference: if any        
       items:
         descriptor:
           name:
@@ -107,12 +147,12 @@ message:
               usage: "PT1H"
               reference: if any
             holidays:
-              description: days on which service provide is not available
+              description: days on which service provider is not available
               required: required
               usage: "[2023-11-13, 2023-11-15]"
               reference: if any
             times:
-              description: time slots in which service provide is available
+              description: time slots in which service provider is available
               required: required
               usage: "[2022-11-20T00:00:00.000Z]"
               reference: if any

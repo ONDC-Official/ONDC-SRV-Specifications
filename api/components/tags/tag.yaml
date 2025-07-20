@@ -34,19 +34,19 @@ schedule:
     reference: <PR/Issue/Discussion Links md format text>
 serviceability:
   - code: location
-    description: Description of the Tag
+    description: Unique identifier of the location where the serviceability rules apply. This ensures only stores that can deliver to this buyer's location are considered.
     reference: <PR/Issue/Discussion Links md format text>
   - code: category
-    description: Description of the Tag
+    description: Unique identifier of the category for which the serviceability rule is defined. Filters catalog based on category-level availability for fulfillment.
     reference: <PR/Issue/Discussion Links md format text>
   - code: type
-    description: Description of the Tag
+    description: Defines the geographical coverage model for serviceability. Supported values - "10" - hyperlocal; "11" - intercity; "12" - pan-India; "13" - polygon (geoJSON).
     reference: <PR/Issue/Discussion Links md format text>
   - code: val
-    description: Description of the Tag
+    description: The value associated with the selected serviceability type (e.g., distance in km for hyperlocal, list of serviceable pincodes, or geo-coordinates).
     reference: <PR/Issue/Discussion Links md format text>
   - code: unit
-    description: Description of the Tag
+    description: The unit in which the 'val' is expressed (e.g., "km", "pincode", "geojson", etc.), depending on the type selected.
     reference: <PR/Issue/Discussion Links md format text>
 attributes:
   - code: color
@@ -76,7 +76,20 @@ SELECTION:
   - code: MAX_SELECTION
     description: Number of maximum selections allowed for this category
     reference: <PR/Issue/Discussion Links md format text>
+COMMODITY_DETAILS:
+  - code: COMMODITY_CODE
+    description: Code Representing the Commodity as Defined in the Enum List
+    reference: <PR/Issue/Discussion Links md format text>
 SERVICE_INFORMATION:
+  - code: SERVICE_TYPE
+    description: This specify whether the service is manual or electronic
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: ASSAYINGTEST_TYPE
+    description: This indicate what kind of test is being offered—whether it’s a physical or chemical test or both
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: ACCURACY
+    description: Indicates the Percentage Accuracy of the Result
+    reference: <PR/Issue/Discussion Links md format text>
   - code: PICKUP_TAT
     description: TAT for picking up the sample, only required if Seller-Fulfilled
     reference: <PR/Issue/Discussion Links md format text>

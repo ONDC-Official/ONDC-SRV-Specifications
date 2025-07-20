@@ -11,6 +11,10 @@ search:
       fulfillments: &fulfillments
         type: 
           $ref: "./fulfillments.yaml#/fulfillments/type"
+      tags:
+        COMMODITY_DETAILS:
+          COMMODITY_CODE:
+            $ref: "./commodity.yaml#/commodity_name"
 on_search:
   context: &context
     domain: 
@@ -20,6 +24,11 @@ on_search:
       fulfillments: &fulfillments
         type: 
           $ref: "./fulfillments.yaml#/fulfillments/type"
+      providers:
+        items: 
+          descriptor: 
+            code:
+              $ref: "./assaying_parameter.yaml#/assaying_parameters"
 init:
   context: &context
     domain: 
