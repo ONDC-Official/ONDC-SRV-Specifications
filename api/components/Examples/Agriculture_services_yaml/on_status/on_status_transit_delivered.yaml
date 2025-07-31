@@ -1,5 +1,3 @@
-summary: Seller app sends order status update (In-Transit)
-description: Seller app sends order status update when service provider is on the way
 value:
   context:
     domain: ONDC:SRV14
@@ -49,7 +47,7 @@ value:
         - id: F2
           state:
             descriptor:
-              code: IN_TRANSIT
+              code: AT_LOCATION
           type: Buyer-Fulfilled
           tracking: false
           stops:

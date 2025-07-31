@@ -1,0 +1,124 @@
+assaying_parameters:
+  - code: SHELF_LIFE
+    description: Shelf Life
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: MOISTURE
+    description: Moisture
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: FOREIGN_MATTER
+    description: Foreign Matter
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: OIL_CONTENT
+    description: Oil Content
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: DEFECTIVES
+    description: Defectives
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: OTHER_EDIBLE_GRAINS
+    description: Other Edible Grains
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: URIC_ACID
+    description: Uric Acid
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: AFLATOXIN
+    description: Aflatoxin
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: ARGEMONE_SEEDS
+    description: Argemone Seeds
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: SIZE_RANGE_MEASURE
+    description: Size Range Measure
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: SIZE_RANGE
+    description: Size Range
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: PERCENTAGE_OF_DEFECTS
+    description: Percentage Of Defects
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: PERCENTAGE_OF_WASTAGE
+    description: Percentage Of Wastage
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: BUNCH_SIZE_VALUE
+    description: Bunch Size Value
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: BUNCH_SIZE_UNIT
+    description: Bunch Size Unit
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: VISIBLE_COLOUR
+    description: Visible Colour
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: COLOUR_PERCENTAGE
+    description: Colour Percentage
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: TOTAL_SOLUBLE_SOLIDS
+    description: Total Soluble Solids
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: TRACES_OF_SOIL
+    description: Traces Of Soil
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: VOLATILE_OIL
+    description: Volatile Oil
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: TOTAL_ASH
+    description: Total Ash
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: CORIANDER_SPLIT_SEEDS_PERCENTAGE
+    description: Coriander Split Seeds Percentage
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: MIN_FLOWER_PER_STEM
+    description: Min Flower Per Stem
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: GIRTH_AT_THIN_END_VALUE
+    description: Girth At Thin End Value
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: GIRTH_AT_THIN_END_UNIT
+    description: Girth At Thin End Unit
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: BLOOMING_AND_SHAPE
+    description: Blooming And Shape
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: FLOWER_DIAMETER_VALUE
+    description: Flower Diameter Value
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: FLOWER_DIAMETER_UNIT
+    description: Flower Diameter Unit
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: STAPLE_LENGTH_OF_COTTON_VALUE
+    description: Staple Length Of Cotton Value
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: STAPLE_LENGTH_OF_COTTON_UNIT
+    description: Staple Length Of Cotton Unit
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: TRASH_PERCENTAGE
+    description: Trash Percentage
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: BUNDLE_STRENGTH
+    description: Bundle Strength
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: MICRONAIRE
+    description: Micronaire
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: PERCENTAGE_OF_MATURED_FIBERS
+    description: Percentage Of Matured Fibers
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: SIEVE_ANALYSIS
+    description: Sieve Analysis
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: NUMBER_OF_NUTS_VALUE
+    description: Number Of Nuts Value
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: NUMBER_OF_NUTS_UNIT
+    description: Number Of Nuts Unit
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: VOID_NUTS
+    description: Void Nuts
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: IMMATURE_NUTS
+    description: Immature Nuts
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: STRENGTH
+    description: Strength
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: FINENESS
+    description: Fineness
+    reference: <PR/Issue/Discussion Links md format text>

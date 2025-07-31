@@ -1,7 +1,3 @@
-summary: Seller app sends order status (Collected by agent)
-description: >-
-  Seller app sends the order status update when the sample has been collected by
-  the service provider
 value:
   context:
     domain: ONDC:SRV14

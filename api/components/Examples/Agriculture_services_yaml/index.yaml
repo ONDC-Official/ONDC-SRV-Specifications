@@ -10,18 +10,19 @@ select:
     - $ref: "./select/select2_reschedule.yaml"
     - $ref: "./select/select_delivered.yaml"
     - $ref: "./select/select_assaying.yaml"
+    - $ref: "./select/select_assaying_digital.yaml"
 init:
   examples:
     - $ref: "./init/init.yaml"
     - $ref: "./init/init_reschedule.yaml"
     - $ref: "./init/init_delivered.yaml"
-    - $ref: "./init/init_assaying.yaml"
+    - $ref: "./init/init_assaying_digital.yaml"
 confirm:
   examples:
     - $ref: "./confirm/confirm.yaml"
     - $ref: "./confirm/confirm_reschedule.yaml"
     - $ref: "./confirm/confirm_delivered.yaml"
-    - $ref: "./confirm/confirm_assaying.yaml"
+    - $ref: "./confirm/confirm_assaying_digital.yaml"
 status:
   examples:
     - $ref: "./status/status.yaml"
@@ -32,26 +33,26 @@ on_search:
   examples:
     - $ref: "./on_search/on_search.yaml"
     - $ref: "./on_search/on_search_delivered.yaml"
-    - $ref: "./on_search/on_search_assaying.yaml"
+    - $ref: "./on_search/on_search_assaying_digital.yaml"
 on_select:
   examples:
     - $ref: "./on_select/on_select.yaml"
     - $ref: "./on_select/on_select_reschedule.yaml"
     - $ref: "./on_select/on_select2_reschedule.yaml"
     - $ref: "./on_select/on_select_delivered.yaml"
-    - $ref: "./on_select/on_select_assaying.yaml"
+    - $ref: "./on_select/on_select_assaying_digital.yaml"
 on_init:
   examples:
     - $ref: "./on_init/on_init.yaml"
     - $ref: "./on_init/on_init_reschedule.yaml"
     - $ref: "./on_init/on_init_delivered.yaml"
-    - $ref: "./on_init/on_init_assaying.yaml"
+    - $ref: "./on_init/on_init_assaying_digital.yaml"
 on_confirm:
   examples:
     - $ref: "./on_confirm/on_confirm.yaml"
     - $ref: "./on_confirm/on_confirm_reschedule.yaml"
     - $ref: "./on_confirm/on_confirm_delivered.yaml"
-    - $ref: "./on_confirm/on_confirm_assaying.yaml"
+    - $ref: "./on_confirm/on_confirm_assaying_digital.yaml"
 on_status:
   examples:
     - $ref: "./on_status/on_status_transit.yaml"

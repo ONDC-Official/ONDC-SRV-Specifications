@@ -1,7 +1,3 @@
-summary: Seller provides the final quotation for the service
-description: >-
-  Seller provides the final quotation and creates the draft contract for the
-  service
 value:
   context:
     domain: ONDC:SRV14

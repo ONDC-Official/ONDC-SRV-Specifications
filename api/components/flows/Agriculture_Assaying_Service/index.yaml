@@ -1,4 +1,4 @@
-summary: Agriculture Services Assaying Report of a Commodity
+summary: Agricultural Services – Assaying Report for a Commodity via Physical Submission
 description: The following is an illustrative flow to perform a transaction of a nature where a buyer would like to avail assaying services for a particular commodity. The booking majorly happens in four phases of order processing flow, i.e. Discovery of available services and service providers based on serviceability, order, fulfillment and post-fulfillment.
 details:
   - description: Sequence Diagram for Agriculture Assaying Service

@@ -1,22 +1,18 @@
-summary: Search by category
-description: >-
-  Search intent sent by the buyer based on the particular agri service required
-  - e.g. Soil Testing
 value:
   context:
-    domain: ONDC:SRV14
+    domain: ONDC:SRV11
     location:
       city:
         code: std:080
       country:
         code: IND
     action: search
-    version: '2.0.0'
+    version: 2.0.0
     bap_id: buyerapp.com
     bap_uri: https://buyerapp.com/ondc
     transaction_id: T1
     message_id: M1
-    timestamp: '2024-04-01T22:00:00.000Z'
+    timestamp: '2023-11-06T22:00:00.000Z'
     ttl: PT30S
   message:
     intent:
@@ -27,25 +23,29 @@ value:
         type: Seller-Fulfilled
         stops:
           - type: end
+            time:
+              range:
+                start: '2024-04-04T22:00:00.000Z'
             location:
               gps: 12.974002,77.613458
               area_code: '560001'
       payment:
-        type: ON-FULFILLMENT
-        collected_by: BPP
+        type: PRE-FULFILLMENT
+        collected_by: BAP
       tags:
         - descriptor:
-            code: BAP_Terms
+            code: BAP_TERMS
+          display: false
           list:
             - descriptor:
-                code: finder_fee_type
+                code: FINDER_FEE_TYPE
               value: percent
             - descriptor:
-                code: finder_fee_amount
-              value: '3'
+                code: FINDER_FEE_AMOUNT
+              value: '0'
         - descriptor:
             code: BAP_DETAILS
           list:
             - descriptor:
                 code: BAP_TYPE
-              value: farmer
+              value: FARMER

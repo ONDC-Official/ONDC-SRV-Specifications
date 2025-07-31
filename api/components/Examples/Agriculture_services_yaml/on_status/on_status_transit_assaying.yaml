@@ -1,5 +1,3 @@
-summary: Seller app sends order status update (In-Transit)
-description: Seller app sends order status update when service provider is on the way
 value:
   context:
     domain: ONDC:SRV14

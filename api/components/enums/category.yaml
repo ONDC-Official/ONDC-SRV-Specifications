@@ -393,5 +393,8 @@ category_ids:
     description: Chemical Testing Services
     reference: <PR/Issue/Discussion Links md format text>
   - code: SRV14-1004
-    description: Assaying Services
+    description: Assaying Services - Physical submissions
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: SRV14-1005
+    description: Assaying Services - Digital submissions
     reference: <PR/Issue/Discussion Links md format text>

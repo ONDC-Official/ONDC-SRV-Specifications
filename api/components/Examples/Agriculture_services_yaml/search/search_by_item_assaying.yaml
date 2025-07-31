@@ -1,7 +1,3 @@
-summary: Search based on the intent for buying a particular agri service
-description: >-
-  Search intent sent by the buyer to test a particular commodity and get
-  assaying services
 value:
   context:
     domain: ONDC:SRV14

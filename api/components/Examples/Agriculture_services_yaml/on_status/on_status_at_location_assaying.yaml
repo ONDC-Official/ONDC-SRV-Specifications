@@ -1,7 +1,3 @@
-summary: Seller app sends the order status (At location)
-description: >-
-  Seller app sends order status update when service provider has reached the
-  buyer location
 value:
   context:
     domain: ONDC:SRV14
