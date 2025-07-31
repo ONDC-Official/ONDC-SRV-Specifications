@@ -27,13 +27,18 @@
       },
       "items": [
         {
-          "fulfillment_ids": [
-            "F1"
-          ],
+          "fulfillment_ids": ["F1"],
           "id": "I1",
-          "location_ids": [
-            "L1"
-          ]
+          "location_ids": ["L1"],
+          "xinput": {
+            "form": {
+              "id": "form_1"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "6547-7456-7235-4386"
+            }
+          }
         }
       ],
       "fulfillments": [

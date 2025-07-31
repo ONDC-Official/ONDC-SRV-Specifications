@@ -114,7 +114,7 @@
                   "descriptor": {
                     "code": "category"
                   },
-                  "value": "SRV14-*"
+                  "value": "SRV14-1005"
                 },
                 {
                   "descriptor": {
@@ -207,10 +207,27 @@
                 "value": "100.00",
                 "minimum_value": "100.00"
               },
-              "category_ids": ["SRV14-xxxx"],
-              "fulfillment_ids": ["2"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "SRV14-1004",
+                "SRV14-1005"
+              ],
+              "fulfillment_ids": [
+                "2"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
+              "xinput": {
+                "required": true,
+                "form": {
+                  "id": "form_1",
+                  "url": "https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234",
+                  "mime_type": "text/html"
+                }
+              },
               "cancellation_terms": [
                 {
                   "fulfillment_state": {
@@ -325,7 +342,10 @@
                 "days": "01,02,03,04,05",
                 "schedule": {
                   "frequency": "PT1H",
-                  "holidays": ["2024-04-09", "2024-04-07"],
+                  "holidays": [
+                    "2024-04-09",
+                    "2024-04-07"
+                  ],
                   "times": [
                     "2024-04-04T22:00:00.000Z",
                     "2024-04-06T22:00:00.000Z",
@@ -376,10 +396,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -460,10 +488,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -544,10 +580,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -628,10 +672,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -712,10 +764,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -796,10 +856,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -880,10 +948,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -964,10 +1040,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1048,10 +1132,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1110,7 +1202,9 @@
               },
               "location_ids": [],
               "category_ids": [],
-              "item_ids": ["I1"],
+              "item_ids": [
+                "I1"
+              ],
               "time": {
                 "label": "validity",
                 "range": {
@@ -1238,10 +1332,26 @@
                 "value": "100.00",
                 "minimum_value": "100.00"
               },
-              "category_ids": ["SRV14-xxxx"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "SRV14-1005"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
+              "xinput": {
+                "required": true,
+                "form": {
+                  "id": "form_1",
+                  "url": "https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234",
+                  "mime_type": "text/html"
+                }
+              },
               "cancellation_terms": [
                 {
                   "fulfillment_state": {
@@ -1350,7 +1460,10 @@
                 "days": "01,02,03,04,05",
                 "schedule": {
                   "frequency": "PT1H",
-                  "holidays": ["2024-04-09", "2024-04-07"],
+                  "holidays": [
+                    "2024-04-09",
+                    "2024-04-07"
+                  ],
                   "times": [
                     "2024-04-04T22:00:00.000Z",
                     "2024-04-06T22:00:00.000Z",
@@ -1401,10 +1514,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1485,10 +1606,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1569,10 +1698,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1653,10 +1790,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1737,10 +1882,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1821,10 +1974,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1905,10 +2066,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -1989,10 +2158,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -2073,10 +2250,18 @@
                   "value": "1"
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -2135,7 +2320,9 @@
               },
               "location_ids": [],
               "category_ids": [],
-              "item_ids": ["I2"],
+              "item_ids": [
+                "I2"
+              ],
               "time": {
                 "label": "validity",
                 "range": {

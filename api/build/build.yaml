@@ -2992,7 +2992,10 @@ x-enum:
                 description: Chemical Testing Services
                 reference: <PR/Issue/Discussion Links md format text>
               - code: SRV14-1004
-                description: Assaying Services
+                description: Assaying Services - Physical submissions
+                reference: <PR/Issue/Discussion Links md format text>
+              - code: SRV14-1005
+                description: Assaying Services - Digital submissions
                 reference: <PR/Issue/Discussion Links md format text>
         fulfillments:
           type: &ref_1
@@ -4322,7 +4325,7 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: &ref_14
+        example: &ref_22
           value:
             context:
               domain: ONDC:SRV14
@@ -4378,7 +4381,7 @@ x-flows:
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: &ref_15
+        example: &ref_23
           value:
             context:
               domain: ONDC:SRV14
@@ -4894,7 +4897,7 @@ x-flows:
         api: select
         description: Buyer selects the required agri service + suitable fulfillment type
         reference: if any
-        example: &ref_16
+        example: &ref_24
           value:
             context:
               domain: ONDC:SRV14
@@ -5070,7 +5073,7 @@ x-flows:
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: &ref_17
+        example: &ref_25
           value:
             context:
               domain: ONDC:SRV14
@@ -5282,7 +5285,7 @@ x-flows:
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: &ref_18
+        example: &ref_26
           value:
             context:
               domain: ONDC:SRV14
@@ -5481,7 +5484,7 @@ x-flows:
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: &ref_19
+        example: &ref_27
           value:
             context:
               domain: ONDC:SRV14
@@ -5881,7 +5884,7 @@ x-flows:
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: &ref_20
+        example: &ref_28
           value:
             context:
               domain: ONDC:SRV14
@@ -6290,7 +6293,7 @@ x-flows:
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: &ref_21
+        example: &ref_29
           value:
             context:
               domain: ONDC:SRV14
@@ -12306,7 +12309,9 @@ x-flows:
                     label: REPORT
                 created_at: '2024-04-01T22:00:38.000Z'
                 updated_at: '2024-04-04T13:00:00.000Z'
-  - summary: Agriculture Services Assaying Report of a Commodity
+  - summary: >-
+      Agricultural Services – Assaying Report for a Commodity via Physical
+      Submission
     description: >-
       The following is an illustrative flow to perform a transaction of a nature
       where a buyer would like to avail assaying services for a particular
@@ -12365,7 +12370,7 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example:
+        example: &ref_14
           value:
             context:
               domain: ONDC:SRV14
@@ -12587,7 +12592,7 @@ x-flows:
                             list:
                               - descriptor:
                                   code: COMMODITY_CODE
-                                value: ARHAR_WHOLE
+                                value: ARHAR_WHOLE,MOONG_WHOLE
                           - descriptor:
                               code: SERVICE_INFORMATION
                             list:
@@ -12685,6 +12690,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C2
                         parent_item_id: I1
                         descriptor:
@@ -12731,6 +12742,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C3
                         parent_item_id: I1
                         descriptor:
@@ -12777,6 +12794,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C4
                         parent_item_id: I1
                         descriptor:
@@ -12823,6 +12846,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C5
                         parent_item_id: I1
                         descriptor:
@@ -12869,6 +12898,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C6
                         parent_item_id: I1
                         descriptor:
@@ -12915,6 +12950,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C7
                         parent_item_id: I1
                         descriptor:
@@ -12961,6 +13002,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C8
                         parent_item_id: I1
                         descriptor:
@@ -13007,6 +13054,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C9
                         parent_item_id: I1
                         descriptor:
@@ -13053,6 +13106,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                     offers:
                       - id: offer-1
                         descriptor:
@@ -13264,6 +13323,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C2
                         parent_item_id: I1
                         descriptor:
@@ -13310,6 +13375,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C3
                         parent_item_id: I1
                         descriptor:
@@ -13356,6 +13427,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C4
                         parent_item_id: I1
                         descriptor:
@@ -13402,6 +13479,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C5
                         parent_item_id: I1
                         descriptor:
@@ -13448,6 +13531,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C6
                         parent_item_id: I1
                         descriptor:
@@ -13494,6 +13583,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C7
                         parent_item_id: I1
                         descriptor:
@@ -13540,6 +13635,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C8
                         parent_item_id: I1
                         descriptor:
@@ -13586,6 +13687,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                       - id: I1C9
                         parent_item_id: I1
                         descriptor:
@@ -13632,6 +13739,12 @@ x-flows:
                               - descriptor:
                                   code: AUTO_SELECTED
                                 value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
                     offers:
                       - id: offer-1
                         descriptor:
@@ -13699,7 +13812,7 @@ x-flows:
                             value: '2024-04-04T22:00:00.000Z'
                           - descriptor:
                               code: CROP
-                            value: ARHAR_WHOLE
+                            value: ARHAR_WHOLE,MOONG_WHOLE
                           - descriptor:
                               code: DATE_OF_SOWING
                             value: '2024-04-04T22:00:00.000Z'
@@ -14977,7 +15090,7 @@ x-flows:
           Seller app sends order status update when service provider is on the
           way
         reference: if any
-        example:
+        example: &ref_15
           value:
             context:
               domain: ONDC:SRV14
@@ -15320,7 +15433,7 @@ x-flows:
           Seller app sends order status update when service provider has reached
           the buyer location
         reference: if any
-        example:
+        example: &ref_16
           value:
             context:
               domain: ONDC:SRV14
@@ -15663,7 +15776,7 @@ x-flows:
           Seller app sends the order status update when the sample has been
           collected by the service provider
         reference: if any
-        example:
+        example: &ref_17
           value:
             context:
               domain: ONDC:SRV14
@@ -16006,7 +16119,7 @@ x-flows:
           Seller app sends the order status update when the sample has been
           received at the lab
         reference: if any
-        example:
+        example: &ref_18
           value:
             context:
               domain: ONDC:SRV14
@@ -16349,7 +16462,7 @@ x-flows:
           Seller app sends the order status update when the test has been
           completed at the lab
         reference: if any
-        example:
+        example: &ref_19
           value:
             context:
               domain: ONDC:SRV14
@@ -16692,7 +16805,7 @@ x-flows:
           Seller app sends the order status update when the test report is
           generated
         reference: if any
-        example:
+        example: &ref_20
           value:
             context:
               domain: ONDC:SRV14
@@ -16744,6 +16857,9 @@ x-flows:
                           - descriptor:
                               code: ACRAGE
                             value: '2'
+                          - descriptor:
+                              code: SAMPLE_COUNT
+                            value: '5'
                   - id: I1C1
                     parent_item_id: I1
                     fulfillment_ids:
@@ -17035,7 +17151,7 @@ x-flows:
           Seller app sends the order status update when the test report is
           shared
         reference: if any
-        example:
+        example: &ref_21
           value:
             context:
               domain: ONDC:SRV14
@@ -17087,6 +17203,9 @@ x-flows:
                           - descriptor:
                               code: ACRAGE
                             value: '2'
+                          - descriptor:
+                              code: SAMPLE_COUNT
+                            value: '5'
                   - id: I1C1
                     parent_item_id: I1
                     fulfillment_ids:
@@ -17375,6 +17494,2847 @@ x-flows:
                     label: REPORT
                 created_at: '2024-04-01T22:00:38.000Z'
                 updated_at: '2024-04-04T13:00:00.000Z'
+  - summary: >-
+      Agricultural Services – Assaying Report for a Commodity via Digital
+      Submission
+    description: >-
+      The following is an illustrative flow to perform a transaction of a nature
+      where a buyer would like to avail assaying services for a particular
+      commodity. The booking majorly happens in four phases of order processing
+      flow, i.e. Discovery of available services and service providers based on
+      serviceability, order, fulfillment and post-fulfillment.
+    details:
+      - description: Sequence Diagram for Agriculture Assaying Service
+        mermaidGraph: |-
+          sequenceDiagram
+            participant B as Buyer
+            participant BA as BuyerApp
+            participant G as Gateway
+            participant SA1 as SellerApp1
+            participant SA2 as SellerApp2
+            
+            Note Over B,SA: **SEARCH FLOW**
+            B ->> BA: Search by item for a service within a city
+            BA ->> G: **/search** - Search by item for a service within city and <br>additional parameters
+            Note left of BA: Additional params include: <br><br>
+            G ->> SA1: **/search** - Services request broadcasted based <br>on city and domain in context
+            G ->> SA2: **/search** - Services request broadcasted based <br>on city and domain in context
+            SA1 ->> BA: **/on_search** - Services catalog returned <br>with pricing, seller statutory details, pricing
+            SA2 ->> BA: **/on_search** - Services catalog returned <br>with pricing, seller statutory details, pricing
+            Note Over BA,SA1: Buyer now has the option to choose the <br>services from either Seller 1 or Seller 2 or both
+            BA ->> B: Shows all service <br>options from sellers
+
+            Note Over B,SA: **SELECT FLOW**
+            B ->> BA: Selects one of the <br>providers for service
+            BA ->> SA: **/select** - A service is selected with a <br>TTL for receiving response
+            SA ->> BA: **/on_select** - Responds to the selection with <br>breakup, quote including logistics charges
+            BA ->> B: Shows response with price details
+
+            Note Over B,SA: **INITIALIZATION FLOW**
+            B ->> BA: Proceeds with the Order
+            BA ->> SA: **/init** - Initializes the order and <br>sends billing details
+            SA ->> BA: **/on_init** - Order initialization with <br>fulfillment & settlement information <br>including UPI or NEFT/IMPS/Bank Transfer
+            BA ->> B: Confirms initialization
+
+            Note Over B,SA: **CONFIRMATION FLOW**
+            B ->> BA: Confirms the Order
+            BA ->> SA: **/confirm** - Creates order to create final digital contract
+            SA ->> BA: **/on_confirm** - Accepts the order 
+            BA ->> B: Confirms order and delivery 
+            
+            Note Over B,SA: **ORDER STATUS FLOW**
+            B ->> BA: Checks the order status
+            BA ->> SA: **/status** - Enquire order status <br>or tracking information
+            SA ->> BA: **/on_status_in_transit** - Latest order and fulfillment status is sent
+            BA ->> B: Updates the latest order <br>and fulfillment information
+    reference: if any
+    steps:
+      - summary: Search based on the intent for buying a particular agri service
+        api: search
+        description: >-
+          Search intent sent by the buyer based on the particular agri service
+          required - e.g. Soil Testing
+        reference: if any
+        example: *ref_14
+      - summary: Returns the catalog specific to the search intent
+        api: on_search
+        description: Returns the catalog specific to the search intent
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: on_search
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/ondc
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/ondc
+              transaction_id: T1
+              message_id: M1
+              timestamp: '2024-04-01T22:00:30.000Z'
+              ttl: PT30S
+            message:
+              catalog:
+                fulfillments:
+                  - id: '1'
+                    type: Buyer-Fulfilled
+                  - id: '2'
+                    type: Seller-Fulfilled
+                payments:
+                  - id: '1'
+                    type: PRE-FULFILLMENT
+                  - id: '2'
+                    type: ON-FULFILLMENT
+                  - id: '3'
+                    type: POST-FULFILLMENT
+                descriptor:
+                  name: ABC Agri Assaying Provider
+                  short_desc: Agri Assaying Provider
+                  long_desc: Agri Assaying Provider
+                  images:
+                    - url: https://abc.com/images/1-shop-img
+                providers:
+                  - id: P1
+                    descriptor:
+                      name: ABC Assaying Provider store
+                      code: P001
+                      short_desc: ABC Assaying Provider store
+                      long_desc: ABC Assaying Provider store
+                      images:
+                        - url: https://abc.com/images/1-shop-img
+                    rating: '4.2'
+                    ttl: PT1D
+                    locations:
+                      - id: L1
+                        gps: 12.956399,77.636803
+                        address: Jayanagar 4th Block
+                        city:
+                          code: std:080
+                          name: Bengaluru
+                        state:
+                          code: KA
+                        country:
+                          code: IND
+                        area_code: '560076'
+                    creds:
+                      - id: GHP-12345678
+                        type: Certificate
+                        desc: Good Hygienic Practices (GHP)
+                        url: https://abcd.cdn.com/images/bage-img
+                    tags:
+                      - descriptor:
+                          code: serviceability
+                        list:
+                          - descriptor:
+                              code: location
+                            value: L1
+                          - descriptor:
+                              code: category
+                            value: SRV14-1005
+                          - descriptor:
+                              code: type
+                            value: '13'
+                          - descriptor:
+                              code: val
+                            value: >-
+                              {"type": "FeatureCollection", "features":
+                              [{"type": "Feature", "properties": {}, "geometry":
+                              {"coordinates": [[[77.175571, 28.675927],
+                              [77.128737, 28.600972], [77.446934, 28.545325],
+                              [77.175571, 28.675927]]], "type": "Polygon"}}]}
+                          - descriptor:
+                              code: unit
+                            value: geojson
+                    categories:
+                      - id: C1
+                        descriptor:
+                          name: Tradabale Parameters
+                          code: TRADABLE_PARAMETERS
+                        tags:
+                          - descriptor:
+                              code: SELECTION
+                            list:
+                              - descriptor:
+                                  code: SEQ
+                                value: '1'
+                              - descriptor:
+                                  code: MANDATORY_SELECTION
+                                value: 'true'
+                              - descriptor:
+                                  code: MIN_SELECTION
+                                value: '1'
+                              - descriptor:
+                                  code: MAX_SELECTION
+                                value: '9'
+                    items:
+                      - id: I1
+                        descriptor:
+                          name: Quality testing for Arhar Whole
+                          short_desc: Assaying service for Arhar Whole
+                          long_desc: Assaying service for Arhar Whole
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                            - mimetype: application/pdf
+                              url: https://abc.com/add-info.pdf
+                        price:
+                          currency: INR
+                          value: '100.00'
+                          minimum_value: '100.00'
+                        category_ids:
+                          - SRV14-1004
+                          - SRV14-1005
+                        fulfillment_ids:
+                          - '2'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        xinput:
+                          required: true
+                          form:
+                            id: form_1
+                            url: >-
+                              https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                            mime_type: text/html
+                        cancellation_terms:
+                          - fulfillment_state:
+                              descriptor:
+                                code: PENDING
+                            cancellation_fee:
+                              percentage: '0.00'
+                          - fulfillment_state:
+                              descriptor:
+                                code: IN_TRANSIT
+                            cancellation_fee:
+                              percentage: '10.00'
+                        tags:
+                          - descriptor:
+                              code: COMMODITY_DETAILS
+                            list:
+                              - descriptor:
+                                  code: COMMODITY_CODE
+                                value: ARHAR_WHOLE,MOONG_WHOLE
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: SERVICE_TYPE
+                                value: manual
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                              - descriptor:
+                                  code: ACCURACY
+                                value: 90%
+                              - descriptor:
+                                  code: PICKUP_TAT
+                                value: PT2D
+                              - descriptor:
+                                  code: COMPLETION_TAT
+                                value: PT1D
+                          - descriptor:
+                              code: RESCHEDULE_TERMS
+                            list:
+                              - descriptor:
+                                  code: FULFILLMENT_STATE
+                                value: Pending
+                              - descriptor:
+                                  code: RESCHEDULE_ELIGIBLE
+                                value: 'true'
+                              - descriptor:
+                                  code: RESCHEDULE_FEE
+                                value: '0.00'
+                              - descriptor:
+                                  code: RESCHEDULE_WITHIN
+                                value: PT1D
+                        time:
+                          label: validity
+                          range:
+                            start: '2024-04-01T00:00:00.000Z'
+                            end: '2024-04-10T00:00:00.000Z'
+                          days: 01,02,03,04,05
+                          schedule:
+                            frequency: PT1H
+                            holidays:
+                              - '2024-04-09'
+                              - '2024-04-07'
+                            times:
+                              - '2024-04-04T22:00:00.000Z'
+                              - '2024-04-06T22:00:00.000Z'
+                              - '2024-04-08T22:00:00.000Z'
+                              - '2024-04-10T22:00:00.000Z'
+                        matched: true
+                        recommended: true
+                      - id: I1C1
+                        parent_item_id: I1
+                        descriptor:
+                          name: Moisture
+                          code: MOISTURE
+                          short_desc: Moisture Testing
+                          long_desc: Moisture Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C2
+                        parent_item_id: I1
+                        descriptor:
+                          name: Foreign Matter
+                          code: FOREIGN_MATTER
+                          short_desc: Foreign Matter Testing
+                          long_desc: Foreign Matter Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C3
+                        parent_item_id: I1
+                        descriptor:
+                          name: Other Edible Grains
+                          code: OTHER_EDIBLE_GRAINS
+                          short_desc: Other Edible Grains Testing
+                          long_desc: Other Edible Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C4
+                        parent_item_id: I1
+                        descriptor:
+                          name: Damaged Grains
+                          code: DAMAGED_GRAINS
+                          short_desc: Other Edible Grains Testing
+                          long_desc: Other Edible Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C5
+                        parent_item_id: I1
+                        descriptor:
+                          name: Weevilled Grains
+                          code: WEEVILLED_GRAINS
+                          short_desc: Weevilled Grains Testing
+                          long_desc: Weevilled Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C6
+                        parent_item_id: I1
+                        descriptor:
+                          name: Admixture
+                          code: ADMIXTURE
+                          short_desc: Admixture Testing
+                          long_desc: Admixture Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C7
+                        parent_item_id: I1
+                        descriptor:
+                          name: Immature & Shriveled
+                          code: IMMATURE_AND_SHRIVELED
+                          short_desc: Immature & Shriveled Testing
+                          long_desc: Immature & Shriveled Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C8
+                        parent_item_id: I1
+                        descriptor:
+                          name: Uric Acid
+                          code: URIC_ACID
+                          short_desc: Uric Acid Testing
+                          long_desc: Uric Acid Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'false'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C9
+                        parent_item_id: I1
+                        descriptor:
+                          name: Aflatoxin
+                          code: AFLATOXIN
+                          short_desc: Aflatoxin Testing
+                          long_desc: Aflatoxin Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'false'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                    offers:
+                      - id: offer-1
+                        descriptor:
+                          name: ''
+                          code: FREEBIE
+                          short_desc: Additional Tests
+                          long_desc: Additional Tests
+                          images:
+                            - url: https://abc.com/images/207.png
+                        location_ids: []
+                        category_ids: []
+                        item_ids:
+                          - I1
+                        time:
+                          label: validity
+                          range:
+                            start: '2024-04-01T00:00:00.000Z'
+                            end: '2024-04-10T00:00:00.000Z'
+                          days: 04,05
+                    fulfillments:
+                      - contact:
+                          phone: '9886098860'
+                          email: abc@xyz.com
+                  - id: P2
+                    descriptor:
+                      name: XYZ Assaying Service
+                      code: P002
+                      short_desc: XYZ Assaying Service
+                      long_desc: XYZ Assaying Service
+                      images:
+                        - url: https://xyz.com/images/1-shop-img
+                    rating: '4.2'
+                    ttl: PT1D
+                    locations:
+                      - id: L2
+                        gps: 12.956399,77.636803
+                        address: Jayanagar 5th Block
+                        city:
+                          code: std:080
+                          name: Bengaluru
+                        state:
+                          code: KA
+                        country:
+                          code: IND
+                        area_code: '560076'
+                    creds:
+                      - id: GHP-12345678
+                        type: Certificate
+                        desc: Good Hygienic Practices (GHP)
+                        url: https://abcd.cdn.com/images/bage-img
+                    tags:
+                      - descriptor:
+                          code: serviceability
+                        list:
+                          - descriptor:
+                              code: location
+                            value: L2
+                          - descriptor:
+                              code: category
+                            value: SRV14-*
+                          - descriptor:
+                              code: type
+                            value: '13'
+                          - descriptor:
+                              code: val
+                            value: >-
+                              {"type": "FeatureCollection", "features":
+                              [{"type": "Feature", "properties": {}, "geometry":
+                              {"coordinates": [[[77.175571, 28.675927],
+                              [77.128737, 28.600972], [77.446934, 28.545325],
+                              [77.175571, 28.675927]]], "type": "Polygon"}}]}
+                          - descriptor:
+                              code: unit
+                            value: geojson
+                    items:
+                      - id: I1
+                        descriptor:
+                          name: Quality testing for Arhar Whole
+                          short_desc: Assaying service for Arhar Whole
+                          long_desc: Assaying service for Arhar Whole
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                            - mimetype: application/pdf
+                              url: https://abc.com/add-info.pdf
+                        price:
+                          currency: INR
+                          value: '100.00'
+                          minimum_value: '100.00'
+                        category_ids:
+                          - SRV14-1005
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        xinput:
+                          required: true
+                          form:
+                            id: form_1
+                            url: >-
+                              https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                            mime_type: text/html
+                        cancellation_terms:
+                          - fulfillment_state:
+                              descriptor:
+                                code: PENDING
+                            cancellation_fee:
+                              percentage: '0.00'
+                          - fulfillment_state:
+                              descriptor:
+                                code: IN_TRANSIT
+                            cancellation_fee:
+                              percentage: '10.00'
+                        tags:
+                          - descriptor:
+                              code: COMMODITY_DETAILS
+                            list:
+                              - descriptor:
+                                  code: COMMODITY_CODE
+                                value: ARHAR_WHOLE
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: SERVICE_TYPE
+                                value: electronic
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: chemical
+                              - descriptor:
+                                  code: ACCURACY
+                                value: 90%
+                              - descriptor:
+                                  code: COMPLETION_TAT
+                                value: PT1D
+                          - descriptor:
+                              code: RESCHEDULE_TERMS
+                            list:
+                              - descriptor:
+                                  code: FULFILLMENT_STATE
+                                value: Pending
+                              - descriptor:
+                                  code: RESCHEDULE_ELIGIBLE
+                                value: 'true'
+                              - descriptor:
+                                  code: RESCHEDULE_FEE
+                                value: '0.00'
+                              - descriptor:
+                                  code: RESCHEDULE_WITHIN
+                                value: PT1D
+                        time:
+                          label: validity
+                          range:
+                            start: '2024-04-01T00:00:00.000Z'
+                            end: '2024-04-10T00:00:00.000Z'
+                          days: 01,02,03,04,05
+                          schedule:
+                            frequency: PT1H
+                            holidays:
+                              - '2024-04-09'
+                              - '2024-04-07'
+                            times:
+                              - '2024-04-04T22:00:00.000Z'
+                              - '2024-04-06T22:00:00.000Z'
+                              - '2024-04-08T22:00:00.000Z'
+                              - '2024-04-10T22:00:00.000Z'
+                        matched: true
+                        recommended: true
+                      - id: I1C1
+                        parent_item_id: I1
+                        descriptor:
+                          name: Moisture
+                          code: MOISTURE
+                          short_desc: Moisture Testing
+                          long_desc: Moisture Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C2
+                        parent_item_id: I1
+                        descriptor:
+                          name: Foreign Matter
+                          code: FOREIGN_MATTER
+                          short_desc: Foreign Matter Testing
+                          long_desc: Foreign Matter Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C3
+                        parent_item_id: I1
+                        descriptor:
+                          name: Other Edible Grains
+                          code: OTHER_EDIBLE_GRAINS
+                          short_desc: Other Edible Grains Testing
+                          long_desc: Other Edible Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C4
+                        parent_item_id: I1
+                        descriptor:
+                          name: Damaged Grains
+                          code: DAMAGED_GRAINS
+                          short_desc: Other Edible Grains Testing
+                          long_desc: Other Edible Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C5
+                        parent_item_id: I1
+                        descriptor:
+                          name: Weevilled Grains
+                          code: WEEVILLED_GRAINS
+                          short_desc: Weevilled Grains Testing
+                          long_desc: Weevilled Grains Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C6
+                        parent_item_id: I1
+                        descriptor:
+                          name: Admixture
+                          code: ADMIXTURE
+                          short_desc: Admixture Testing
+                          long_desc: Admixture Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'true'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C7
+                        parent_item_id: I1
+                        descriptor:
+                          name: Immature & Shriveled
+                          code: IMMATURE_AND_SHRIVELED
+                          short_desc: Immature & Shriveled Testing
+                          long_desc: Immature & Shriveled Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'false'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'true'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C8
+                        parent_item_id: I1
+                        descriptor:
+                          name: Uric Acid
+                          code: URIC_ACID
+                          short_desc: Uric Acid Testing
+                          long_desc: Uric Acid Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'false'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                      - id: I1C9
+                        parent_item_id: I1
+                        descriptor:
+                          name: Aflatoxin
+                          code: AFLATOXIN
+                          short_desc: Aflatoxin Testing
+                          long_desc: Aflatoxin Testing
+                          images:
+                            - url: https://abc.com/images/207.png
+                          media:
+                            - mimetype: video/mp4
+                              url: video_url
+                        price:
+                          currency: INR
+                          value: '200.00'
+                          minimum_value: '200.00'
+                        quantity:
+                          unitized:
+                            measure:
+                              unit: parameter
+                              value: '1'
+                          minimum:
+                            value: '1'
+                          maximum:
+                            value: '1'
+                        category_ids:
+                          - C1
+                        fulfillment_ids:
+                          - '1'
+                        location_ids:
+                          - L1
+                        payment_ids:
+                          - '1'
+                        tags:
+                          - descriptor:
+                              code: ATTRIBUTE
+                            list:
+                              - descriptor:
+                                  code: TYPE
+                                value: customization
+                              - descriptor:
+                                  code: MANDATORY
+                                value: 'false'
+                              - descriptor:
+                                  code: AUTO_SELECTED
+                                value: 'false'
+                          - descriptor:
+                              code: SERVICE_INFORMATION
+                            list:
+                              - descriptor:
+                                  code: ASSAYINGTEST_TYPE
+                                value: physical
+                    offers:
+                      - id: offer-1
+                        descriptor:
+                          name: ''
+                          code: FREEBIE
+                          short_desc: Additional Tests
+                          long_desc: Additional Tests
+                          images:
+                            - url: https://abc.com/images/207.png
+                        location_ids: []
+                        category_ids: []
+                        item_ids:
+                          - I2
+                        time:
+                          label: validity
+                          range:
+                            start: '2024-04-01T00:00:00.000Z'
+                            end: '2024-04-10T00:00:00.000Z'
+                          days: 04,05
+                    fulfillments:
+                      - contact:
+                          phone: '9886098860'
+                          email: abc@xyz.com
+      - summary: Get Form
+        api: form
+        details:
+          - description: Get the form for digital sample submission
+        reference: if any
+        example:
+          value: |
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Assaying Report Submission</title>
+            </head>
+            <body>
+              <h2>Submit Commodity Media for Assaying Report</h2>
+
+              <form action="/submit-assaying-report" method="POST" enctype="multipart/form-data">
+                <label for="commodityName">Commodity Name:</label><br>
+                <input type="text" id="commodityName" name="commodityName" required><br>
+
+                <label for="image">Upload Image of Commodity:</label><br>
+                <input type="file" id="image" name="image" accept="image/*" required><br>
+
+                <label for="video">Upload Video of Commodity:</label><br>
+                <input type="file" id="video" name="video" accept="video/*" required><br>
+
+                <button type="submit">Submit Report</button>
+              </form>
+            </body>
+            </html>
+      - summary: Buyer selects the required agri service
+        api: select
+        description: Buyer selects the required agri service + suitable fulfillment type
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: select
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/ondc
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/ondc
+              transaction_id: T1
+              message_id: M2
+              timestamp: '2024-04-01T22:00:30.000Z'
+              ttl: PT30S
+            message:
+              order:
+                provider:
+                  id: P1
+                  locations:
+                    - id: L1
+                items:
+                  - id: I1
+                    location_ids:
+                      - L1
+                    fulfillment_ids:
+                      - '2'
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        submission_id: 6547-7456-7235-4386
+                    tags:
+                      - descriptor:
+                          code: REPORT_REQUIREMENT
+                        list:
+                          - descriptor:
+                              code: REPORT_DEADLINE
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: CROP
+                            value: ARHAR_WHOLE,MOONG_WHOLE
+                          - descriptor:
+                              code: DATE_OF_SOWING
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: FARM_STATUS
+                            value: RAIN_FED
+                          - descriptor:
+                              code: ACRAGE
+                            value: '2'
+                fulfillments:
+                  - type: Seller-Fulfilled
+                    stops:
+                      - type: end
+                        time:
+                          label: selected
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                        location:
+                          gps: 12.974002,77.613458
+                          area_code: '560001'
+                payments:
+                  - type: PRE-FULFILLMENT
+      - summary: Seller confirms the schedule and returns the quote for service
+        api: on_select
+        description: Seller confirms the schedule and returns the quote for service
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: on_select
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M2
+              timestamp: '2024-04-01T22:00:31.000Z'
+              ttl: PT30S
+            message:
+              order:
+                provider:
+                  id: P1
+                items:
+                  - fulfillment_ids:
+                      - F1
+                    id: I1
+                    location_ids:
+                      - L1
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        status: SUCCESS
+                        submission_id: 6547-7456-7235-4386
+                fulfillments:
+                  - id: F1
+                    type: Seller-Fulfilled
+                    tracking: false
+                    state:
+                      descriptor:
+                        code: Serviceable
+                    stops:
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          area_code: '560001'
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                quote:
+                  price:
+                    currency: INR
+                    value: '1549'
+                  breakup:
+                    - title: Quality testing for Arhar Whole
+                      price:
+                        currency: INR
+                        value: '1400'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: 1
+                        price:
+                          currency: INR
+                          value: '1400'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: item
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: tax
+                    - title: discount
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: discount
+                    - title: pickup_charge
+                      price:
+                        currency: INR
+                        value: '149'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: misc
+                  ttl: P1D
+                payments:
+                  - type: PRE-FULFILLMENT
+                    collected_by: BAP
+      - summary: Buyer initialises the order for service
+        api: init
+        description: Buyer initialises the order and provides billing details
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: init
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M3
+              timestamp: '2024-04-01T22:00:35.000Z'
+              ttl: P30S
+            message:
+              order:
+                provider:
+                  id: P1
+                  locations:
+                    - id: L1
+                items:
+                  - id: I1
+                    location_ids:
+                      - L1
+                    fulfillment_ids:
+                      - '2'
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        status: SUCCESS
+                        submission_id: 6547-7456-7235-4386
+                    tags:
+                      - descriptor:
+                          code: REPORT_REQUIREMENT
+                        list:
+                          - descriptor:
+                              code: REPORT_DEADLINE
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: CROP
+                            value: MAIZE
+                          - descriptor:
+                              code: DATE_OF_SOWING
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: FARM_STATUS
+                            value: RAIN_FED
+                          - descriptor:
+                              code: ACRAGE
+                            value: '2'
+                  - id: I1C1
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C2
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C3
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C4
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C5
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C6
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                billing:
+                  name: ONDC buyer
+                  address: >-
+                    22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar,
+                    Bengaluru, Karnataka 560001
+                  state:
+                    name: Karnataka
+                  city:
+                    name: Bengaluru
+                  tax_id: XXXXXXXXXXXXXXX
+                  email: nobody@nomail.com
+                  phone: '9886098860'
+                fulfillments:
+                  - id: F1
+                    type: Seller-Fulfilled
+                    stops:
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          address: Farm 14 Near Village
+                          city:
+                            name: Bengaluru
+                          country:
+                            code: IND
+                          area_code: '560001'
+                          state:
+                            name: Karnataka
+                        contact:
+                          phone: '9886098860'
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                payments:
+                  - type: PRE-FULFILLMENT
+                    collected_by: BAP
+      - summary: Seller provides the final quotation for the service
+        api: on_init
+        description: Seller provides the final quotation
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: on_init
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M3
+              timestamp: '2024-04-01T22:00:36.000Z'
+              ttl: PT30S
+            message:
+              order:
+                provider:
+                  id: P1
+                locations:
+                  - id: L1
+                items:
+                  - id: I1
+                    location_ids:
+                      - L1
+                    fulfillment_ids:
+                      - '2'
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        status: SUCCESS
+                        submission_id: 6547-7456-7235-4386
+                    tags:
+                      - descriptor:
+                          code: REPORT_REQUIREMENT
+                        list:
+                          - descriptor:
+                              code: REPORT_DEADLINE
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: CROP
+                            value: MAIZE
+                          - descriptor:
+                              code: DATE_OF_SOWING
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: FARM_STATUS
+                            value: RAIN_FED
+                          - descriptor:
+                              code: ACRAGE
+                            value: '2'
+                  - id: I1C1
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C2
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C3
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C4
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C5
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C6
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                billing:
+                  name: ONDC buyer
+                  address: >-
+                    22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar,
+                    Bengaluru, Karnataka 560001
+                  state:
+                    name: Karnataka
+                  city:
+                    name: Bengaluru
+                  tax_id: XXXXXXXXXXXXXXX
+                  email: nobody@nomail.com
+                  phone: '9886098860'
+                fulfillments:
+                  - id: F1
+                    type: Seller-Fulfilled
+                    tracking: false
+                    stops:
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          address: Farm 14 Near Village
+                          city:
+                            name: Bengaluru
+                          country:
+                            code: IND
+                          area_code: '560001'
+                          state:
+                            name: Karnataka
+                        contact:
+                          phone: '9886098860'
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                quote:
+                  price:
+                    currency: INR
+                    value: '1549'
+                  breakup:
+                    - title: Quality testing for Arhar Whole
+                      price:
+                        currency: INR
+                        value: '1400'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: 1
+                        price:
+                          currency: INR
+                          value: '1400'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: item
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: tax
+                    - title: discount
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: discount
+                    - title: pickup_charge
+                      price:
+                        currency: INR
+                        value: '149'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: misc
+                  ttl: P1D
+                payments:
+                  - id: P1
+                    collected_by: BAP
+                    params:
+                      amount: '1549'
+                      currency: INR
+                      bank_account_number: xxxxxxxx
+                      virtual_payment_address: xxx@xxxx
+                    type: PRE-FULFILLMENT
+                    tags:
+                      - descriptor:
+                          code: Settlement_Details
+                        list:
+                          - descriptor:
+                              code: Counterparty
+                            value: BPP
+                          - descriptor:
+                              code: Mode
+                            value: UPI
+                          - descriptor:
+                              code: Beneficiary_Name
+                            value: xxxxx
+                          - descriptor:
+                              code: Bank_Account_No
+                            value: xxxxx
+                          - descriptor:
+                              code: Ifsc_Code
+                            value: xxxxxxx
+                          - descriptor:
+                              code: UPI_Address
+                            value: xxxxxxx
+                      - descriptor:
+                          code: Buyer_Finder_Fee
+                        list:
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Type
+                            value: percentage
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Amount
+                            value: '3'
+                xinput:
+                  form:
+                    url: https//abc.com/checklist
+                    mimetype: text/html
+                  required: false
+      - summary: Buyer confirm the order for the service
+        api: confirm
+        description: Buyer makes the payment to confirm the order
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: confirm
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M4
+              timestamp: '2024-04-01T22:00:38.000Z'
+              ttl: PT30S
+            message:
+              order:
+                id: O1
+                status: Created
+                provider:
+                  id: P1
+                  locations:
+                    - id: L1
+                items:
+                  - id: I1
+                    location_ids:
+                      - L1
+                    fulfillment_ids:
+                      - '2'
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        status: SUCCESS
+                        submission_id: 6547-7456-7235-4386
+                    tags:
+                      - descriptor:
+                          code: REPORT_REQUIREMENT
+                        list:
+                          - descriptor:
+                              code: REPORT_DEADLINE
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: CROP
+                            value: MAIZE
+                          - descriptor:
+                              code: DATE_OF_SOWING
+                            value: '2024-04-04T22:00:00.000Z'
+                          - descriptor:
+                              code: FARM_STATUS
+                            value: RAIN_FED
+                          - descriptor:
+                              code: ACRAGE
+                            value: '2'
+                  - id: I1C1
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C2
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C3
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C1
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C4
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C5
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                  - id: I1C6
+                    parent_item_id: I1
+                    fulfillment_ids:
+                      - '2'
+                    location_ids:
+                      - L1
+                    category_ids:
+                      - C2
+                    quantity:
+                      selected:
+                        count: 1
+                    tags:
+                      - descriptor:
+                          code: ATTRIBUTE
+                        list:
+                          - descriptor:
+                              code: TYPE
+                            value: customization
+                billing:
+                  name: ONDC buyer
+                  address: >-
+                    22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar,
+                    Bengaluru, Karnataka 560001
+                  state:
+                    name: Karnataka
+                  city:
+                    name: Bengaluru
+                  tax_id: XXXXXXXXXXXXXXX
+                  email: nobody@nomail.com
+                  phone: '9886098860'
+                fulfillments:
+                  - id: F1
+                    type: Seller-Fulfilled
+                    tracking: false
+                    stops:
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          address: Farm 14 Near Village
+                          city:
+                            name: Bengaluru
+                          country:
+                            code: IND
+                          area_code: '560001'
+                          state:
+                            name: Karnataka
+                        contact:
+                          phone: '9886098860'
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                        customer:
+                          person:
+                            name: Ramu
+                        instructions:
+                          name: Special Instructions
+                          short_desc: Customer Special Instructions
+                quote:
+                  price:
+                    currency: INR
+                    value: '1549'
+                  breakup:
+                    - title: Quality testing for Arhar Whole
+                      price:
+                        currency: INR
+                        value: '1400'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: 1
+                        price:
+                          currency: INR
+                          value: '1400'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: item
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: tax
+                    - title: discount
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: discount
+                    - title: pickup_charge
+                      price:
+                        currency: INR
+                        value: '149'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: misc
+                  ttl: P1D
+                payments:
+                  - id: P1
+                    collected_by: BAP
+                    params:
+                      amount: '1549'
+                      currency: INR
+                      bank_account_number: xxxxxxxx
+                      virtual_payment_address: xxx@xxxx
+                    status: PAID
+                    type: PRE-FULFILLMENT
+                    tags:
+                      - descriptor:
+                          code: Settlement_Details
+                        list:
+                          - descriptor:
+                              code: Counterparty
+                            value: BPP
+                          - descriptor:
+                              code: Mode
+                            value: UPI
+                          - descriptor:
+                              code: Beneficiary_Name
+                            value: xxxxx
+                          - descriptor:
+                              code: Bank_Account_No
+                            value: xxxxx
+                          - descriptor:
+                              code: Ifsc_Code
+                            value: xxxxxxx
+                          - descriptor:
+                              code: UPI_Address
+                            value: xxxxxxx
+                      - descriptor:
+                          code: Buyer_Finder_Fee
+                        list:
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Type
+                            value: percentage
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Amount
+                            value: '3'
+                created_at: '2024-04-01T22:00:38.000Z'
+                updated_at: '2024-04-01T22:00:38.000Z'
+      - summary: Seller accepts the order for service
+        api: on_confirm
+        description: >-
+          Seller app sends an on_confirm call to the buyer app accepting the
+          order
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: on_confirm
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M4
+              timestamp: '2024-04-01T22:00:39.000Z'
+              ttl: PT30S
+            message:
+              order:
+                id: O1
+                status: Accepted
+                provider:
+                  id: P1
+                  locations:
+                    - id: L1
+                  rateable: true
+                items:
+                  - id: I1
+                    fulfillment_ids:
+                      - F1
+                    quantity:
+                      selected:
+                        count: 1
+                    xinput:
+                      form:
+                        id: form_1
+                      form_response:
+                        status: SUCCESS
+                        submission_id: 6547-7456-7235-4386
+                    cancellation_terms:
+                      - fulfillment_state:
+                          descriptor:
+                            code: PENDING
+                        cancellation_fee:
+                          percentage: '0.00'
+                      - fulfillment_state:
+                          descriptor:
+                            code: IN_TRANSIT
+                        cancellation_fee:
+                          percentage: '10.00'
+                    tags:
+                      - descriptor:
+                          code: RESCHEDULE_TERMS
+                        list:
+                          - descriptor:
+                              code: FULFILLMENT_STATE
+                            value: Pending
+                          - descriptor:
+                              code: RESCHEDULE_ELIGIBLE
+                            value: 'true'
+                          - descriptor:
+                              code: RESCHEDULE_FEE
+                            value: '0.00'
+                          - descriptor:
+                              code: RESCHEDULE_WITHIN
+                            value: PT1D
+                billing:
+                  name: ONDC buyer
+                  address: >-
+                    22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar,
+                    Bengaluru, Karnataka 560001
+                  state:
+                    name: Karnataka
+                  city:
+                    name: Bengaluru
+                  tax_id: XXXXXXXXXXXXXXX
+                  email: nobody@nomail.com
+                  phone: '9886098860'
+                fulfillments:
+                  - id: F1
+                    state:
+                      descriptor:
+                        code: Pending
+                    type: Seller-Fulfilled
+                    tracking: false
+                    stops:
+                      - type: start
+                        location:
+                          id: L1
+                          descriptor:
+                            name: ABC Agri Assaying Provider
+                          gps: 12.956399,77.636803
+                        time:
+                          range:
+                            start: '2024-04-04T22:00:00Z'
+                            end: '2024-04-04T23:00:00Z'
+                        contact:
+                          phone: '9886098860'
+                          email: nobody@nomail.com
+                        person:
+                          name: Kishan
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          address: 'My House #, My buildin'
+                          city:
+                            name: Bengaluru
+                          country:
+                            code: IND
+                          area_code: '560001'
+                          state:
+                            name: Karnataka
+                        contact:
+                          phone: '9886098860'
+                          email: nobody@nomail.com
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00Z'
+                            end: '2024-04-04T23:00:00Z'
+                        person:
+                          name: Ramu
+                        instructions:
+                          name: Special Instructions
+                          short_desc: Customer Special Instructions
+                        authorization:
+                          type: OTP
+                          token: '1234'
+                          valid_from: '2024-04-04T22:00:00Z'
+                          valid_to: '2024-04-04T23:00:00Z'
+                          status: valid
+                    rateable: true
+                quote:
+                  price:
+                    currency: INR
+                    value: '1549'
+                  breakup:
+                    - title: Quality testing for Arhar Whole
+                      price:
+                        currency: INR
+                        value: '1400'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: 1
+                        price:
+                          currency: INR
+                          value: '1400'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: item
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: tax
+                    - title: discount
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: discount
+                    - title: pickup_charge
+                      price:
+                        currency: INR
+                        value: '149'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: misc
+                  ttl: P1D
+                payments:
+                  - id: P1
+                    collected_by: BAP
+                    params:
+                      amount: '1549'
+                      currency: INR
+                      bank_account_number: xxxxxxxx
+                      virtual_payment_address: xxx@xxxx
+                    status: PAID
+                    type: PRE-FULFILLMENT
+                    tags:
+                      - descriptor:
+                          code: Settlement_Details
+                        list:
+                          - descriptor:
+                              code: Counterparty
+                            value: BPP
+                          - descriptor:
+                              code: Mode
+                            value: UPI
+                          - descriptor:
+                              code: Beneficiary_Name
+                            value: xxxxx
+                          - descriptor:
+                              code: Bank_Account_No
+                            value: xxxxx
+                          - descriptor:
+                              code: Ifsc_Code
+                            value: xxxxxxx
+                          - descriptor:
+                              code: UPI_Address
+                            value: xxxxxxx
+                      - descriptor:
+                          code: Buyer_Finder_Fee
+                        list:
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Type
+                            value: percentage
+                          - descriptor:
+                              code: Buyer_Finder_Fee_Amount
+                            value: '3'
+                cancellation_terms:
+                  - fulfillment_state:
+                      descriptor:
+                        code: PENDING
+                        short_desc: '002'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: IN_TRANSIT
+                        short_desc: '002'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: AT_LOCATION
+                        short_desc: '002'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: COLLECTED_BY_AGENT
+                        short_desc: '002'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: RECEIVED_AT_LAB
+                        short_desc: '002'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: TEST_COMPLETED
+                        short_desc: '009'
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                  - fulfillment_state:
+                      descriptor:
+                        code: REPORT_GENERATED
+                        short_desc: 010,011,012
+                    cancellation_fee:
+                      percentage: '0.00'
+                      amount:
+                        currency: INR
+                        value: '0.00'
+                created_at: '2024-04-01T22:00:38.000Z'
+                updated_at: '2024-04-01T22:00:39.000Z'
+                xinput:
+                  form:
+                    url: https//abc.com/checklist
+                    mimetype: text/html
+                    submission_id: xxxxxxxx
+                    status: SUCCESS
+      - summary: Buyer requests for the status of the order
+        api: status
+        description: Buyer requests for the status of the order
+        example: *ref_13
+      - summary: Seller app sends order status update (In-Transit)
+        api: on_status (In Transit)
+        description: >-
+          Seller app sends order status update when service provider is on the
+          way
+        reference: if any
+        example: *ref_15
+      - summary: Seller app sends the order status (At location)
+        api: on_status (At Location)
+        description: >-
+          Seller app sends order status update when service provider has reached
+          the buyer location
+        reference: if any
+        example: *ref_16
+      - summary: Seller app sends order status (Collected by agent)
+        api: on_status (Collected By Agent)
+        description: >-
+          Seller app sends the order status update when the sample has been
+          collected by the service provider
+        reference: if any
+        example: *ref_17
+      - summary: Seller app sends order status (Received at lab)
+        api: on_status (Received At Lab)
+        description: >-
+          Seller app sends the order status update when the sample has been
+          received at the lab
+        reference: if any
+        example: *ref_18
+      - summary: Seller app sends order status (Test completed)
+        api: on_status (Test Completed)
+        description: >-
+          Seller app sends the order status update when the test has been
+          completed at the lab
+        reference: if any
+        example: *ref_19
+      - summary: Seller app sends the order status(Report generated)
+        api: on_status (Report Generated)
+        description: >-
+          Seller app sends the order status update when the test report is
+          generated
+        reference: if any
+        example: *ref_20
+      - summary: Seller app sends the order status (Report Shared)
+        api: on_status (Report Shared)
+        description: >-
+          Seller app sends the order status update when the test report is
+          shared
+        reference: if any
+        example: *ref_21
   - summary: Agriculture Services - Schedule Reschedule
     description: >-
       The following is an illustrative flow to perform a transaction of a nature
@@ -17452,12 +20412,12 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_14
+        example: *ref_22
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_15
+        example: *ref_23
       - summary: Buyer selects the required agri service
         api: select (Reschedule)
         description: >-
@@ -21632,45 +24592,45 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_14
+        example: *ref_22
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_15
+        example: *ref_23
       - summary: Buyer selects the required agri service
         api: select
         description: >-
           Buyer selects the required agri service + suitable fulfillment type +
           suitable schedule
         reference: if any
-        example: *ref_16
+        example: *ref_24
       - summary: Seller confirms the schedule and returns the quote for service
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: *ref_17
+        example: *ref_25
       - summary: Buyer initialises the order for service
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: *ref_18
+        example: *ref_26
       - summary: Seller provides the final quotation for the service
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: *ref_19
+        example: *ref_27
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: *ref_20
+        example: *ref_28
       - summary: Seller accepts the order for service
         api: on_confirm
         description: >-
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: *ref_21
+        example: *ref_29
       - summary: Buyer requests for the order cancellation
         api: cancel
         description: >-
@@ -22116,45 +25076,45 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_14
+        example: *ref_22
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_15
+        example: *ref_23
       - summary: Buyer selects the required agri service
         api: select
         description: >-
           Buyer selects the required agri service + suitable fulfillment type +
           suitable schedule
         reference: if any
-        example: *ref_16
+        example: *ref_24
       - summary: Seller confirms the schedule and returns the quote for service
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: *ref_17
+        example: *ref_25
       - summary: Buyer initialises the order for service
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: *ref_18
+        example: *ref_26
       - summary: Seller provides the final quotation for the service
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: *ref_19
+        example: *ref_27
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: *ref_20
+        example: *ref_28
       - summary: Seller accepts the order for service
         api: on_confirm
         description: >-
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: *ref_21
+        example: *ref_29
       - summary: Seller accepts the cancellation request
         api: on_cancel
         description: Seller cancels the order
@@ -23340,7 +26300,75 @@ x-examples:
                               value: '2024-04-04T22:00:00.000Z'
                             - descriptor:
                                 code: CROP
-                              value: ARHAR_WHOLE
+                              value: ARHAR_WHOLE,MOONG_WHOLE
+                            - descriptor:
+                                code: DATE_OF_SOWING
+                              value: '2024-04-04T22:00:00.000Z'
+                            - descriptor:
+                                code: FARM_STATUS
+                              value: RAIN_FED
+                            - descriptor:
+                                code: ACRAGE
+                              value: '2'
+                  fulfillments:
+                    - type: Seller-Fulfilled
+                      stops:
+                        - type: end
+                          time:
+                            label: selected
+                            range:
+                              start: '2024-04-04T22:00:00.000Z'
+                              end: '2024-04-04T23:00:00.000Z'
+                          location:
+                            gps: 12.974002,77.613458
+                            area_code: '560001'
+                  payments:
+                    - type: PRE-FULFILLMENT
+          - value:
+              context:
+                domain: ONDC:SRV14
+                location:
+                  city:
+                    code: std:080
+                  country:
+                    code: IND
+                action: select
+                version: 2.0.0
+                bap_id: buyerapp.com
+                bap_uri: https://buyerapp.com/ondc
+                bpp_id: sellerapp.com
+                bpp_uri: https://sellerapp.com/ondc
+                transaction_id: T1
+                message_id: M2
+                timestamp: '2024-04-01T22:00:30.000Z'
+                ttl: PT30S
+              message:
+                order:
+                  provider:
+                    id: P1
+                    locations:
+                      - id: L1
+                  items:
+                    - id: I1
+                      location_ids:
+                        - L1
+                      fulfillment_ids:
+                        - '2'
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          submission_id: 6547-7456-7235-4386
+                      tags:
+                        - descriptor:
+                            code: REPORT_REQUIREMENT
+                          list:
+                            - descriptor:
+                                code: REPORT_DEADLINE
+                              value: '2024-04-04T22:00:00.000Z'
+                            - descriptor:
+                                code: CROP
+                              value: ARHAR_WHOLE,MOONG_WHOLE
                             - descriptor:
                                 code: DATE_OF_SOWING
                               value: '2024-04-04T22:00:00.000Z'
@@ -23984,6 +27012,12 @@ x-examples:
                         - L1
                       fulfillment_ids:
                         - '2'
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUCCESS
+                          submission_id: 6547-7456-7235-4386
                       tags:
                         - descriptor:
                             code: REPORT_REQUIREMENT
@@ -25210,6 +28244,12 @@ x-examples:
                         - L1
                       fulfillment_ids:
                         - '2'
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUCCESS
+                          submission_id: 6547-7456-7235-4386
                       tags:
                         - descriptor:
                             code: REPORT_REQUIREMENT
@@ -26460,7 +29500,7 @@ x-examples:
                               value: L1
                             - descriptor:
                                 code: category
-                              value: SRV14-*
+                              value: SRV14-1005
                             - descriptor:
                                 code: type
                               value: '13'
@@ -26515,13 +29555,21 @@ x-examples:
                             value: '100.00'
                             minimum_value: '100.00'
                           category_ids:
-                            - SRV14-xxxx
+                            - SRV14-1004
+                            - SRV14-1005
                           fulfillment_ids:
                             - '2'
                           location_ids:
                             - L1
                           payment_ids:
                             - '1'
+                          xinput:
+                            required: true
+                            form:
+                              id: form_1
+                              url: >-
+                                https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                              mime_type: text/html
                           cancellation_terms:
                             - fulfillment_state:
                                 descriptor:
@@ -26539,7 +29587,7 @@ x-examples:
                               list:
                                 - descriptor:
                                     code: COMMODITY_CODE
-                                  value: ARHAR_WHOLE
+                                  value: ARHAR_WHOLE,MOONG_WHOLE
                             - descriptor:
                                 code: SERVICE_INFORMATION
                               list:
@@ -26637,6 +29685,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C2
                           parent_item_id: I1
                           descriptor:
@@ -26683,6 +29737,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C3
                           parent_item_id: I1
                           descriptor:
@@ -26729,6 +29789,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C4
                           parent_item_id: I1
                           descriptor:
@@ -26775,6 +29841,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C5
                           parent_item_id: I1
                           descriptor:
@@ -26821,6 +29893,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C6
                           parent_item_id: I1
                           descriptor:
@@ -26867,6 +29945,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C7
                           parent_item_id: I1
                           descriptor:
@@ -26913,6 +29997,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C8
                           parent_item_id: I1
                           descriptor:
@@ -26959,6 +30049,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'false'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C9
                           parent_item_id: I1
                           descriptor:
@@ -27005,6 +30101,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'false'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                       offers:
                         - id: offer-1
                           descriptor:
@@ -27098,13 +30200,20 @@ x-examples:
                             value: '100.00'
                             minimum_value: '100.00'
                           category_ids:
-                            - SRV14-xxxx
+                            - SRV14-1005
                           fulfillment_ids:
                             - '1'
                           location_ids:
                             - L1
                           payment_ids:
                             - '1'
+                          xinput:
+                            required: true
+                            form:
+                              id: form_1
+                              url: >-
+                                https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                              mime_type: text/html
                           cancellation_terms:
                             - fulfillment_state:
                                 descriptor:
@@ -27217,6 +30326,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C2
                           parent_item_id: I1
                           descriptor:
@@ -27263,6 +30378,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C3
                           parent_item_id: I1
                           descriptor:
@@ -27309,6 +30430,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C4
                           parent_item_id: I1
                           descriptor:
@@ -27355,6 +30482,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C5
                           parent_item_id: I1
                           descriptor:
@@ -27401,6 +30534,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C6
                           parent_item_id: I1
                           descriptor:
@@ -27447,6 +30586,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C7
                           parent_item_id: I1
                           descriptor:
@@ -27493,6 +30638,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'true'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C8
                           parent_item_id: I1
                           descriptor:
@@ -27539,6 +30690,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'false'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                         - id: I1C9
                           parent_item_id: I1
                           descriptor:
@@ -27585,6 +30742,12 @@ x-examples:
                                 - descriptor:
                                     code: AUTO_SELECTED
                                   value: 'false'
+                            - descriptor:
+                                code: SERVICE_INFORMATION
+                              list:
+                                - descriptor:
+                                    code: ASSAYINGTEST_TYPE
+                                  value: physical
                       offers:
                         - id: offer-1
                           descriptor:
@@ -28207,6 +31370,12 @@ x-examples:
                       id: I1
                       location_ids:
                         - L1
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUCCESS
+                          submission_id: 6547-7456-7235-4386
                   fulfillments:
                     - id: F1
                       type: Seller-Fulfilled
@@ -29355,6 +32524,12 @@ x-examples:
                         - L1
                       fulfillment_ids:
                         - '2'
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUCCESS
+                          submission_id: 6547-7456-7235-4386
                       tags:
                         - descriptor:
                             code: REPORT_REQUIREMENT
@@ -30939,6 +34114,12 @@ x-examples:
                       quantity:
                         selected:
                           count: 1
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUCCESS
+                          submission_id: 6547-7456-7235-4386
                       cancellation_terms:
                         - fulfillment_state:
                             descriptor:
@@ -36009,6 +39190,9 @@ x-examples:
                             - descriptor:
                                 code: ACRAGE
                               value: '2'
+                            - descriptor:
+                                code: SAMPLE_COUNT
+                              value: '5'
                     - id: I1C1
                       parent_item_id: I1
                       fulfillment_ids:
@@ -36348,6 +39532,9 @@ x-examples:
                             - descriptor:
                                 code: ACRAGE
                               value: '2'
+                            - descriptor:
+                                code: SAMPLE_COUNT
+                              value: '5'
                     - id: I1C1
                       parent_item_id: I1
                       fulfillment_ids:

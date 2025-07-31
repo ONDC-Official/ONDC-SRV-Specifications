@@ -6,30 +6,34 @@ value:
         code: std:080
       country:
         code: IND
-    action: on_status
+    action: on_init
     version: 2.0.0
     bap_id: buyerapp.com
     bap_uri: https://buyerapp.com/services
     bpp_id: sellerapp.com
     bpp_uri: https://sellerapp.com/services
     transaction_id: T1
-    message_id: M10
-    timestamp: '2024-04-04T12:00:55.000Z'
+    message_id: M3
+    timestamp: '2024-04-01T22:00:36.000Z'
     ttl: PT30S
   message:
     order:
-      id: O1
-      status: In-progress
       provider:
         id: P1
-        locations:
-          - id: L1
+      locations:
+        - id: L1
       items:
         - id: I1
           location_ids:
             - L1
           fulfillment_ids:
             - '2'
+          xinput:
+            form:
+              id: form_1
+            form_response:
+              status: SUCCESS
+              submission_id: 6547-7456-7235-4386
           tags:
             - descriptor:
                 code: REPORT_REQUIREMENT
@@ -49,9 +53,6 @@ value:
                 - descriptor:
                     code: ACRAGE
                   value: '2'
-                - descriptor:
-                    code: SAMPLE_COUNT
-                  value: '5'
         - id: I1C1
           parent_item_id: I1
           fulfillment_ids:
@@ -174,32 +175,13 @@ value:
         phone: '9886098860'
       fulfillments:
         - id: F1
-          state:
-            descriptor:
-              code: REPORT_GENERATED
           type: Seller-Fulfilled
           tracking: false
           stops:
-            - type: start
-              location:
-                id: L1
-                descriptor:
-                  name: ABC Agri Assaying Provider
-                gps: 12.956399,77.636803
-              time:
-                range:
-                  start: '2024-04-04T22:00:00Z'
-                  end: '2024-04-04T23:00:00Z'
-                timestamp: '2024-04-01T22:00:41.000Z'
-              contact:
-                phone: '9886098860'
-                email: nobody@nomail.com
-              person:
-                name: Kishan
             - type: end
               location:
                 gps: 12.974002,77.613458
-                address: 'My House #, My buildin'
+                address: Farm 14 Near Village
                 city:
                   name: Bengaluru
                 country:
@@ -209,24 +191,11 @@ value:
                   name: Karnataka
               contact:
                 phone: '9886098860'
-                email: nobody@nomail.com
               time:
                 label: confirmed
                 range:
-                  start: '2024-04-04T22:00:00Z'
-                  end: '2024-04-04T23:00:00Z'
-              person:
-                name: Ramu
-              instructions:
-                name: Special Instructions
-                short_desc: Customer Special Instructions
-              authorization:
-                type: OTP
-                token: '1234'
-                valid_from: '2024-04-04T22:00:00Z'
-                valid_to: '2024-04-04T23:00:00Z'
-                status: valid
-          rateable: true
+                  start: '2024-04-04T22:00:00.000Z'
+                  end: '2024-04-04T23:00:00.000Z'
       quote:
         price:
           currency: INR
@@ -299,7 +268,6 @@ value:
             currency: INR
             bank_account_number: xxxxxxxx
             virtual_payment_address: xxx@xxxx
-          status: PAID
           type: PRE-FULFILLMENT
           tags:
             - descriptor:
@@ -332,8 +300,8 @@ value:
                 - descriptor:
                     code: Buyer_Finder_Fee_Amount
                   value: '3'
-      documents:
-        - url: https://invoice_url
-          label: INVOICE
-      created_at: '2024-04-01T22:00:38.000Z'
-      updated_at: '2024-04-04T12:00:55.000Z'
+      xinput:
+        form:
+          url: https//abc.com/checklist
+          mimetype: text/html
+        required: false

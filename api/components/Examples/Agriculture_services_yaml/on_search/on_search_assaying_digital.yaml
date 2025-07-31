@@ -73,7 +73,7 @@ value:
                   value: L1
                 - descriptor:
                     code: category
-                  value: SRV14-*
+                  value: SRV14-1005
                 - descriptor:
                     code: type
                   value: '13'
@@ -127,13 +127,21 @@ value:
                 value: '100.00'
                 minimum_value: '100.00'
               category_ids:
-                - SRV14-xxxx
+                - SRV14-1004
+                - SRV14-1005
               fulfillment_ids:
                 - '2'
               location_ids:
                 - L1
               payment_ids:
                 - '1'
+              xinput:
+                required: true
+                form:
+                  id: form_1
+                  url: >-
+                    https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                  mime_type: text/html
               cancellation_terms:
                 - fulfillment_state:
                     descriptor:
@@ -763,13 +771,20 @@ value:
                 value: '100.00'
                 minimum_value: '100.00'
               category_ids:
-                - SRV14-xxxx
+                - SRV14-1005
               fulfillment_ids:
                 - '1'
               location_ids:
                 - L1
               payment_ids:
                 - '1'
+              xinput:
+                required: true
+                form:
+                  id: form_1
+                  url: >-
+                    https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                  mime_type: text/html
               cancellation_terms:
                 - fulfillment_state:
                     descriptor:

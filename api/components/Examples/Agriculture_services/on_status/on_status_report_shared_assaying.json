@@ -72,6 +72,12 @@
                     "code": "ACRAGE"
                   },
                   "value": "2"
+                },
+                {
+                  "descriptor": {
+                    "code": "SAMPLE_COUNT"
+                  },
+                  "value": "5"
                 }
               ]
             }
