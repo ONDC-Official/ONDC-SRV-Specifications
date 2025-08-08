@@ -21,17 +21,30 @@ async function readBuildFile(branchName) {
     });
     const formattedResponse = await response?.json();
     // reading data using github raw apis.
-    if(formattedResponse?.download_url){
+    if(formattedResponse?.git_url){
+      // setTimeout(async ()=>{
+      //   const rawResponse = await fetch(formattedResponse.download_url, {
+      //     // headers: {
+      //     //   Authorization: "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",
+      //     // },
+      //   });
+      //   const formattedrawResponse = await rawResponse?.text();
+      //   build_spec = JSON.parse(getStringAfterEquals(formattedrawResponse));
+        
+      //   onFirstLoad(build_spec,features);
+      // },1200)
+
       setTimeout(async ()=>{
-        const rawResponse = await fetch(formattedResponse.download_url, {
+        const rawResponse = await fetch(formattedResponse.git_url, {
           // headers: {
           //   Authorization: "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",
           // },
         });
-        const formattedrawResponse = await rawResponse?.text();
-        build_spec = JSON.parse(getStringAfterEquals(formattedrawResponse));
-        
-        onFirstLoad(build_spec,features);
+        let formattedrawResponse = await rawResponse?.text();
+        formattedrawResponse =  JSON.parse(formattedrawResponse)
+        let splitedText = atob(formattedrawResponse?.content);
+        build_spec = JSON.parse(getStringAfterEquals(splitedText));
+        onFirstLoad(build_spec);
       },1200)
     }
    
