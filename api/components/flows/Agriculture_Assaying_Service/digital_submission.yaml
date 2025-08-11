@@ -59,26 +59,30 @@ steps:
     reference: if any
     example:
       $ref: "../../Examples/Agriculture_services_yaml/on_search/on_search_assaying_digital.yaml"
-  - summary: Get Form
-    api: form
-    details:
-      - description: Get the form for digital sample submission
-    reference: if any
-    example:
-      value:
-        $ref: "../../Examples/Agriculture_services_yaml/forms/sample-collecting-form.html"
   - summary: Buyer selects the required agri service
     api: select
     description: Buyer selects the required agri service + suitable fulfillment type
     reference: if any
     example:
       $ref: "../../Examples/Agriculture_services_yaml/select/select_assaying_digital.yaml"
-  - summary: Seller confirms the schedule and returns the quote for service
+  - summary: Seller confirms the schedule and returns the quote for service along with form to take the digital sample
     api: on_select
-    description: Seller confirms the schedule and returns the quote for service
+    description: Seller confirms the schedule and returns the quote for service along with form to take the digital sample
     reference: if any
     example:
       $ref: "../../Examples/Agriculture_services_yaml/on_select/on_select_assaying_digital.yaml"
+  - summary: Get Form
+    api: form
+    description: Get the form for digital sample submission
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/forms/sample-collecting-form.html"
+  - summary: Seller send the on status for form submission response, Its submitted or failed
+    api: on_status
+    description: Seller send the on status for form submission response, Its submitted or failed
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/on_status/on_status_form_response_assaying.yaml"
   - summary: Buyer initialises the order for service
     api: init
     description: Buyer initialises the order and provides billing details

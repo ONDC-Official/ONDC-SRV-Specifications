@@ -23,7 +23,12 @@
   "message": {
     "order": {
       "provider": {
-        "id": "P1"
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
       },
       "items": [
         {
@@ -31,12 +36,11 @@
           "id": "I1",
           "location_ids": ["L1"],
           "xinput": {
+            "required": true,
             "form": {
-              "id": "form_1"
-            },
-            "form_response": {
-              "status": "SUCCESS",
-              "submission_id": "6547-7456-7235-4386"
+              "id": "form_1",
+              "url": "https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234",
+              "mime_type": "text/html"
             }
           }
         }

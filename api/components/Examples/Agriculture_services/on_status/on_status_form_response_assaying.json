@@ -9,15 +9,15 @@
         "code": "IND"
       }
     },
-    "action": "on_select",
+    "action": "on_status",
     "version": "2.0.0",
     "bap_id": "buyerapp.com",
     "bap_uri": "https://buyerapp.com/services",
     "bpp_id": "sellerapp.com",
     "bpp_uri": "https://sellerapp.com/services",
     "transaction_id": "T1",
-    "message_id": "M2",
-    "timestamp": "2024-04-01T22:00:31.000Z",
+    "message_id": "M6",
+    "timestamp": "2024-04-02T12:00:40.000Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -32,26 +32,20 @@
       },
       "items": [
         {
-          "fulfillment_ids": ["F1"],
-          "id": "I2",
-
-          "location_ids": ["L1"],
-          "time": {
-            "label": "validity",
-            "range": {
-              "start": "2024-04-01T00:00:00.000Z",
-              "end": "2022-04-10T00:00:00.000Z"
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "id": "I1",
+          "location_ids": [
+            "L1"
+          ],
+          "xinput": {
+            "form": {
+              "id": "form_1"
             },
-            "days": "04, 05",
-            "schedule": {
-              "frequency": "PT1H",
-              "holidays": ["2024-04-09", "2024-04-07"],
-              "times": [
-                "2024-04-04T22:00:00.000Z",
-                "2024-04-06T22:00:00.000Z",
-                "2024-04-08T22:00:00.000Z",
-                "2024-04-10T22:00:00.000Z"
-              ]
+            "form_response": {
+              "status": "SUBMITTED",
+              "submission_id": "1978-5697-3478-6547"
             }
           }
         }
@@ -74,12 +68,11 @@
                 "area_code": "560001"
               },
               "time": {
-                "label": "rejected",
+                "label": "confirmed",
                 "range": {
                   "start": "2024-04-04T22:00:00.000Z",
                   "end": "2024-04-04T23:00:00.000Z"
-                },
-                "days": "4"
+                }
               }
             }
           ]
@@ -88,14 +81,14 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1499"
+          "value": "1549"
         },
         "breakup": [
           {
-            "title": "Soil Testing - Micro Nutrient & Misc",
+            "title": "Quality testing for Arhar Whole",
             "price": {
               "currency": "INR",
-              "value": "1300"
+              "value": "1400"
             },
             "item": {
               "id": "I1",
@@ -106,7 +99,7 @@
               },
               "price": {
                 "currency": "INR",
-                "value": "1300"
+                "value": "1400"
               }
             },
             "tags": [
@@ -129,10 +122,10 @@
             "title": "tax",
             "price": {
               "currency": "INR",
-              "value": "100"
+              "value": "0"
             },
             "item": {
-              "id": "I2"
+              "id": "I1"
             },
             "tags": [
               {
@@ -157,7 +150,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I2"
+              "id": "I1"
             },
             "tags": [
               {
@@ -179,10 +172,10 @@
             "title": "pickup_charge",
             "price": {
               "currency": "INR",
-              "value": "99"
+              "value": "149"
             },
             "item": {
-              "id": "I2"
+              "id": "I1"
             },
             "tags": [
               {
@@ -210,9 +203,5 @@
         }
       ]
     }
-  },
-  "error": {
-    "code": 90001,
-    "message": "Schedule not available"
   }
 }

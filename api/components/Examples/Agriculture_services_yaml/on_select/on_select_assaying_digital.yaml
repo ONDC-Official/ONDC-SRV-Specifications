@@ -20,6 +20,8 @@ value:
     order:
       provider:
         id: P1
+        locations:
+          - id: L1
       items:
         - fulfillment_ids:
             - F1
@@ -27,11 +29,12 @@ value:
           location_ids:
             - L1
           xinput:
+            required: true
             form:
               id: form_1
-            form_response:
-              status: SUCCESS
-              submission_id: 6547-7456-7235-4386
+              url: >-
+                https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+              mime_type: text/html
       fulfillments:
         - id: F1
           type: Seller-Fulfilled

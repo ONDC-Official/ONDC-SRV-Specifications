@@ -3923,6 +3923,16 @@ x-enum:
           - code: Cancelled
             description: about the enum
             reference: <PR/Issue/Discussion Links md format text>
+        items: &ref_6
+          xinput:
+            form_response:
+              status:
+                - code: SUBMITTED
+                  description: When form submitted successfully
+                  reference: <PR/Issue/Discussion Links md format text>
+                - code: FAILED
+                  description: When form failed to submit
+                  reference: <PR/Issue/Discussion Links md format text>
   on_confirm:
     context:
       domain: *ref_0
@@ -3930,7 +3940,7 @@ x-enum:
       order:
         fulfillments:
           type: *ref_1
-          state: &ref_6
+          state: &ref_7
             descriptor:
               code:
                 - code: PENDING
@@ -3963,6 +3973,7 @@ x-enum:
           breakup: *ref_4
         payments: *ref_3
         status: *ref_5
+        items: *ref_6
   update:
     context:
       domain: *ref_0
@@ -3975,11 +3986,12 @@ x-enum:
     message:
       order:
         fulfillments:
-          state: *ref_6
+          state: *ref_7
         quote:
           breakup: *ref_4
         payments: *ref_3
         status: *ref_5
+        items: *ref_6
   status:
     context:
       domain: *ref_0
@@ -3989,11 +4001,12 @@ x-enum:
     message:
       order:
         fulfillments:
-          state: *ref_6
+          state: *ref_7
         quote:
           breakup: *ref_4
         payments: *ref_3
         status: *ref_5
+        items: *ref_6
 x-tags:
   search:
     message:
@@ -4149,8 +4162,8 @@ x-tags:
     message:
       order:
         quote:
-          breakup: &ref_8
-            tags: &ref_11
+          breakup: &ref_9
+            tags: &ref_12
               - code: title
                 description: title tag
                 reference: <PR/Issue/Discussion Links md format text>
@@ -4163,7 +4176,7 @@ x-tags:
   init:
     message:
       order:
-        items: &ref_7
+        items: &ref_8
           tags:
             - code: REPORT_REQUIREMENT
               description: Attribute of a particular item
@@ -4185,12 +4198,12 @@ x-tags:
                   description: Acrage of the farm, optional
                   reference: <PR/Issue/Discussion Links md format text>
   on_init:
-    message: &ref_9
+    message: &ref_10
       order:
-        items: *ref_7
+        items: *ref_8
         quote:
-          breakup: *ref_8
-        payments: &ref_10
+          breakup: *ref_9
+        payments: &ref_11
           tags:
             - code: SETTLEMENT_DETAILS
               description: Define Payment Settlement Details here
@@ -4225,16 +4238,16 @@ x-tags:
                   description: Amount for the finder fee
                   reference: <PR/Issue/Discussion Links md format text>
   confirm:
-    message: *ref_9
+    message: *ref_10
   on_status:
-    message: *ref_9
+    message: *ref_10
   update:
-    message: &ref_12
+    message: &ref_13
       order:
-        payments: *ref_10
+        payments: *ref_11
         quote:
           breakup:
-            tags: *ref_11
+            tags: *ref_12
           item:
             tags:
               - code: attributes
@@ -4245,7 +4258,7 @@ x-tags:
                     description: Hex Code for color
                     reference: <PR/Issue/Discussion Links md format text>
   on_update:
-    message: *ref_12
+    message: *ref_13
 x-flows:
   - summary: Agriculture Services Collection Pickup by Seller
     description: >-
@@ -4325,7 +4338,7 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: &ref_22
+        example: &ref_23
           value:
             context:
               domain: ONDC:SRV14
@@ -4381,7 +4394,7 @@ x-flows:
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: &ref_23
+        example: &ref_24
           value:
             context:
               domain: ONDC:SRV14
@@ -4897,7 +4910,7 @@ x-flows:
         api: select
         description: Buyer selects the required agri service + suitable fulfillment type
         reference: if any
-        example: &ref_24
+        example: &ref_25
           value:
             context:
               domain: ONDC:SRV14
@@ -5073,7 +5086,7 @@ x-flows:
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: &ref_25
+        example: &ref_26
           value:
             context:
               domain: ONDC:SRV14
@@ -5096,6 +5109,8 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F1
@@ -5285,7 +5300,7 @@ x-flows:
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: &ref_26
+        example: &ref_27
           value:
             context:
               domain: ONDC:SRV14
@@ -5484,7 +5499,7 @@ x-flows:
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: &ref_27
+        example: &ref_28
           value:
             context:
               domain: ONDC:SRV14
@@ -5507,8 +5522,8 @@ x-flows:
               order:
                 provider:
                   id: P1
-                locations:
-                  - id: L1
+                  locations:
+                    - id: L1
                 items:
                   - id: I1
                     location_ids:
@@ -5884,7 +5899,7 @@ x-flows:
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: &ref_28
+        example: &ref_29
           value:
             context:
               domain: ONDC:SRV14
@@ -6293,7 +6308,7 @@ x-flows:
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: &ref_29
+        example: &ref_30
           value:
             context:
               domain: ONDC:SRV14
@@ -6795,7 +6810,7 @@ x-flows:
       - summary: Buyer requests for the status of the order
         api: status
         description: Buyer requests for the status of the order
-        example: &ref_13
+        example: &ref_14
           value:
             context:
               domain: ONDC:SRV14
@@ -9810,6 +9825,8 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F2
@@ -10138,8 +10155,8 @@ x-flows:
               order:
                 provider:
                   id: P1
-                locations:
-                  - id: L1
+                  locations:
+                    - id: L1
                 items:
                   - id: I1
                     location_ids:
@@ -11160,7 +11177,7 @@ x-flows:
       - summary: Buyer requests for the status of the order
         api: status
         description: Buyer requests for the status of the order
-        example: *ref_13
+        example: *ref_14
       - summary: Seller app sends order status update (At location)
         api: on_status (At location)
         description: >-
@@ -12370,7 +12387,7 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: &ref_14
+        example: &ref_15
           value:
             context:
               domain: ONDC:SRV14
@@ -13863,6 +13880,8 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F1
@@ -14179,8 +14198,8 @@ x-flows:
               order:
                 provider:
                   id: P1
-                locations:
-                  - id: L1
+                  locations:
+                    - id: L1
                 items:
                   - id: I1
                     location_ids:
@@ -15083,14 +15102,14 @@ x-flows:
       - summary: Buyer requests for the status of the order
         api: status
         description: Buyer requests for the status of the order
-        example: *ref_13
+        example: *ref_14
       - summary: Seller app sends order status update (In-Transit)
         api: on_status (In Transit)
         description: >-
           Seller app sends order status update when service provider is on the
           way
         reference: if any
-        example: &ref_15
+        example: &ref_16
           value:
             context:
               domain: ONDC:SRV14
@@ -15433,7 +15452,7 @@ x-flows:
           Seller app sends order status update when service provider has reached
           the buyer location
         reference: if any
-        example: &ref_16
+        example: &ref_17
           value:
             context:
               domain: ONDC:SRV14
@@ -15776,7 +15795,7 @@ x-flows:
           Seller app sends the order status update when the sample has been
           collected by the service provider
         reference: if any
-        example: &ref_17
+        example: &ref_18
           value:
             context:
               domain: ONDC:SRV14
@@ -16119,7 +16138,7 @@ x-flows:
           Seller app sends the order status update when the sample has been
           received at the lab
         reference: if any
-        example: &ref_18
+        example: &ref_19
           value:
             context:
               domain: ONDC:SRV14
@@ -16462,7 +16481,7 @@ x-flows:
           Seller app sends the order status update when the test has been
           completed at the lab
         reference: if any
-        example: &ref_19
+        example: &ref_20
           value:
             context:
               domain: ONDC:SRV14
@@ -16805,7 +16824,7 @@ x-flows:
           Seller app sends the order status update when the test report is
           generated
         reference: if any
-        example: &ref_20
+        example: &ref_21
           value:
             context:
               domain: ONDC:SRV14
@@ -17151,7 +17170,7 @@ x-flows:
           Seller app sends the order status update when the test report is
           shared
         reference: if any
-        example: &ref_21
+        example: &ref_22
           value:
             context:
               domain: ONDC:SRV14
@@ -17555,7 +17574,7 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_14
+        example: *ref_15
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
@@ -17698,13 +17717,6 @@ x-flows:
                           - L1
                         payment_ids:
                           - '1'
-                        xinput:
-                          required: true
-                          form:
-                            id: form_1
-                            url: >-
-                              https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
-                            mime_type: text/html
                         cancellation_terms:
                           - fulfillment_state:
                               descriptor:
@@ -18341,13 +18353,6 @@ x-flows:
                           - L1
                         payment_ids:
                           - '1'
-                        xinput:
-                          required: true
-                          form:
-                            id: form_1
-                            url: >-
-                              https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
-                            mime_type: text/html
                         cancellation_terms:
                           - fulfillment_state:
                               descriptor:
@@ -18905,36 +18910,6 @@ x-flows:
                       - contact:
                           phone: '9886098860'
                           email: abc@xyz.com
-      - summary: Get Form
-        api: form
-        details:
-          - description: Get the form for digital sample submission
-        reference: if any
-        example:
-          value: |
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-              <meta charset="UTF-8">
-              <title>Assaying Report Submission</title>
-            </head>
-            <body>
-              <h2>Submit Commodity Media for Assaying Report</h2>
-
-              <form action="/submit-assaying-report" method="POST" enctype="multipart/form-data">
-                <label for="commodityName">Commodity Name:</label><br>
-                <input type="text" id="commodityName" name="commodityName" required><br>
-
-                <label for="image">Upload Image of Commodity:</label><br>
-                <input type="file" id="image" name="image" accept="image/*" required><br>
-
-                <label for="video">Upload Video of Commodity:</label><br>
-                <input type="file" id="video" name="video" accept="video/*" required><br>
-
-                <button type="submit">Submit Report</button>
-              </form>
-            </body>
-            </html>
       - summary: Buyer selects the required agri service
         api: select
         description: Buyer selects the required agri service + suitable fulfillment type
@@ -18970,11 +18945,6 @@ x-flows:
                       - L1
                     fulfillment_ids:
                       - '2'
-                    xinput:
-                      form:
-                        id: form_1
-                      form_response:
-                        submission_id: 6547-7456-7235-4386
                     tags:
                       - descriptor:
                           code: REPORT_REQUIREMENT
@@ -19008,9 +18978,13 @@ x-flows:
                           area_code: '560001'
                 payments:
                   - type: PRE-FULFILLMENT
-      - summary: Seller confirms the schedule and returns the quote for service
+      - summary: >-
+          Seller confirms the schedule and returns the quote for service along
+          with form to take the digital sample
         api: on_select
-        description: Seller confirms the schedule and returns the quote for service
+        description: >-
+          Seller confirms the schedule and returns the quote for service along
+          with form to take the digital sample
         reference: if any
         example:
           value:
@@ -19035,6 +19009,167 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
+                items:
+                  - fulfillment_ids:
+                      - F1
+                    id: I1
+                    location_ids:
+                      - L1
+                    xinput:
+                      required: true
+                      form:
+                        id: form_1
+                        url: >-
+                          https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                        mime_type: text/html
+                fulfillments:
+                  - id: F1
+                    type: Seller-Fulfilled
+                    tracking: false
+                    state:
+                      descriptor:
+                        code: Serviceable
+                    stops:
+                      - type: end
+                        location:
+                          gps: 12.974002,77.613458
+                          area_code: '560001'
+                        time:
+                          label: confirmed
+                          range:
+                            start: '2024-04-04T22:00:00.000Z'
+                            end: '2024-04-04T23:00:00.000Z'
+                quote:
+                  price:
+                    currency: INR
+                    value: '1549'
+                  breakup:
+                    - title: Quality testing for Arhar Whole
+                      price:
+                        currency: INR
+                        value: '1400'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: 1
+                        price:
+                          currency: INR
+                          value: '1400'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: item
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: tax
+                    - title: discount
+                      price:
+                        currency: INR
+                        value: '0'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: discount
+                    - title: pickup_charge
+                      price:
+                        currency: INR
+                        value: '149'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: misc
+                  ttl: P1D
+                payments:
+                  - type: PRE-FULFILLMENT
+                    collected_by: BAP
+      - summary: Get Form
+        api: form
+        description: Get the form for digital sample submission
+        reference: if any
+        example: |
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>Assaying Report Submission</title>
+          </head>
+          <body>
+            <h2>Submit Commodity Media for Assaying Report</h2>
+            <h5><b>Disclaimer:</b> This is a sample form provided for demonstration purposes only. The actual form may vary based on your specific requirements.</h5>
+
+            <form action="/submit-assaying-report" method="POST" enctype="multipart/form-data">
+              <label for="commodityName">Commodity Name:</label><br>
+              <input type="text" id="commodityName" name="commodityName" required><br>
+
+              <label for="image">Upload Image of Commodity:</label><br>
+              <input type="file" id="image" name="image" accept="image/*" required><br>
+
+              <label for="video">Upload Video of Commodity:</label><br>
+              <input type="file" id="video" name="video" accept="video/*" required><br>
+
+              <button type="submit">Submit Report</button>
+            </form>
+          </body>
+          </html>
+      - summary: >-
+          Seller send the on status for form submission response, Its submitted
+          or failed
+        api: on_status
+        description: >-
+          Seller send the on status for form submission response, Its submitted
+          or failed
+        reference: if any
+        example:
+          value:
+            context:
+              domain: ONDC:SRV14
+              location:
+                city:
+                  code: std:080
+                country:
+                  code: IND
+              action: on_status
+              version: 2.0.0
+              bap_id: buyerapp.com
+              bap_uri: https://buyerapp.com/services
+              bpp_id: sellerapp.com
+              bpp_uri: https://sellerapp.com/services
+              transaction_id: T1
+              message_id: M6
+              timestamp: '2024-04-02T12:00:40.000Z'
+              ttl: PT30S
+            message:
+              order:
+                provider:
+                  id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F1
@@ -19045,8 +19180,8 @@ x-flows:
                       form:
                         id: form_1
                       form_response:
-                        status: SUCCESS
-                        submission_id: 6547-7456-7235-4386
+                        status: SUBMITTED
+                        submission_id: 1978-5697-3478-6547
                 fulfillments:
                   - id: F1
                     type: Seller-Fulfilled
@@ -19363,8 +19498,8 @@ x-flows:
               order:
                 provider:
                   id: P1
-                locations:
-                  - id: L1
+                  locations:
+                    - id: L1
                 items:
                   - id: I1
                     location_ids:
@@ -20285,56 +20420,56 @@ x-flows:
       - summary: Buyer requests for the status of the order
         api: status
         description: Buyer requests for the status of the order
-        example: *ref_13
+        example: *ref_14
       - summary: Seller app sends order status update (In-Transit)
         api: on_status (In Transit)
         description: >-
           Seller app sends order status update when service provider is on the
           way
         reference: if any
-        example: *ref_15
+        example: *ref_16
       - summary: Seller app sends the order status (At location)
         api: on_status (At Location)
         description: >-
           Seller app sends order status update when service provider has reached
           the buyer location
         reference: if any
-        example: *ref_16
+        example: *ref_17
       - summary: Seller app sends order status (Collected by agent)
         api: on_status (Collected By Agent)
         description: >-
           Seller app sends the order status update when the sample has been
           collected by the service provider
         reference: if any
-        example: *ref_17
+        example: *ref_18
       - summary: Seller app sends order status (Received at lab)
         api: on_status (Received At Lab)
         description: >-
           Seller app sends the order status update when the sample has been
           received at the lab
         reference: if any
-        example: *ref_18
+        example: *ref_19
       - summary: Seller app sends order status (Test completed)
         api: on_status (Test Completed)
         description: >-
           Seller app sends the order status update when the test has been
           completed at the lab
         reference: if any
-        example: *ref_19
+        example: *ref_20
       - summary: Seller app sends the order status(Report generated)
         api: on_status (Report Generated)
         description: >-
           Seller app sends the order status update when the test report is
           generated
         reference: if any
-        example: *ref_20
+        example: *ref_21
       - summary: Seller app sends the order status (Report Shared)
         api: on_status (Report Shared)
         description: >-
           Seller app sends the order status update when the test report is
           shared
         reference: if any
-        example: *ref_21
+        example: *ref_22
   - summary: Agriculture Services - Schedule Reschedule
     description: >-
       The following is an illustrative flow to perform a transaction of a nature
@@ -20412,12 +20547,12 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_22
+        example: *ref_23
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_23
+        example: *ref_24
       - summary: Buyer selects the required agri service
         api: select (Reschedule)
         description: >-
@@ -20624,6 +20759,8 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F1
@@ -20836,6 +20973,8 @@ x-flows:
               order:
                 provider:
                   id: P1
+                  locations:
+                    - id: L1
                 items:
                   - fulfillment_ids:
                       - F1
@@ -21152,8 +21291,8 @@ x-flows:
               order:
                 provider:
                   id: P1
-                locations:
-                  - id: L1
+                  locations:
+                    - id: L1
                 items:
                   - id: I1
                     location_ids:
@@ -24592,45 +24731,45 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_22
+        example: *ref_23
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_23
+        example: *ref_24
       - summary: Buyer selects the required agri service
         api: select
         description: >-
           Buyer selects the required agri service + suitable fulfillment type +
           suitable schedule
         reference: if any
-        example: *ref_24
+        example: *ref_25
       - summary: Seller confirms the schedule and returns the quote for service
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: *ref_25
+        example: *ref_26
       - summary: Buyer initialises the order for service
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: *ref_26
+        example: *ref_27
       - summary: Seller provides the final quotation for the service
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: *ref_27
+        example: *ref_28
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: *ref_28
+        example: *ref_29
       - summary: Seller accepts the order for service
         api: on_confirm
         description: >-
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: *ref_29
+        example: *ref_30
       - summary: Buyer requests for the order cancellation
         api: cancel
         description: >-
@@ -25076,45 +25215,45 @@ x-flows:
           Search intent sent by the buyer based on the particular agri service
           required - e.g. Soil Testing
         reference: if any
-        example: *ref_22
+        example: *ref_23
       - summary: Returns the catalog specific to the search intent
         api: on_search
         description: Returns the catalog specific to the search intent
         reference: if any
-        example: *ref_23
+        example: *ref_24
       - summary: Buyer selects the required agri service
         api: select
         description: >-
           Buyer selects the required agri service + suitable fulfillment type +
           suitable schedule
         reference: if any
-        example: *ref_24
+        example: *ref_25
       - summary: Seller confirms the schedule and returns the quote for service
         api: on_select
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
-        example: *ref_25
+        example: *ref_26
       - summary: Buyer initialises the order for service
         api: init
         description: Buyer initialises the order and provides billing details
         reference: if any
-        example: *ref_26
+        example: *ref_27
       - summary: Seller provides the final quotation for the service
         api: on_init
         description: Seller provides the final quotation
         reference: if any
-        example: *ref_27
+        example: *ref_28
       - summary: Buyer confirm the order for the service
         api: confirm
         description: Buyer makes the payment to confirm the order
-        example: *ref_28
+        example: *ref_29
       - summary: Seller accepts the order for service
         api: on_confirm
         description: >-
           Seller app sends an on_confirm call to the buyer app accepting the
           order
         reference: if any
-        example: *ref_29
+        example: *ref_30
       - summary: Seller accepts the cancellation request
         api: on_cancel
         description: Seller cancels the order
@@ -26354,11 +26493,6 @@ x-examples:
                         - L1
                       fulfillment_ids:
                         - '2'
-                      xinput:
-                        form:
-                          id: form_1
-                        form_response:
-                          submission_id: 6547-7456-7235-4386
                       tags:
                         - descriptor:
                             code: REPORT_REQUIREMENT
@@ -29563,13 +29697,6 @@ x-examples:
                             - L1
                           payment_ids:
                             - '1'
-                          xinput:
-                            required: true
-                            form:
-                              id: form_1
-                              url: >-
-                                https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
-                              mime_type: text/html
                           cancellation_terms:
                             - fulfillment_state:
                                 descriptor:
@@ -30207,13 +30334,6 @@ x-examples:
                             - L1
                           payment_ids:
                             - '1'
-                          xinput:
-                            required: true
-                            form:
-                              id: form_1
-                              url: >-
-                                https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
-                              mime_type: text/html
                           cancellation_terms:
                             - fulfillment_state:
                                 descriptor:
@@ -30795,6 +30915,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
+                    locations:
+                      - id: L1
                   items:
                     - fulfillment_ids:
                         - F1
@@ -31002,6 +31124,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
+                    locations:
+                      - id: L1
                   items:
                     - fulfillment_ids:
                         - F1
@@ -31134,6 +31258,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
+                    locations:
+                      - id: L1
                   items:
                     - fulfillment_ids:
                         - F1
@@ -31246,6 +31372,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
+                    locations:
+                      - id: L1
                   items:
                     - fulfillment_ids:
                         - F2
@@ -31364,6 +31492,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
+                    locations:
+                      - id: L1
                   items:
                     - fulfillment_ids:
                         - F1
@@ -31371,11 +31501,12 @@ x-examples:
                       location_ids:
                         - L1
                       xinput:
+                        required: true
                         form:
                           id: form_1
-                        form_response:
-                          status: SUCCESS
-                          submission_id: 6547-7456-7235-4386
+                          url: >-
+                            https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234
+                          mime_type: text/html
                   fulfillments:
                     - id: F1
                       type: Seller-Fulfilled
@@ -31484,8 +31615,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
-                  locations:
-                    - id: L1
+                    locations:
+                      - id: L1
                   items:
                     - id: I1
                       location_ids:
@@ -31880,8 +32011,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
-                  locations:
-                    - id: L1
+                    locations:
+                      - id: L1
                   items:
                     - id: I1
                       location_ids:
@@ -32181,8 +32312,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
-                  locations:
-                    - id: L1
+                    locations:
+                      - id: L1
                   items:
                     - id: I1
                       location_ids:
@@ -32516,8 +32647,8 @@ x-examples:
                 order:
                   provider:
                     id: P1
-                  locations:
-                    - id: L1
+                    locations:
+                      - id: L1
                   items:
                     - id: I1
                       location_ids:
@@ -40156,6 +40287,126 @@ x-examples:
                       label: INVOICE
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-03T12:00:50.000Z'
+          - value:
+              context:
+                domain: ONDC:SRV14
+                location:
+                  city:
+                    code: std:080
+                  country:
+                    code: IND
+                action: on_status
+                version: 2.0.0
+                bap_id: buyerapp.com
+                bap_uri: https://buyerapp.com/services
+                bpp_id: sellerapp.com
+                bpp_uri: https://sellerapp.com/services
+                transaction_id: T1
+                message_id: M6
+                timestamp: '2024-04-02T12:00:40.000Z'
+                ttl: PT30S
+              message:
+                order:
+                  provider:
+                    id: P1
+                    locations:
+                      - id: L1
+                  items:
+                    - fulfillment_ids:
+                        - F1
+                      id: I1
+                      location_ids:
+                        - L1
+                      xinput:
+                        form:
+                          id: form_1
+                        form_response:
+                          status: SUBMITTED
+                          submission_id: 1978-5697-3478-6547
+                  fulfillments:
+                    - id: F1
+                      type: Seller-Fulfilled
+                      tracking: false
+                      state:
+                        descriptor:
+                          code: Serviceable
+                      stops:
+                        - type: end
+                          location:
+                            gps: 12.974002,77.613458
+                            area_code: '560001'
+                          time:
+                            label: confirmed
+                            range:
+                              start: '2024-04-04T22:00:00.000Z'
+                              end: '2024-04-04T23:00:00.000Z'
+                  quote:
+                    price:
+                      currency: INR
+                      value: '1549'
+                    breakup:
+                      - title: Quality testing for Arhar Whole
+                        price:
+                          currency: INR
+                          value: '1400'
+                        item:
+                          id: I1
+                          quantity:
+                            selected:
+                              count: 1
+                          price:
+                            currency: INR
+                            value: '1400'
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: item
+                      - title: tax
+                        price:
+                          currency: INR
+                          value: '0'
+                        item:
+                          id: I1
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: tax
+                      - title: discount
+                        price:
+                          currency: INR
+                          value: '0'
+                        item:
+                          id: I1
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: discount
+                      - title: pickup_charge
+                        price:
+                          currency: INR
+                          value: '149'
+                        item:
+                          id: I1
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: misc
+                    ttl: P1D
+                  payments:
+                    - type: PRE-FULFILLMENT
+                      collected_by: BAP
       on_cancel:
         examples:
           - value:
