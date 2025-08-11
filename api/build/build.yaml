@@ -19112,31 +19112,32 @@ x-flows:
         api: form
         description: Get the form for digital sample submission
         reference: if any
-        example: |
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <title>Assaying Report Submission</title>
-          </head>
-          <body>
-            <h2>Submit Commodity Media for Assaying Report</h2>
-            <h5><b>Disclaimer:</b> This is a sample form provided for demonstration purposes only. The actual form may vary based on your specific requirements.</h5>
+        example:
+          value: |
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Assaying Report Submission</title>
+            </head>
+            <body>
+              <h2>Submit Commodity Media for Assaying Report</h2>
+              <h5><b>Disclaimer:</b> This is a sample form provided for demonstration purposes only. The actual form may vary based on your specific requirements.</h5>
 
-            <form action="/submit-assaying-report" method="POST" enctype="multipart/form-data">
-              <label for="commodityName">Commodity Name:</label><br>
-              <input type="text" id="commodityName" name="commodityName" required><br>
+              <form action="/submit-assaying-report" method="POST" enctype="multipart/form-data">
+                <label for="commodityName">Commodity Name:</label><br>
+                <input type="text" id="commodityName" name="commodityName" required><br>
 
-              <label for="image">Upload Image of Commodity:</label><br>
-              <input type="file" id="image" name="image" accept="image/*" required><br>
+                <label for="image">Upload Image of Commodity:</label><br>
+                <input type="file" id="image" name="image" accept="image/*" required><br>
 
-              <label for="video">Upload Video of Commodity:</label><br>
-              <input type="file" id="video" name="video" accept="video/*" required><br>
+                <label for="video">Upload Video of Commodity:</label><br>
+                <input type="file" id="video" name="video" accept="video/*" required><br>
 
-              <button type="submit">Submit Report</button>
-            </form>
-          </body>
-          </html>
+                <button type="submit">Submit Report</button>
+              </form>
+            </body>
+            </html>
       - summary: >-
           Seller send the on status for form submission response, Its submitted
           or failed
