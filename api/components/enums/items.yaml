@@ -1,0 +1,7 @@
+form_response_status:
+  - code: SUBMITTED
+    description: When form submitted successfully
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: FAILED
+    description: When form failed to submit
+    reference: <PR/Issue/Discussion Links md format text>

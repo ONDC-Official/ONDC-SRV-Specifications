@@ -220,14 +220,6 @@
               "payment_ids": [
                 "1"
               ],
-              "xinput": {
-                "required": true,
-                "form": {
-                  "id": "form_1",
-                  "url": "https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234",
-                  "mime_type": "text/html"
-                }
-              },
               "cancellation_terms": [
                 {
                   "fulfillment_state": {
@@ -1344,14 +1336,6 @@
               "payment_ids": [
                 "1"
               ],
-              "xinput": {
-                "required": true,
-                "form": {
-                  "id": "form_1",
-                  "url": "https://forms.sellerapp.com/sample-collecting-form/data?k=234sadf234",
-                  "mime_type": "text/html"
-                }
-              },
               "cancellation_terms": [
                 {
                   "fulfillment_state": {

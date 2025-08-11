@@ -6,15 +6,15 @@ value:
         code: std:080
       country:
         code: IND
-    action: on_select
+    action: on_status
     version: 2.0.0
     bap_id: buyerapp.com
     bap_uri: https://buyerapp.com/services
     bpp_id: sellerapp.com
     bpp_uri: https://sellerapp.com/services
     transaction_id: T1
-    message_id: M2
-    timestamp: '2024-04-01T22:00:31.000Z'
+    message_id: M6
+    timestamp: '2024-04-02T12:00:40.000Z'
     ttl: PT30S
   message:
     order:
@@ -28,6 +28,12 @@ value:
           id: I1
           location_ids:
             - L1
+          xinput:
+            form:
+              id: form_1
+            form_response:
+              status: SUBMITTED
+              submission_id: 1978-5697-3478-6547
       fulfillments:
         - id: F1
           type: Seller-Fulfilled
