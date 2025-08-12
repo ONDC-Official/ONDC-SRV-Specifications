@@ -4459,6 +4459,22 @@ x-flows:
                         type: Certificate
                         desc: AGRMARK
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -9349,6 +9365,22 @@ x-flows:
                         type: Certificate
                         desc: AGRMARK
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -12522,6 +12554,22 @@ x-flows:
                         type: Certificate
                         desc: Good Hygienic Practices (GHP)
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -13179,6 +13227,22 @@ x-flows:
                         type: Certificate
                         desc: Good Hygienic Practices (GHP)
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -17646,6 +17710,22 @@ x-flows:
                         type: Certificate
                         desc: Good Hygienic Practices (GHP)
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -18304,6 +18384,22 @@ x-flows:
                         type: Certificate
                         desc: Good Hygienic Practices (GHP)
                         url: https://abcd.cdn.com/images/bage-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 01,02,03,04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -28771,6 +28867,22 @@ x-examples:
                           type: Certificate
                           desc: AGRMARK
                           url: https://abcd.cdn.com/images/bage-img
+                      time:
+                        label: validity
+                        range:
+                          start: '2024-04-01T00:00:00.000Z'
+                          end: '2024-04-10T00:00:00.000Z'
+                        days: 01,02,03,04,05
+                        schedule:
+                          frequency: PT1H
+                          holidays:
+                            - '2024-04-07'
+                            - '2024-04-09'
+                          times:
+                            - '2024-04-04T22:00:00.000Z'
+                            - '2024-04-06T22:00:00.000Z'
+                            - '2024-04-08T22:00:00.000Z'
+                            - '2024-04-10T22:00:00.000Z'
                       tags:
                         - descriptor:
                             code: serviceability
@@ -29285,6 +29397,22 @@ x-examples:
                           type: Certificate
                           desc: AGRMARK
                           url: https://abcd.cdn.com/images/bage-img
+                      time:
+                        label: validity
+                        range:
+                          start: '2024-04-01T00:00:00.000Z'
+                          end: '2024-04-10T00:00:00.000Z'
+                        days: 01,02,03,04,05
+                        schedule:
+                          frequency: PT1H
+                          holidays:
+                            - '2024-04-07'
+                            - '2024-04-09'
+                          times:
+                            - '2024-04-04T22:00:00.000Z'
+                            - '2024-04-06T22:00:00.000Z'
+                            - '2024-04-08T22:00:00.000Z'
+                            - '2024-04-10T22:00:00.000Z'
                       tags:
                         - descriptor:
                             code: serviceability
@@ -29626,6 +29754,22 @@ x-examples:
                           type: Certificate
                           desc: Good Hygienic Practices (GHP)
                           url: https://abcd.cdn.com/images/bage-img
+                      time:
+                        label: validity
+                        range:
+                          start: '2024-04-01T00:00:00.000Z'
+                          end: '2024-04-10T00:00:00.000Z'
+                        days: 01,02,03,04,05
+                        schedule:
+                          frequency: PT1H
+                          holidays:
+                            - '2024-04-07'
+                            - '2024-04-09'
+                          times:
+                            - '2024-04-04T22:00:00.000Z'
+                            - '2024-04-06T22:00:00.000Z'
+                            - '2024-04-08T22:00:00.000Z'
+                            - '2024-04-10T22:00:00.000Z'
                       tags:
                         - descriptor:
                             code: serviceability
@@ -30285,6 +30429,22 @@ x-examples:
                           type: Certificate
                           desc: Good Hygienic Practices (GHP)
                           url: https://abcd.cdn.com/images/bage-img
+                      time:
+                        label: validity
+                        range:
+                          start: '2024-04-01T00:00:00.000Z'
+                          end: '2024-04-10T00:00:00.000Z'
+                        days: 01,02,03,04,05
+                        schedule:
+                          frequency: PT1H
+                          holidays:
+                            - '2024-04-07'
+                            - '2024-04-09'
+                          times:
+                            - '2024-04-04T22:00:00.000Z'
+                            - '2024-04-06T22:00:00.000Z'
+                            - '2024-04-08T22:00:00.000Z'
+                            - '2024-04-10T22:00:00.000Z'
                       tags:
                         - descriptor:
                             code: serviceability
