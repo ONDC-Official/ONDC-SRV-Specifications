@@ -2989,8 +2989,6 @@ x-flows:
           context.city
         reference: if any
         example: &ref_13
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3025,8 +3023,6 @@ x-flows:
         description: Returns the catalog specific to the search intent
         reference: if any
         example: &ref_14
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3087,6 +3083,22 @@ x-flows:
                         type: Certification
                         desc: Certification No. WEIGHMENT-12345678
                         url: https://abcd.cdn.com/images/certification-img
+                    time:
+                      label: validity
+                      range:
+                        start: '2024-04-01T00:00:00.000Z'
+                        end: '2024-04-10T00:00:00.000Z'
+                      days: 04,05
+                      schedule:
+                        frequency: PT1H
+                        holidays:
+                          - '2024-04-07'
+                          - '2024-04-09'
+                        times:
+                          - '2024-04-04T22:00:00.000Z'
+                          - '2024-04-06T22:00:00.000Z'
+                          - '2024-04-08T22:00:00.000Z'
+                          - '2024-04-10T22:00:00.000Z'
                     tags:
                       - descriptor:
                           code: serviceability
@@ -3110,7 +3122,7 @@ x-flows:
                             value: geojson
                           - descriptor:
                               code: type
-                            value: 12
+                            value: '13'
                     items:
                       - id: I1
                         descriptor:
@@ -3379,8 +3391,6 @@ x-flows:
           type
         reference: if any
         example: &ref_15
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3436,8 +3446,6 @@ x-flows:
         description: Seller confirms the schedule and returns the quote for service
         reference: if any
         example: &ref_16
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3480,7 +3488,7 @@ x-flows:
                           range:
                             start: '2024-04-04T10:00:00.000Z'
                             end: '2024-04-04T11:00:00.000Z'
-                          days: '4'
+                          days: '04'
                         location:
                           gps: 12.974002,77.613458
                           area_code: '560001'
@@ -3530,8 +3538,6 @@ x-flows:
         description: Buyer initialises the order and provides billing details
         reference: if any
         example: &ref_17
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3587,7 +3593,7 @@ x-flows:
                           range:
                             start: '2024-04-04T10:00:00.000Z'
                             end: '2024-04-04T11:00:00.000Z'
-                          days: '4'
+                          days: '04'
                         location:
                           gps: 12.974002,77.613458
                           area_code: '560001'
@@ -3599,8 +3605,6 @@ x-flows:
         description: Seller provides the final quotation
         reference: if any
         example: &ref_18
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3742,8 +3746,6 @@ x-flows:
         description: Buyer app gets the payment from user and confirms the order
         reference: if any
         example: &ref_19
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -3801,7 +3803,7 @@ x-flows:
                           range:
                             start: '2024-04-04T10:00:00.000Z'
                             end: '2024-04-04T11:00:00.000Z'
-                          days: '4'
+                          days: '04'
                         contact:
                           phone: '9886098860'
                         location:
@@ -3899,8 +3901,6 @@ x-flows:
         description: Seller accepts the order
         reference: if any
         example: &ref_20
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4058,8 +4058,6 @@ x-flows:
         description: Seller provides accepts the order
         reference: if any
         example: &ref_21
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4085,8 +4083,6 @@ x-flows:
         description: Seller sends back the update of order
         reference: if any
         example: &ref_22
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4250,8 +4246,6 @@ x-flows:
         description: Seller sends back an update with fulfillment and order status updated
         reference: if any
         example: &ref_23
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4563,8 +4557,6 @@ x-flows:
         description: Buyer requests for cancellation of order with cancellation reason
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4589,8 +4581,6 @@ x-flows:
         description: Seller sends back confirmation of cancellation and updates order
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -4599,7 +4589,7 @@ x-flows:
                   code: std:080
                 country:
                   code: IND
-              action: on_status
+              action: on_cancel
               version: 2.0.0
               bap_id: buyerapp.com
               bap_uri: https://buyerapp.com/services
@@ -4889,8 +4879,6 @@ x-flows:
           proper
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -5054,8 +5042,6 @@ x-flows:
         description: Seller reschedules the service if applicable
         reference: if any
         example: &ref_24
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -5213,8 +5199,6 @@ x-flows:
         description: Seller reschedules the service if applicable
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -5425,8 +5409,6 @@ x-flows:
         description: Seller cancels the order and refunds if applicable
         reference: if any
         example: &ref_25
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -5435,7 +5417,7 @@ x-flows:
                   code: std:080
                 country:
                   code: IND
-              action: on_status
+              action: on_cancel
               version: 2.0.0
               bap_id: buyerapp.com
               bap_uri: https://buyerapp.com/services
@@ -5710,8 +5692,6 @@ x-flows:
         description: Buyer requests for reschedule by specifying updated time and day
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -5947,8 +5927,6 @@ x-flows:
         description: Seller accepts the order
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -6106,8 +6084,6 @@ x-flows:
         description: Seller sends back the update of order
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -6273,8 +6249,6 @@ x-flows:
           received and attaches timestamp
         reference: if any
         example:
-          summary: ''
-          description: ''
           value:
             context:
               domain: ONDC:SRV19
@@ -6458,9 +6432,7 @@ x-examples:
     example_set:
       search:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6491,9 +6463,7 @@ x-examples:
                           value: '3'
       select:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6545,9 +6515,7 @@ x-examples:
                     - type: PRE-FULFILLMENT
       init:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6602,7 +6570,7 @@ x-examples:
                             range:
                               start: '2024-04-04T10:00:00.000Z'
                               end: '2024-04-04T11:00:00.000Z'
-                            days: '4'
+                            days: '04'
                           location:
                             gps: 12.974002,77.613458
                             area_code: '560001'
@@ -6611,9 +6579,7 @@ x-examples:
                       collected_by: BAP
       confirm:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6670,7 +6636,7 @@ x-examples:
                             range:
                               start: '2024-04-04T10:00:00.000Z'
                               end: '2024-04-04T11:00:00.000Z'
-                            days: '4'
+                            days: '04'
                           contact:
                             phone: '9886098860'
                           location:
@@ -6765,9 +6731,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       update:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6819,9 +6783,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       status:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6843,9 +6805,7 @@ x-examples:
                 order_id: O1
       cancel:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6866,9 +6826,7 @@ x-examples:
                 cancellation_reason_id: '012'
       on_search:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -6928,6 +6886,22 @@ x-examples:
                           type: Certification
                           desc: Certification No. WEIGHMENT-12345678
                           url: https://abcd.cdn.com/images/certification-img
+                      time:
+                        label: validity
+                        range:
+                          start: '2024-04-01T00:00:00.000Z'
+                          end: '2024-04-10T00:00:00.000Z'
+                        days: 04,05
+                        schedule:
+                          frequency: PT1H
+                          holidays:
+                            - '2024-04-07'
+                            - '2024-04-09'
+                          times:
+                            - '2024-04-04T22:00:00.000Z'
+                            - '2024-04-06T22:00:00.000Z'
+                            - '2024-04-08T22:00:00.000Z'
+                            - '2024-04-10T22:00:00.000Z'
                       tags:
                         - descriptor:
                             code: serviceability
@@ -6952,7 +6926,7 @@ x-examples:
                               value: geojson
                             - descriptor:
                                 code: type
-                              value: 12
+                              value: '13'
                       items:
                         - id: I1
                           descriptor:
@@ -7216,9 +7190,7 @@ x-examples:
                               reason_required: true
       on_select:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -7260,7 +7232,7 @@ x-examples:
                             range:
                               start: '2024-04-04T10:00:00.000Z'
                               end: '2024-04-04T11:00:00.000Z'
-                            days: '4'
+                            days: '04'
                           location:
                             gps: 12.974002,77.613458
                             area_code: '560001'
@@ -7307,9 +7279,7 @@ x-examples:
                       collected_by: BAP
       on_init:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -7447,9 +7417,7 @@ x-examples:
                               value: '3'
       on_confirm:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -7603,9 +7571,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       on_status:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -7763,9 +7729,7 @@ x-examples:
                               value: '3'
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:38.000Z'
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -7923,9 +7887,7 @@ x-examples:
                               value: '3'
                   created_at: '2024-04-01T22:00:38.000Z'
                   updated_at: '2024-04-01T22:00:38.000Z'
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -8092,9 +8054,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       on_update:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -8248,9 +8208,7 @@ x-examples:
                   updated_at: '2024-04-01T22:00:38.000Z'
       on_cancel:
         examples:
-          - summary: ''
-            description: ''
-            value:
+          - value:
               context:
                 domain: ONDC:SRV19
                 location:
@@ -8258,7 +8216,7 @@ x-examples:
                     code: std:080
                   country:
                     code: IND
-                action: on_status
+                action: on_cancel
                 version: 2.0.0
                 bap_id: buyerapp.com
                 bap_uri: https://buyerapp.com/services

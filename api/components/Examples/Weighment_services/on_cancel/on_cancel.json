@@ -9,7 +9,7 @@
         "code": "IND"
       }
     },
-    "action": "on_status",
+    "action": "on_cancel",
     "version": "2.0.0",
     "bap_id": "buyerapp.com",
     "bap_uri": "https://buyerapp.com/services",
