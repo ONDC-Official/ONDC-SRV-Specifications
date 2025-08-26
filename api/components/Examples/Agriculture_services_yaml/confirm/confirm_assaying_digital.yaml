@@ -29,7 +29,7 @@ value:
           location_ids:
             - L1
           fulfillment_ids:
-            - '2'
+            - F1
           xinput:
             form:
               id: form_1
@@ -58,11 +58,11 @@ value:
         - id: I1C1
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C1
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -76,11 +76,11 @@ value:
         - id: I1C2
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C1
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -94,11 +94,11 @@ value:
         - id: I1C3
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C1
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -112,11 +112,11 @@ value:
         - id: I1C4
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C2
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -130,11 +130,11 @@ value:
         - id: I1C5
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C2
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -148,11 +148,11 @@ value:
         - id: I1C6
           parent_item_id: I1
           fulfillment_ids:
-            - '2'
+            - F1
           location_ids:
             - L1
           category_ids:
-            - C2
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -207,12 +207,12 @@ value:
       quote:
         price:
           currency: INR
-          value: '1549'
+          value: '1449.00'
         breakup:
           - title: Quality testing for Arhar Whole
             price:
               currency: INR
-              value: '1400'
+              value: '100'
             item:
               id: I1
               quantity:
@@ -220,7 +220,121 @@ value:
                   count: 1
               price:
                 currency: INR
-                value: '1400'
+                value: '100'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Moisture
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C1
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '200'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Foreign Matter
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C2
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '200'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Other Edible Grains
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C3
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '200'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Damaged Grains
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C4
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '250'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Weevilled Grains
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C5
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '200'
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: item
+          - title: Admixture
+            price:
+              currency: INR
+              value: '200'
+            item:
+              id: I1C6
+              quantity:
+                selected:
+                  count: 1
+              price:
+                currency: INR
+                value: '200'
             tags:
               - descriptor:
                   code: title
@@ -272,7 +386,7 @@ value:
         - id: P1
           collected_by: BAP
           params:
-            amount: '1549'
+            amount: '1449.00'
             currency: INR
             bank_account_number: xxxxxxxx
             virtual_payment_address: xxx@xxxx
