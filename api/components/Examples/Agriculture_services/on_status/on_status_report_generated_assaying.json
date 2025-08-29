@@ -36,8 +36,66 @@
         {
           "id": "I1",
           "location_ids": ["L1"],
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "cancellation_terms": [
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "PENDING"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "0.00"
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "IN_TRANSIT"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "10.00"
+              }
+            }
+          ],
           "tags": [
+            {
+              "descriptor": {
+                "code": "RESCHEDULE_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "FULFILLMENT_STATE"
+                  },
+                  "value": "Pending"
+                },
+                {
+                  "descriptor": {
+                    "code": "RESCHEDULE_ELIGIBLE"
+                  },
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "RESCHEDULE_FEE"
+                  },
+                  "value": "0.00"
+                },
+                {
+                  "descriptor": {
+                    "code": "RESCHEDULE_WITHIN"
+                  },
+                  "value": "PT1D"
+                }
+              ]
+            },
             {
               "descriptor": {
                 "code": "REPORT_REQUIREMENT"
@@ -72,12 +130,6 @@
                     "code": "ACRAGE"
                   },
                   "value": "2"
-                },
-                {
-                  "descriptor": {
-                    "code": "SAMPLE_COUNT"
-                  },
-                  "value": "5"
                 }
               ]
             }
@@ -86,9 +138,9 @@
         {
           "id": "I1C1",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -113,9 +165,9 @@
         {
           "id": "I1C2",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -140,9 +192,9 @@
         {
           "id": "I1C3",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -167,9 +219,9 @@
         {
           "id": "I1C4",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C2"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -194,9 +246,9 @@
         {
           "id": "I1C5",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C2"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -221,9 +273,9 @@
         {
           "id": "I1C6",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["2"],
+          "fulfillment_ids": ["F1"],
           "location_ids": ["L1"],
-          "category_ids": ["C2"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -343,14 +395,14 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "1549"
+          "value": "1449.00"
         },
         "breakup": [
           {
             "title": "Quality testing for Arhar Whole",
             "price": {
               "currency": "INR",
-              "value": "1400"
+              "value": "100"
             },
             "item": {
               "id": "I1",
@@ -361,7 +413,211 @@
               },
               "price": {
                 "currency": "INR",
-                "value": "1400"
+                "value": "100"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Moisture",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C1",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Foreign Matter",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C2",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Other Edible Grains",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C3",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Damaged Grains",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C4",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Weevilled Grains",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C5",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Admixture",
+            "price": {
+              "currency": "INR",
+              "value": "200"
+            },
+            "item": {
+              "id": "I1C6",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200"
               }
             },
             "tags": [
@@ -463,7 +719,7 @@
           "id": "P1",
           "collected_by": "BAP",
           "params": {
-            "amount": "1549",
+            "amount": "1449.00",
             "currency": "INR",
             "bank_account_number": "xxxxxxxx",
             "virtual_payment_address": "xxx@xxxx"

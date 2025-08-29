@@ -76,7 +76,8 @@ steps:
     description: Get the form for digital sample submission
     reference: if any
     example:
-      $ref: "../../Examples/Agriculture_services_yaml/forms/sample-collecting-form.html"
+      value:
+        $ref: "../../Examples/Agriculture_services_yaml/forms/sample-collecting-form.html"
   - summary: Seller send the on status for form submission response, Its submitted or failed
     api: on_status
     description: Seller send the on status for form submission response, Its submitted or failed

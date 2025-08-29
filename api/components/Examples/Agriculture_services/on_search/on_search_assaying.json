@@ -24,12 +24,12 @@
     "catalog": {
       "fulfillments": [
         {
-          "id": "1",
-          "type": "Buyer-Fulfilled"
+          "id": "F1",
+          "type": "Seller-Fulfilled"
         },
         {
-          "id": "2",
-          "type": "Seller-Fulfilled"
+          "id": "F2",
+          "type": "Buyer-Fulfilled"
         }
       ],
       "payments": [
@@ -98,6 +98,27 @@
               "url": "https://abcd.cdn.com/images/bage-img"
             }
           ],
+          "time": {
+            "label": "validity",
+            "range": {
+              "start": "2024-04-01T00:00:00.000Z",
+              "end": "2024-04-10T00:00:00.000Z"
+            },
+            "days": "01,02,03,04,05",
+            "schedule": {
+              "frequency": "PT1H",
+              "holidays": [
+                "2024-04-07",
+                "2024-04-09"
+              ],
+              "times": [
+                "2024-04-04T22:00:00.000Z",
+                "2024-04-06T22:00:00.000Z",
+                "2024-04-08T22:00:00.000Z",
+                "2024-04-10T22:00:00.000Z"
+              ]
+            }
+          },
           "tags": [
             {
               "descriptor": {
@@ -137,48 +158,6 @@
               ]
             }
           ],
-          "categories": [
-            {
-              "id": "C1",
-              "descriptor": {
-                "name": "Tradabale Parameters",
-                "code": "TRADABLE_PARAMETERS"
-              },
-              "tags": [
-                {
-                  "descriptor": {
-                    "code": "SELECTION"
-                  },
-                  "list": [
-                    {
-                      "descriptor": {
-                        "code": "SEQ"
-                      },
-                      "value": "1"
-                    },
-                    {
-                      "descriptor": {
-                        "code": "MANDATORY_SELECTION"
-                      },
-                      "value": "true"
-                    },
-                    {
-                      "descriptor": {
-                        "code": "MIN_SELECTION"
-                      },
-                      "value": "1"
-                    },
-                    {
-                      "descriptor": {
-                        "code": "MAX_SELECTION"
-                      },
-                      "value": "9"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
           "items": [
             {
               "id": "I1",
@@ -207,8 +186,8 @@
                 "value": "100.00",
                 "minimum_value": "100.00"
               },
-              "category_ids": ["SRV14-xxxx"],
-              "fulfillment_ids": ["2"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "cancellation_terms": [
@@ -370,14 +349,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -454,14 +433,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -538,14 +517,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -622,14 +601,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -706,14 +685,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -790,14 +769,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -874,14 +853,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -958,14 +937,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1042,14 +1021,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1171,6 +1150,27 @@
               "url": "https://abcd.cdn.com/images/bage-img"
             }
           ],
+          "time": {
+            "label": "validity",
+            "range": {
+              "start": "2024-04-01T00:00:00.000Z",
+              "end": "2024-04-10T00:00:00.000Z"
+            },
+            "days": "01,02,03,04,05",
+            "schedule": {
+              "frequency": "PT1H",
+              "holidays": [
+                "2024-04-07",
+                "2024-04-09"
+              ],
+              "times": [
+                "2024-04-04T22:00:00.000Z",
+                "2024-04-06T22:00:00.000Z",
+                "2024-04-08T22:00:00.000Z",
+                "2024-04-10T22:00:00.000Z"
+              ]
+            }
+          },
           "tags": [
             {
               "descriptor": {
@@ -1239,7 +1239,7 @@
                 "minimum_value": "100.00"
               },
               "category_ids": ["SRV14-xxxx"],
-              "fulfillment_ids": ["1"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "cancellation_terms": [
@@ -1395,14 +1395,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1479,14 +1479,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1563,14 +1563,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1647,14 +1647,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1731,14 +1731,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1815,14 +1815,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1899,14 +1899,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -1983,14 +1983,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
@@ -2067,14 +2067,14 @@
                   }
                 },
                 "minimum": {
-                  "value": "1"
+                  "count": 1
                 },
                 "maximum": {
-                  "value": "1"
+                  "count": 1
                 }
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
+              "category_ids": ["SRV14-1004"],
+              "fulfillment_ids": ["F1"],
               "location_ids": ["L1"],
               "payment_ids": ["1"],
               "tags": [
