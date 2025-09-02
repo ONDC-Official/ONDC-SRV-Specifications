@@ -186,7 +186,7 @@ message:
           reference: if any
         parent_item_id:
           description: id of the parent item for a service or customization
-          required: required
+          required: optional (required only for customizations)
           usage: PI1
           reference: if any
         descriptor.code:

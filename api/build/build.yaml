@@ -4613,7 +4613,6 @@ x-flows:
                       virtual_payment_address: xxx@xxxx
                     type: PRE-FULFILLMENT
                     tags:
-                      - descriptor: null
                       - descriptor:
                           code: Settlement_Counterparty
                         list:
@@ -14613,7 +14612,7 @@ x-flows:
                     - title: Sofa Cleaning
                       price:
                         currency: INR
-                        value: '0.00'
+                        value: '474.00'
                       item:
                         id: I1
                         quantity:
@@ -14624,7 +14623,7 @@ x-flows:
                             value: '2'
                         price:
                           currency: INR
-                          value: '0.00'
+                          value: '474.00'
                       tags:
                         - descriptor:
                             code: title
@@ -14632,10 +14631,32 @@ x-flows:
                             - descriptor:
                                 code: type
                               value: item
+                    - title: Sofa Cleaning
+                      price:
+                        currency: INR
+                        value: '-474.00'
+                      item:
+                        id: I1
+                        quantity:
+                          selected:
+                            count: '0'
+                          measure:
+                            unit: seats
+                            value: '2'
+                        price:
+                          currency: INR
+                          value: '474.00'
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: refund
                     - title: tax
                       price:
                         currency: INR
-                        value: '0.00'
+                        value: '25.00'
                       item:
                         id: I1
                       tags:
@@ -14645,6 +14666,19 @@ x-flows:
                             - descriptor:
                                 code: type
                               value: tax
+                    - title: tax
+                      price:
+                        currency: INR
+                        value: '-25.00'
+                      item:
+                        id: I1
+                      tags:
+                        - descriptor:
+                            code: title
+                          list:
+                            - descriptor:
+                                code: type
+                              value: refund
                     - title: discount
                       price:
                         currency: INR
@@ -14661,7 +14695,7 @@ x-flows:
                     - title: convenience_fee
                       price:
                         currency: INR
-                        value: '0'
+                        value: '-0'
                       item:
                         id: I1
                       tags:
@@ -19369,6 +19403,8 @@ x-flows:
               order:
                 id: O1
                 status: ACCEPTED
+                update_target:
+                  - message.order.fulfillments
                 provider:
                   id: P1
                   locations:
@@ -25193,7 +25229,6 @@ x-examples:
                         virtual_payment_address: xxx@xxxx
                       type: PRE-FULFILLMENT
                       tags:
-                        - descriptor: null
                         - descriptor:
                             code: Settlement_Counterparty
                           list:
@@ -29095,7 +29130,7 @@ x-examples:
                       - title: Sofa Cleaning
                         price:
                           currency: INR
-                          value: '0.00'
+                          value: '474.00'
                         item:
                           id: I1
                           quantity:
@@ -29106,7 +29141,7 @@ x-examples:
                               value: '2'
                           price:
                             currency: INR
-                            value: '0.00'
+                            value: '474.00'
                         tags:
                           - descriptor:
                               code: title
@@ -29114,10 +29149,32 @@ x-examples:
                               - descriptor:
                                   code: type
                                 value: item
+                      - title: Sofa Cleaning
+                        price:
+                          currency: INR
+                          value: '-474.00'
+                        item:
+                          id: I1
+                          quantity:
+                            selected:
+                              count: '0'
+                            measure:
+                              unit: seats
+                              value: '2'
+                          price:
+                            currency: INR
+                            value: '474.00'
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: refund
                       - title: tax
                         price:
                           currency: INR
-                          value: '0.00'
+                          value: '25.00'
                         item:
                           id: I1
                         tags:
@@ -29127,6 +29184,19 @@ x-examples:
                               - descriptor:
                                   code: type
                                 value: tax
+                      - title: tax
+                        price:
+                          currency: INR
+                          value: '-25.00'
+                        item:
+                          id: I1
+                        tags:
+                          - descriptor:
+                              code: title
+                            list:
+                              - descriptor:
+                                  code: type
+                                value: refund
                       - title: discount
                         price:
                           currency: INR
@@ -29143,7 +29213,7 @@ x-examples:
                       - title: convenience_fee
                         price:
                           currency: INR
-                          value: '0'
+                          value: '-0'
                         item:
                           id: I1
                         tags:
@@ -29882,7 +29952,7 @@ x-attributes:
                   reference: if any
                 parent_item_id:
                   description: id of the parent item for a service or customization
-                  required: required
+                  required: optional (required only for customizations)
                   usage: PI1
                   reference: if any
                 descriptor.code:
@@ -30140,7 +30210,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: id of the parent item for selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: I1
                 reference: if any
               location_ids:
@@ -30238,7 +30308,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:
@@ -30400,7 +30470,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:
@@ -30597,7 +30667,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:
@@ -30938,7 +31008,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:
@@ -31301,7 +31371,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:
@@ -31832,7 +31902,7 @@ x-attributes:
                 reference: if any
               parent_item_id:
                 description: parent item id of the selected service or customization
-                required: required for customizations
+                required: optional (required only for customizations)
                 usage: PI1
                 reference: if any
               location_ids:

@@ -34,9 +34,9 @@ value:
               count: 1
       billing:
         name: ONDC buyer
-        address:
-          22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka
-          560001
+        address: >-
+          22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru,
+          Karnataka 560001
         state:
           name: Karnataka
         city:
@@ -167,7 +167,6 @@ value:
             virtual_payment_address: xxx@xxxx
           type: PRE-FULFILLMENT
           tags:
-            - descriptor:
             - descriptor:
                 code: Settlement_Counterparty
               list:

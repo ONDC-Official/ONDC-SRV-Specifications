@@ -351,7 +351,7 @@
                   "descriptor": {
                     "code": "Buyer_finder_fee_type"
                   },
-                  "value": "percentage"
+                  "value": "percent"
                 },
                 {
                   "descriptor": {
