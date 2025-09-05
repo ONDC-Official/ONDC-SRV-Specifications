@@ -133,7 +133,7 @@ value:
           - title: convenience_fee
             price:
               currency: INR
-              value: "-0"
+              value: "0"
             item:
               id: I1
             tags:
@@ -248,9 +248,6 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
+                    code: Buyer_finder_fee_percentage
                   value: "3"
       updated_at: "2023-11-08T22:00:57.000Z"

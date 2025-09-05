@@ -196,11 +196,8 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
-                  value: '3'
+                    code: Buyer_finder_fee_percentage
+                  value: "3"
       created_at: '2023-02-03T09:30:00.000Z'
       updated_at: '2023-02-03T09:30:00.000Z'
       xinput:
