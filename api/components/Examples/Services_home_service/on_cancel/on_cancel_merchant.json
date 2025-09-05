@@ -166,31 +166,6 @@
             ]
           },
           {
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "-0.00"
-            },
-            "item": {
-              "id": "I1"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "title"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "type"
-                    },
-                    "value": "refund"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "title": "discount",
             "price": {
               "currency": "INR",
@@ -219,7 +194,7 @@
             "title": "convenience_fee",
             "price": {
               "currency": "INR",
-              "value": "-0"
+              "value": "0"
             },
             "item": {
               "id": "I1"
@@ -401,13 +376,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "Buyer_finder_fee_type"
-                  },
-                  "value": "percentage"
-                },
-                {
-                  "descriptor": {
-                    "code": "Buyer_finder_fee_amount"
+                    "code": "Buyer_finder_fee_percentage"
                   },
                   "value": "3"
                 }

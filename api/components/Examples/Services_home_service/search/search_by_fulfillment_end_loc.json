@@ -44,15 +44,15 @@
           "list": [
             {
               "descriptor": {
-                "code": "Buyer_finder_fee_type"
+                "code": "Buyer_finder_fee_percentage"
               },
-              "value": "percent"
+              "value": "3"
             },
             {
               "descriptor": {
                 "code": "Buyer_finder_fee_amount"
               },
-              "value": "3"
+              "value": "50"
             }
           ]
         }

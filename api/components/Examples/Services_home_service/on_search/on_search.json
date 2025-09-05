@@ -162,7 +162,7 @@
           "items": [
             {
               "id": "I1",
-              "parent_item_id": "PI1",
+              "parent_item_id": "",
               "descriptor": {
                 "name": "Home Painting - Home consultation",
                 "code": "UPC code",
@@ -290,7 +290,7 @@
             },
             {
               "id": "I2",
-              "parent_item_id": "PI2",
+              "parent_item_id": "",
               "descriptor": {
                 "name": "Sofa Cleaning",
                 "code": "UPC code",
@@ -439,7 +439,7 @@
             },
             {
               "id": "I3",
-              "parent_item_id": "PI2",
+              "parent_item_id": "",
               "descriptor": {
                 "name": "Sofa Cleaning",
                 "code": "UPC code",
@@ -588,7 +588,7 @@
             },
             {
               "id": "I4",
-              "parent_item_id": "PI2",
+              "parent_item_id": "",
               "descriptor": {
                 "name": "Sofa Cleaning",
                 "code": "UPC code",

@@ -1,7 +1,7 @@
 intent:
   tags:
     - code: BAP_Terms
-      description: The buyer terms, including the type and amount of the buyer finder fee, are communicated.
+      description: The buyer terms define the buyer finder fee, which can either be a percentage of the order value or a flat amount per order. If the fee is based on a percentage, the field Buyer_finder_fee_percentage should be sent, and if it is a flat amount, the field Buyer_finder_fee_amount should be sent.
       reference: <PR/Issue/Discussion Links md format text>
       required: required
       list:

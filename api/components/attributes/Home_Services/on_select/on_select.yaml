@@ -17,7 +17,7 @@ message:
         reference: if any
       parent_item_id:
         description: parent item id of the selected service or customization
-        required: required for customizations
+        required: optional (required only for customizations)
         usage: "PI1"
         reference: if any
       location_ids:

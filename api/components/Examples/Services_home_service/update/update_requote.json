@@ -151,13 +151,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "Buyer_finder_fee_type"
-                  },
-                  "value": "percentage"
-                },
-                {
-                  "descriptor": {
-                    "code": "Buyer_finder_fee_amount"
+                    "code": "Buyer_finder_fee_percentage"
                   },
                   "value": "3"
                 }
@@ -229,13 +223,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "Buyer_finder_fee_type"
-                  },
-                  "value": "percentage"
-                },
-                {
-                  "descriptor": {
-                    "code": "Buyer_finder_fee_amount"
+                    "code": "Buyer_finder_fee_percentage"
                   },
                   "value": "3"
                 }
@@ -306,13 +294,7 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "Buyer_finder_fee_type"
-                  },
-                  "value": "percentage"
-                },
-                {
-                  "descriptor": {
-                    "code": "Buyer_finder_fee_amount"
+                    "code": "Buyer_finder_fee_percentage"
                   },
                   "value": "3"
                 }

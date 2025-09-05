@@ -95,11 +95,8 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
-                  value: '3'
+                    code: Buyer_finder_fee_percentage
+                  value: "3"
         - id: P2
           collected_by: BPP
           params:
@@ -136,11 +133,8 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
-                  value: '3'
+                    code: Buyer_finder_fee_percentage
+                  value: "3"
         - id: P3
           collected_by: BPP
           params:
@@ -177,11 +171,8 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
-                  value: '3'
+                    code: Buyer_finder_fee_percentage
+                  value: "3"
       fulfillments:
         - id: F1
           state:

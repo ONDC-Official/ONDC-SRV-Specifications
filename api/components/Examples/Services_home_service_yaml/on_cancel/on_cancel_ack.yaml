@@ -9,14 +9,14 @@ value:
       country:
         code: IND
     action: on_cancel
-    version: "2.0.0"
+    version: 2.0.0
     bap_id: buyerapp.com
     bap_uri: https://buyerapp.com/srv
     bpp_id: sellerapp.com
     bpp_uri: https://sellerapp.com/services
     transaction_id: 9fdb667c-76c6-456a-9742-ba9caa5eb765
-    message_id: 'bd186a4e-b075-41e7-926f-c833d9977f8d'
-    timestamp: '2023-11-08T22:00:57.000Z'
+    message_id: bd186a4e-b075-41e7-926f-c833d9977f8d
+    timestamp: "2023-11-08T22:00:57.000Z"
     ttl: PT30S
   message:
     order:
@@ -50,7 +50,7 @@ value:
           - title: Sofa Cleaning
             price:
               currency: INR
-              value: "0.00"
+              value: "474.00"
             item:
               id: I1
               quantity:
@@ -61,7 +61,7 @@ value:
                   value: "2"
               price:
                 currency: INR
-                value: "0.00"
+                value: "474.00"
             tags:
               - descriptor:
                   code: title
@@ -69,10 +69,32 @@ value:
                   - descriptor:
                       code: type
                     value: item
+          - title: Sofa Cleaning
+            price:
+              currency: INR
+              value: "-474.00"
+            item:
+              id: I1
+              quantity:
+                selected:
+                  count: "0"
+                measure:
+                  unit: seats
+                  value: "2"
+              price:
+                currency: INR
+                value: "474.00"
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: refund
           - title: tax
             price:
               currency: INR
-              value: "0.00"
+              value: "25.00"
             item:
               id: I1
             tags:
@@ -82,6 +104,19 @@ value:
                   - descriptor:
                       code: type
                     value: tax
+          - title: tax
+            price:
+              currency: INR
+              value: "-25.00"
+            item:
+              id: I1
+            tags:
+              - descriptor:
+                  code: title
+                list:
+                  - descriptor:
+                      code: type
+                    value: refund
           - title: discount
             price:
               currency: INR
@@ -153,7 +188,6 @@ value:
                 range:
                   start: "2023-11-16T09:30:00.000Z"
                   end: "2023-11-16T10:30:00.000Z"
-
               person:
                 name: Ramu
               instructions:
@@ -214,9 +248,6 @@ value:
                 code: Buyer_Finder_Fee
               list:
                 - descriptor:
-                    code: Buyer_finder_fee_type
-                  value: percent
-                - descriptor:
-                    code: Buyer_finder_fee_amount
+                    code: Buyer_finder_fee_percentage
                   value: "3"
       updated_at: "2023-11-08T22:00:57.000Z"
