@@ -28,36 +28,13 @@ value:
             - L1
           fulfillment_ids:
             - F1
-          quantity:
-            selected:
-              count: 1
-          cancellation_terms:
-            - fulfillment_state:
-                descriptor:
-                  code: PENDING
-              cancellation_fee:
-                percentage: '0.00'
-            - fulfillment_state:
-                descriptor:
-                  code: IN_TRANSIT
-              cancellation_fee:
-                percentage: '10.00'
+          xinput:
+            form:
+              id: form_1
+            form_response:
+              status: SUCCESS
+              submission_id: 6547-7456-7235-4386
           tags:
-            - descriptor:
-                code: RESCHEDULE_TERMS
-              list:
-                - descriptor:
-                    code: FULFILLMENT_STATE
-                  value: Pending
-                - descriptor:
-                    code: RESCHEDULE_ELIGIBLE
-                  value: 'true'
-                - descriptor:
-                    code: RESCHEDULE_FEE
-                  value: '0.00'
-                - descriptor:
-                    code: RESCHEDULE_WITHIN
-                  value: PT1D
             - descriptor:
                 code: REPORT_REQUIREMENT
               list:
@@ -83,7 +60,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -101,7 +78,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -119,7 +96,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -137,7 +114,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -155,7 +132,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1
@@ -173,7 +150,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1004
+            - SRV14-1005
           quantity:
             selected:
               count: 1

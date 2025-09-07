@@ -33,67 +33,22 @@
       "items": [
         {
           "id": "I1",
-          "location_ids": ["L1"],
-          "fulfillment_ids": ["F1"],
-          "quantity": {
-            "selected": {
-              "count": 1
+          "location_ids": [
+            "L1"
+          ],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "xinput": {
+            "form": {
+              "id": "form_1"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "6547-7456-7235-4386"
             }
           },
-          "cancellation_terms": [
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "PENDING"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "0.00"
-              }
-            },
-            {
-              "fulfillment_state": {
-                "descriptor": {
-                  "code": "IN_TRANSIT"
-                }
-              },
-              "cancellation_fee": {
-                "percentage": "10.00"
-              }
-            }
-          ],
           "tags": [
-            {
-              "descriptor": {
-                "code": "RESCHEDULE_TERMS"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "FULFILLMENT_STATE"
-                  },
-                  "value": "Pending"
-                },
-                {
-                  "descriptor": {
-                    "code": "RESCHEDULE_ELIGIBLE"
-                  },
-                  "value": "true"
-                },
-                {
-                  "descriptor": {
-                    "code": "RESCHEDULE_FEE"
-                  },
-                  "value": "0.00"
-                },
-                {
-                  "descriptor": {
-                    "code": "RESCHEDULE_WITHIN"
-                  },
-                  "value": "PT1D"
-                }
-              ]
-            },
             {
               "descriptor": {
                 "code": "REPORT_REQUIREMENT"
@@ -136,9 +91,15 @@
         {
           "id": "I1C1",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
@@ -163,9 +124,15 @@
         {
           "id": "I1C2",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
@@ -190,9 +157,15 @@
         {
           "id": "I1C3",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
@@ -217,9 +190,15 @@
         {
           "id": "I1C4",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
@@ -244,9 +223,15 @@
         {
           "id": "I1C5",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
@@ -271,9 +256,15 @@
         {
           "id": "I1C6",
           "parent_item_id": "I1",
-          "fulfillment_ids": ["F1"],
-          "location_ids": ["L1"],
-          "category_ids": ["SRV14-1004"],
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
           "quantity": {
             "selected": {
               "count": 1
