@@ -10,6 +10,8 @@ select:
     - $ref: "./select/select2_reschedule.yaml"
     - $ref: "./select/select_delivered.yaml"
     - $ref: "./select/select_assaying.yaml"
+    - $ref: "./select/select_assaying_negotiation_start.yaml"
+    - $ref: "./select/select_assaying_negotiation_end.yaml"
     - $ref: "./select/select_assaying_digital.yaml"
 init:
   examples:
@@ -17,12 +19,16 @@ init:
     - $ref: "./init/init_reschedule.yaml"
     - $ref: "./init/init_delivered.yaml"
     - $ref: "./init/init_assaying_digital.yaml"
+    - $ref: "./init/init_assaying.yaml"
+    - $ref: "./init/init_assaying_negotiation.yaml"
 confirm:
   examples:
     - $ref: "./confirm/confirm.yaml"
     - $ref: "./confirm/confirm_reschedule.yaml"
     - $ref: "./confirm/confirm_delivered.yaml"
     - $ref: "./confirm/confirm_assaying_digital.yaml"
+    - $ref: "./confirm/confirm_assaying.yaml"
+    - $ref: "./confirm/confirm_assaying_negotiation.yaml"
 status:
   examples:
     - $ref: "./status/status.yaml"
@@ -34,6 +40,8 @@ on_search:
     - $ref: "./on_search/on_search.yaml"
     - $ref: "./on_search/on_search_delivered.yaml"
     - $ref: "./on_search/on_search_assaying_digital.yaml"
+    - $ref: "./on_search/on_search_assaying.yaml"
+    - $ref: "./on_search/on_search_assaying_negotiation.yaml"
 on_select:
   examples:
     - $ref: "./on_select/on_select.yaml"
@@ -41,18 +49,26 @@ on_select:
     - $ref: "./on_select/on_select2_reschedule.yaml"
     - $ref: "./on_select/on_select_delivered.yaml"
     - $ref: "./on_select/on_select_assaying_digital.yaml"
+    - $ref: "./on_select/on_select_assaying.yaml"
+    - $ref: "./on_select/on_select_assaying_negotiation_start.yaml"
+    - $ref: "./on_select/on_select_assaying_negotiation_reject.yaml"
+    - $ref: "./on_select/on_select_assaying_negotiation_end.yaml"
 on_init:
   examples:
     - $ref: "./on_init/on_init.yaml"
     - $ref: "./on_init/on_init_reschedule.yaml"
     - $ref: "./on_init/on_init_delivered.yaml"
     - $ref: "./on_init/on_init_assaying_digital.yaml"
+    - $ref: "./on_init/on_init_assaying.yaml"
+    - $ref: "./on_init/on_init_assaying_negotiation.yaml"
 on_confirm:
   examples:
     - $ref: "./on_confirm/on_confirm.yaml"
     - $ref: "./on_confirm/on_confirm_reschedule.yaml"
     - $ref: "./on_confirm/on_confirm_delivered.yaml"
     - $ref: "./on_confirm/on_confirm_assaying_digital.yaml"
+    - $ref: "./on_confirm/on_confirm_assaying.yaml"
+    - $ref: "./on_confirm/on_confirm_assaying_negotiation.yaml"
 on_status:
   examples:
     - $ref: "./on_status/on_status_transit.yaml"
@@ -75,6 +91,14 @@ on_status:
     - $ref: "./on_status/on_status_report_generated_assaying.yaml"
     - $ref: "./on_status/on_status_test_completed_assaying.yaml"
     - $ref: "./on_status/on_status_form_response_assaying.yaml"
+    - $ref: "./on_status/on_status_at_location_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_collected_by_agent_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_form_response_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_received_at_lab_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_report_generated_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_report_shared_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_test_completed_assaying_negotiation.yaml"
+    - $ref: "./on_status/on_status_transit_assaying_negotiation.yaml"
 on_cancel:
   examples:
     - $ref: "./on_cancel/on_cancel_buyer.yaml"

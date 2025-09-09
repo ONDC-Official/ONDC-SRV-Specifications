@@ -1,0 +1,95 @@
+summary: Agricultural Services – Assaying Report based on negotiation but rejected for a Commodity via Physical Submission
+description: The following is an illustrative flow to perform a transaction of a nature where a buyer would like to avail assaying services for a particular commodity by negotiating on price or report TAT. The booking majorly happens in four phases of order processing flow, i.e. Discovery of available services and service providers based on serviceability, order, fulfillment and post-fulfillment.
+details:
+  - description: Sequence Diagram for Agriculture Assaying Service
+    mermaidGraph: >-
+      sequenceDiagram
+        participant B as Buyer
+        participant BA as BuyerApp
+        participant G as Gateway
+        participant SA1 as SellerApp1
+        participant SA2 as SellerApp2
+        participant SA as SellerApp
+
+        Note over B,SA2: SEARCH FLOW
+        B->>BA: Search by item for a service within a city
+        BA->>G: /search - Search by item for a service within city and additional parameters
+        Note left of BA: Additional params include:<br/>price range, ratings, availability
+        G->>SA1: /search - Services request broadcasted based<br/>on city and domain in context
+        G->>SA2: /search - Services request broadcasted based<br/>on city and domain in context
+        SA1->>BA: /on_search - Services catalog returned<br/>with pricing, seller statutory details, pricing
+        SA2->>BA: /on_search - Services catalog returned<br/>with pricing, seller statutory details, pricing
+        Note over BA,SA1: Buyer now has the option to choose the<br/>services from either Seller 1 or Seller 2 or both
+        BA->>B: Shows all service<br/>options from sellers
+
+        Note over B,SA: SELECT FLOW WITH NEGOTIATION
+        B->>BA: Selects one of the<br/>providers for service
+        
+        alt negotiable service (price or TAT negotiation)
+            loop Negotiation Loop
+                BA->>SA: /select - Buyer sends offered_price,<br/>selected quantity, and preferred TAT for report
+                Note right of B: If negotiation: Buyer can negotiate<br/>on price or report generation TAT
+                
+                alt Seller accepts offer
+                    SA->>BA: /on_select - Seller accepts offer with<br/>agreed price, quantity, and TAT
+                else Seller counter-offers
+                    SA->>BA: /on_select - Seller counter-offers with<br/>different price, allocated quantity, and TAT
+                    Note right of SA: Seller can reject offer in<br/>error object of on_select
+                end
+                
+                opt Buyer rejects counter-offer
+                    BA-->>SA: Buyer can reject by not responding to on_select
+                    Note left of BA: Loop continues until acceptance<br/>or termination
+                end
+            end
+        else direct purchase (non-negotiable)
+            BA->>SA: /select - A service is selected with a<br/>TTL for receiving response
+            SA->>BA: /on_select - Seller sends the same quote<br/>as decided on the last on_select
+        end
+        
+        BA->>B: Shows response with price details<br/>if item is in stock
+
+        Note over B,SA: INITIALIZATION FLOW
+        B->>BA: Proceeds with the Order
+        BA->>SA: /init - Initializes the order and<br/>sends billing details
+        SA->>BA: /on_init - Order initialization with<br/>fulfillment & settlement information<br/>including UPI or NEFT/IMPS/Bank Transfer
+        BA->>B: Confirms initialization
+
+        Note over B,SA: CONFIRMATION FLOW
+        B->>BA: Confirms the Order
+        BA->>SA: /confirm - Creates order to create final digital contract
+        SA->>BA: /on_confirm - Accepts the order
+        BA->>B: Confirms order and delivery
+
+        Note over B,SA: ORDER STATUS FLOW
+        B->>BA: Checks the order status
+        BA->>SA: /status - Enquire order status<br/>or tracking information
+        SA->>BA: /on_status_in_transit - Latest order and fulfillment status is sent
+        BA->>B: Updates the latest order<br/>and fulfillment information
+
+reference: if any
+steps:
+  - summary: Search based on the intent for buying a particular agri service
+    api: search
+    description: Search intent sent by the buyer based on the particular agri service required - e.g. Assaying service
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/search/search_by_item_assaying.yaml"
+  - summary: Returns the catalog specific to the search intent
+    api: on_search
+    description: Returns the catalog specific to the search intent
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/on_search/on_search_assaying_negotiation.yaml"
+  - summary: Buyer sends offered price for assaying report negotiation
+    api: select (counter-offers)
+    description: Buyer sends offered price for assaying report negotiation
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/select/select_assaying_negotiation_start.yaml"
+  - summary: Seller accepts/counter-offers with price for assaying report negotiation
+    api: on_select (Rejected)
+    description: Seller accepts/counter-offers with price for assaying report negotiation
+    reference: if any
+    example:
+      $ref: "../../Examples/Agriculture_services_yaml/on_select/on_select_assaying_negotiation_reject.yaml"
