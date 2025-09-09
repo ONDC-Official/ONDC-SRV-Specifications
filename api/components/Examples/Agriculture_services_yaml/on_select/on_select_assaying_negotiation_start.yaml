@@ -6,15 +6,15 @@ value:
         code: std:080
       country:
         code: IND
-    action: on_status
+    action: on_select
     version: 2.0.0
     bap_id: buyerapp.com
     bap_uri: https://buyerapp.com/services
     bpp_id: sellerapp.com
     bpp_uri: https://sellerapp.com/services
     transaction_id: T1
-    message_id: M6
-    timestamp: '2024-04-02T12:00:40.000Z'
+    message_id: M2
+    timestamp: '2024-04-01T22:00:31.000Z'
     ttl: PT30S
   message:
     order:
@@ -28,12 +28,9 @@ value:
             - L1
           fulfillment_ids:
             - F1
-          xinput:
-            form:
-              id: form_1
-            form_response:
-              status: SUCCESS
-              submission_id: 6547-7456-7235-4386
+          price:
+            currency: INR
+            value: '120.00'
           tags:
             - descriptor:
                 code: REPORT_REQUIREMENT
@@ -53,6 +50,18 @@ value:
                 - descriptor:
                     code: ACRAGE
                   value: '2'
+            - descriptor:
+                code: NEGOTIATION_BAP
+              list:
+                - descriptor:
+                    code: items.price.value
+                  value: '80.00'
+            - descriptor:
+                code: NEGOTIATION_BPP
+              list:
+                - descriptor:
+                    code: items.price.value
+                  value: '120.00'
         - id: I1C1
           parent_item_id: I1
           fulfillment_ids:
@@ -60,7 +69,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1
@@ -78,7 +87,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1
@@ -96,7 +105,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1
@@ -114,7 +123,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1
@@ -132,7 +141,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1
@@ -150,7 +159,7 @@ value:
           location_ids:
             - L1
           category_ids:
-            - SRV14-1005
+            - SRV14-1004
           quantity:
             selected:
               count: 1

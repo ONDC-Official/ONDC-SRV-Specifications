@@ -148,3 +148,24 @@ REPORT_REQUIREMENT:
   - code: ACRAGE
     description: Acrage of the farm, optional
     reference: <PR/Issue/Discussion Links md format text>
+NEGOTIATION_SPECIFICATION:
+  - code: PRICE
+    description: Selected price of item (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: COMPLETION_TAT
+    description: Selected time duration, how early they wants the report (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>
+NEGOTIATION_BPP:
+  - code: PRICE
+    description: Selected price of item (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: COMPLETION_TAT
+    description: Selected time duration, how early they wants the report (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>
+NEGOTIATION_BAP:
+  - code: PRICE
+    description: Selected price of item (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>
+  - code: COMPLETION_TAT
+    description: Selected time duration, how early they wants the report (Optional - depends on selection)
+    reference: <PR/Issue/Discussion Links md format text>

@@ -9,15 +9,15 @@
         "code": "IND"
       }
     },
-    "action": "on_status",
+    "action": "on_select",
     "version": "2.0.0",
     "bap_id": "buyerapp.com",
     "bap_uri": "https://buyerapp.com/services",
     "bpp_id": "sellerapp.com",
     "bpp_uri": "https://sellerapp.com/services",
     "transaction_id": "T1",
-    "message_id": "M6",
-    "timestamp": "2024-04-02T12:00:40.000Z",
+    "message_id": "M2",
+    "timestamp": "2024-04-01T22:00:31.000Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -33,20 +33,11 @@
       "items": [
         {
           "id": "I1",
-          "location_ids": [
-            "L1"
-          ],
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "xinput": {
-            "form": {
-              "id": "form_1"
-            },
-            "form_response": {
-              "status": "SUCCESS",
-              "submission_id": "6547-7456-7235-4386"
-            }
+          "location_ids": ["L1"],
+          "fulfillment_ids": ["F1"],
+          "price": {
+            "currency": "INR",
+            "value": "100.00"
           },
           "tags": [
             {
@@ -85,21 +76,41 @@
                   "value": "2"
                 }
               ]
+            },
+            {
+              "descriptor": {
+                "code": "NEGOTIATION_BAP"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "items.price.value"
+                  },
+                  "value": "100.00"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "NEGOTIATION_BPP"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "items.price.value"
+                  },
+                  "value": "100.00"
+                }
+              ]
             }
           ]
         },
         {
           "id": "I1C1",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -124,15 +135,9 @@
         {
           "id": "I1C2",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -157,15 +162,9 @@
         {
           "id": "I1C3",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -190,15 +189,9 @@
         {
           "id": "I1C4",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -223,15 +216,9 @@
         {
           "id": "I1C5",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -256,15 +243,9 @@
         {
           "id": "I1C6",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1

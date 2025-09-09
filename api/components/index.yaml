@@ -10,3 +10,5 @@ attributes:
   $ref: "./attributes/index.yaml"
 error_codes:
   $ref: "./error_codes/index.yaml"
+changeLog:
+  $ref: "./docs/changeLog/index.yaml"

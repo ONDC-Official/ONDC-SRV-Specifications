@@ -39,6 +39,10 @@
           "fulfillment_ids": [
             "F1"
           ],
+          "price": {
+            "currency": "INR",
+            "value": "100.00"
+          },
           "xinput": {
             "form": {
               "id": "form_1"
@@ -83,6 +87,32 @@
                     "code": "ACRAGE"
                   },
                   "value": "2"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "NEGOTIATION_BAP"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "items.price.value"
+                  },
+                  "value": "100.00"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "NEGOTIATION_BPP"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "items.price.value"
+                  },
+                  "value": "100.00"
                 }
               ]
             }

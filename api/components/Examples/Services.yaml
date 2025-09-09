@@ -5,3 +5,21 @@ Services - Agri Service:
     The booking majorly happens in four phases of order processing flow, i.e. Discovery of available services and service providers based on serviceability, order, fulfillment and post-fulfillment.
   example_set:
     $ref: "./Agriculture_services_yaml/index.yaml"
+Agri Services – Negotiation for Assaying Report:
+  summary: Negotiation for Assaying Report
+  description: >-
+    Negotiation for assaying service for submitted sample report based on price and report TAT.
+  example_set:
+    $ref: "./Agriculture_services_yaml/negotiation.yaml"
+Agri Services – Physical Submission Assaying Report:
+  summary: Physical Sample Submission for Assaying Report
+  description: >-
+    The following is an illustrative flow to perform a transaction of a nature where a buyer would like to avail assaying services for a particular commodity. The booking majorly happens in four phases of order processing flow, i.e. Discovery of available services and service providers based on serviceability, order, fulfillment and post-fulfillment.
+  example_set:
+    $ref: "./Agriculture_services_yaml/physical_submission.yaml"
+Agri Services – Digital Submission Assaying Report:
+  summary: Digital Sample Submission for Assaying Report
+  description: >-
+    The following is an illustrative flow to perform a transaction of a nature where a buyer would like to avail assaying services for a particular commodity. The booking majorly happens in four phases of order processing flow, i.e. Discovery of available services and service providers based on serviceability, order, fulfillment and post-fulfillment.
+  example_set:
+    $ref: "./Agriculture_services_yaml/digital_submission.yaml"

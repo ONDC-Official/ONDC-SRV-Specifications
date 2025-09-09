@@ -40,6 +40,11 @@ catalog:
           reference: <PR/Issue/Discussion Links md format text>
           list:
             $ref: "./Tag.yaml#/ATTRIBUTE"
+        - code: NEGOTIATION_SPECIFICATION
+          description: Negotiation specification for the terms based on negotiation happen (Required atleast one for negotiation based on terms selected)
+          reference: <PR/Issue/Discussion Links md format text>
+          list:
+            $ref: "./Tag.yaml#/NEGOTIATION_SPECIFICATION"
   categories:
     tags:
       - code: SELECTION

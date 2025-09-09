@@ -9,19 +9,21 @@
         "code": "IND"
       }
     },
-    "action": "on_status",
+    "action": "confirm",
     "version": "2.0.0",
     "bap_id": "buyerapp.com",
     "bap_uri": "https://buyerapp.com/services",
     "bpp_id": "sellerapp.com",
     "bpp_uri": "https://sellerapp.com/services",
     "transaction_id": "T1",
-    "message_id": "M6",
-    "timestamp": "2024-04-02T12:00:40.000Z",
+    "message_id": "M4",
+    "timestamp": "2024-04-01T22:00:38.000Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
+      "id": "O1",
+      "status": "Created",
       "provider": {
         "id": "P1",
         "locations": [
@@ -33,20 +35,11 @@
       "items": [
         {
           "id": "I1",
-          "location_ids": [
-            "L1"
-          ],
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "xinput": {
-            "form": {
-              "id": "form_1"
-            },
-            "form_response": {
-              "status": "SUCCESS",
-              "submission_id": "6547-7456-7235-4386"
-            }
+          "location_ids": ["L1"],
+          "fulfillment_ids": ["F1"],
+          "price": {
+            "currency": "INR",
+            "value": "100.00"
           },
           "tags": [
             {
@@ -85,21 +78,28 @@
                   "value": "2"
                 }
               ]
+            },
+            {
+              "descriptor": {
+                "code": "NEGOTIATION_BAP"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "items.price.value"
+                  },
+                  "value": "100.00"
+                }
+              ]
             }
           ]
         },
         {
           "id": "I1C1",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -124,15 +124,9 @@
         {
           "id": "I1C2",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -157,15 +151,9 @@
         {
           "id": "I1C3",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -190,15 +178,9 @@
         {
           "id": "I1C4",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -223,15 +205,9 @@
         {
           "id": "I1C5",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -256,15 +232,9 @@
         {
           "id": "I1C6",
           "parent_item_id": "I1",
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "location_ids": [
-            "L1"
-          ],
-          "category_ids": [
-            "SRV14-1005"
-          ],
+          "fulfillment_ids": ["F1"],
+          "location_ids": ["L1"],
+          "category_ids": ["SRV14-1004"],
           "quantity": {
             "selected": {
               "count": 1
@@ -287,22 +257,43 @@
           ]
         }
       ],
+      "billing": {
+        "name": "ONDC buyer",
+        "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+        "state": {
+          "name": "Karnataka"
+        },
+        "city": {
+          "name": "Bengaluru"
+        },
+        "tax_id": "XXXXXXXXXXXXXXX",
+        "email": "nobody@nomail.com",
+        "phone": "9886098860"
+      },
       "fulfillments": [
         {
           "id": "F1",
           "type": "Seller-Fulfilled",
           "tracking": false,
-          "state": {
-            "descriptor": {
-              "code": "Serviceable"
-            }
-          },
           "stops": [
             {
               "type": "end",
               "location": {
                 "gps": "12.974002,77.613458",
-                "area_code": "560001"
+                "address": "Farm 14 Near Village",
+                "city": {
+                  "name": "Bengaluru"
+                },
+                "country": {
+                  "code": "IND"
+                },
+                "area_code": "560001",
+                "state": {
+                  "name": "Karnataka"
+                }
+              },
+              "contact": {
+                "phone": "9886098860"
               },
               "time": {
                 "label": "confirmed",
@@ -310,6 +301,15 @@
                   "start": "2024-04-04T22:00:00.000Z",
                   "end": "2024-04-04T23:00:00.000Z"
                 }
+              },
+              "customer": {
+                "person": {
+                  "name": "Ramu"
+                }
+              },
+              "instructions": {
+                "name": "Special Instructions",
+                "short_desc": "Customer Special Instructions"
               }
             }
           ]
@@ -639,10 +639,84 @@
       },
       "payments": [
         {
+          "id": "P1",
+          "collected_by": "BAP",
+          "params": {
+            "amount": "1449.00",
+            "currency": "INR",
+            "bank_account_number": "xxxxxxxx",
+            "virtual_payment_address": "xxx@xxxx"
+          },
+          "status": "PAID",
           "type": "PRE-FULFILLMENT",
-          "collected_by": "BAP"
+          "tags": [
+            {
+              "descriptor": {
+                "code": "Settlement_Details"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "Counterparty"
+                  },
+                  "value": "BPP"
+                },
+                {
+                  "descriptor": {
+                    "code": "Mode"
+                  },
+                  "value": "UPI"
+                },
+                {
+                  "descriptor": {
+                    "code": "Beneficiary_Name"
+                  },
+                  "value": "xxxxx"
+                },
+                {
+                  "descriptor": {
+                    "code": "Bank_Account_No"
+                  },
+                  "value": "xxxxx"
+                },
+                {
+                  "descriptor": {
+                    "code": "Ifsc_Code"
+                  },
+                  "value": "xxxxxxx"
+                },
+                {
+                  "descriptor": {
+                    "code": "UPI_Address"
+                  },
+                  "value": "xxxxxxx"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "Buyer_Finder_Fee"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "Buyer_Finder_Fee_Type"
+                  },
+                  "value": "percentage"
+                },
+                {
+                  "descriptor": {
+                    "code": "Buyer_Finder_Fee_Amount"
+                  },
+                  "value": "3"
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "created_at": "2024-04-01T22:00:38.000Z",
+      "updated_at": "2024-04-01T22:00:38.000Z"
     }
   }
 }

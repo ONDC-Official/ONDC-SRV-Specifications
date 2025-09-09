@@ -10,40 +10,48 @@ details:
         participant SA1 as SellerApp1
         participant SA2 as SellerApp2
         
-        Note Over B,SA: **SEARCH FLOW**
-        B ->> BA: Search by item for a service within a city
-        BA ->> G: **/search** - Search by item for a service within city and <br>additional parameters
-        Note left of BA: Additional params include: <br><br>
-        G ->> SA1: **/search** - Services request broadcasted based <br>on city and domain in context
-        G ->> SA2: **/search** - Services request broadcasted based <br>on city and domain in context
-        SA1 ->> BA: **/on_search** - Services catalog returned <br>with pricing, seller statutory details, pricing
-        SA2 ->> BA: **/on_search** - Services catalog returned <br>with pricing, seller statutory details, pricing
-        Note Over BA,SA1: Buyer now has the option to choose the <br>services from either Seller 1 or Seller 2 or both
-        BA ->> B: Shows all service <br>options from sellers
+        Note over B,SA2: SEARCH FLOW
+        B->>BA: Search by item for a service within a city
+        BA->>G: /search - Search by item for service within city<br/>and additional parameters
+        Note left of BA: Additional params include:<br/>- Service type<br/>- Service City code <br/>- Buyer finder fee
+        G->>SA1: /search - Services request broadcasted based<br/>on city and domain in context
+        G->>SA2: /search - Services request broadcasted based<br/>on city and domain in context
+        SA1->>BA: /on_search - Services catalog returned<br/>with pricing, seller statutory details
+        SA2->>BA: /on_search - Services catalog returned<br/>with pricing, seller statutory details
+        Note over BA,SA2: Buyer now has the option to choose<br/>services from either Seller 1 or Seller 2 or both
+        BA->>B: Shows all service options from sellers
 
-        Note Over B,SA: **SELECT FLOW**
-        B ->> BA: Selects one of the <br>providers for service
-        BA ->> SA: **/select** - A service is selected with a <br>TTL for receiving response
-        SA ->> BA: **/on_select** - Responds to the selection with <br>breakup, quote including logistics charges
-        BA ->> B: Shows response with price details
+        Note over B,SA2: SELECT FLOW
+        B->>BA: Selects one of the providers for service
+        BA->>SA1: /select - A service is selected with a<br/>TTL for receiving response
+        SA1->>BA: /on_select - Responds to selection with<br/>breakup, quote including logistics charges
+        BA->>B: Shows response with price details
 
-        Note Over B,SA: **INITIALIZATION FLOW**
-        B ->> BA: Proceeds with the Order
-        BA ->> SA: **/init** - Initializes the order and <br>sends billing details
-        SA ->> BA: **/on_init** - Order initialization with <br>fulfillment & settlement information <br>including UPI or NEFT/IMPS/Bank Transfer
-        BA ->> B: Confirms initialization
+        Note over B,SA2: INITIALIZATION FLOW
+        B->>BA: Proceeds with the Order
+        BA->>SA1: /init - Initializes the order and<br/>sends billing details
+        SA1->>BA: /on_init - Order initialization with<br/>fulfillment & settlement information<br/>including UPI or NEFT/IMPS/Bank Transfer
+        BA->>B: Confirms initialization
 
-        Note Over B,SA: **CONFIRMATION FLOW**
-        B ->> BA: Confirms the Order
-        BA ->> SA: **/confirm** - Creates order to create final digital contract
-        SA ->> BA: **/on_confirm** - Accepts the order 
-        BA ->> B: Confirms order and delivery 
-        
-        Note Over B,SA: **ORDER STATUS FLOW**
-        B ->> BA: Checks the order status
-        BA ->> SA: **/status** - Enquire order status <br>or tracking information
-        SA ->> BA: **/on_status_in_transit** - Latest order and fulfillment status is sent
-        BA ->> B: Updates the latest order <br>and fulfillment information
+        Note over B,SA2: CONFIRMATION FLOW
+        B->>BA: Confirms the Order
+        BA->>SA1: /confirm - Creates order to create final digital contract
+        SA1->>BA: /on_confirm - Accepts the order
+        BA->>B: Confirms order and delivery timeline
+
+        Note over B,SA2: ORDER STATUS FLOW
+        B->>BA: Checks the order status
+        BA->>SA1: /status - Enquire order status<br/>or tracking information
+        SA1->>BA: /on_status - Latest order and fulfillment status is sent
+        BA->>B: Updates the latest order<br/>and fulfillment information
+
+        Note over B,SA2: SAMPLE COLLECTION & ASSAYING
+        SA1->>B: Sample collection scheduled
+        SA1->>SA1: Laboratory assaying process
+        SA1->>BA: /on_status - Assaying in progress
+        BA->>B: Notifies assaying status
+        SA1->>BA: /on_status - Assaying completed with results
+        BA->>B: Delivers digital assaying report
 
 reference: if any
 steps:

@@ -28,6 +28,9 @@ value:
             - L1
           fulfillment_ids:
             - F1
+          price:
+            currency: INR
+            value: '100.00'
           xinput:
             form:
               id: form_1
@@ -53,6 +56,18 @@ value:
                 - descriptor:
                     code: ACRAGE
                   value: '2'
+            - descriptor:
+                code: NEGOTIATION_BAP
+              list:
+                - descriptor:
+                    code: items.price.value
+                  value: '100.00'
+            - descriptor:
+                code: NEGOTIATION_BPP
+              list:
+                - descriptor:
+                    code: items.price.value
+                  value: '100.00'
         - id: I1C1
           parent_item_id: I1
           fulfillment_ids:
